@@ -16,7 +16,7 @@ Dates are not promised.
 | **BLOCKED** | Publication of a third benchmark's results and harness, pending redistribution rights |
 | **PLANNED** | Official Docker image |
 | **PLANNED** | Plan-release import into a workspace |
-| **BLOCKED** | Public release: Apache-2.0 + DCO selected; applied once copyright ownership is confirmed (ADR 0002) |
+| **IMPLEMENTED** | Apache-2.0 license with DCO sign-off (ADR 0002) |
 | **Commercial (planned)** | Hosted cloud, managed connectors, scheduled evaluation, alerts, teams, SSO, audit |
 
 Not planned for the community edition: telemetry, required accounts, license keys.

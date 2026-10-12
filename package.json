@@ -2,6 +2,7 @@
   "name": "radardb",
   "version": "0.2.0",
   "private": true,
+  "license": "Apache-2.0",
   "description": "RadarDB - the context engine for enterprise AI",
   "homepage": "https://github.com/bounty-bunny/radardb-community#readme",
   "repository": {

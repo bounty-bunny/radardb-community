@@ -35,7 +35,7 @@
     },
     {
       "path": ".github/dependabot.yml",
-      "sha256": "3be037795decacf7c0cb95835ff79a842c419f8abb0662acda613f6f6fce2daa",
+      "sha256": "05113590eb997ffcc85e8215652f6596b0df11fe74d71f9c60a28b2fef0c8db1",
       "class": "PUBLIC"
     },
     {
@@ -65,7 +65,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "6363a9c00b9910889fba6a01ad139bc6101b57c7847a9f757651ff93c1f35e7f",
+      "sha256": "85f926eb03bd3b98461aad77424b57f78cf1b2d63b3b1b25d296a70ba7b677b0",
       "class": "PUBLIC"
     },
     {
@@ -79,8 +79,18 @@
       "class": "PUBLIC"
     },
     {
+      "path": "DCO",
+      "sha256": "f7ac75b443f4ca16b503241344b41aeff9503b0c30bedc2b119551d83cb0fa90",
+      "class": "PUBLIC"
+    },
+    {
       "path": "GOVERNANCE.md",
       "sha256": "f1f3a7ac56dd06d2f28ba0922388b53ed56bdcea9374239d25d90a35a09d188d",
+      "class": "PUBLIC"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
       "class": "PUBLIC"
     },
     {
@@ -90,12 +100,12 @@
     },
     {
       "path": "NOTICE",
-      "sha256": "b44084bbbc64198c4413e09992c207334d9171de3f5c03083517b01c15f7f262",
+      "sha256": "2b8f592b3ab51015ea0443a92b0f0e420d5d53f5336247c5649312e35d7ebb49",
       "class": "PUBLIC"
     },
     {
       "path": "README.md",
-      "sha256": "ef2cb34d49c0efa6de38f14628c860b55d77d41b92a34614f13431a539c6de07",
+      "sha256": "6865aa2d38b0d2781fc451f5f173d2075a918ee4adcf7e5464f3ab9bf1715ccf",
       "class": "PUBLIC"
     },
     {
@@ -415,7 +425,7 @@
     },
     {
       "path": "docs/COMMUNITY_VS_COMMERCIAL.md",
-      "sha256": "7839cf9b9d67107dd59e179b83d0ba15fee44bf6c76798d3c1abe7350428673a",
+      "sha256": "93b218224ff7a56b9f5c15b5a4d02d3a9dd12f36bee31171cad65b84b7c5d655",
       "class": "PUBLIC"
     },
     {
@@ -425,7 +435,7 @@
     },
     {
       "path": "docs/FAQ.md",
-      "sha256": "b5bc9770964cac6dc757d8bd29327fdcf3fcf2a9a52210a47a4b91888d2fb5c3",
+      "sha256": "9e76e3f930b9c45689e2b96a31464c1fbd35ca1e56d4abc3753c3fab3b2ff7f8",
       "class": "PUBLIC"
     },
     {
@@ -455,7 +465,7 @@
     },
     {
       "path": "docs/ROADMAP.md",
-      "sha256": "6c5dd64ed51066c2b17bae645f3146f1450a620aec6c867e0c104cf1b7fd3760",
+      "sha256": "3351013b49523ae0266ba8f37e4af61521fbe2ee60c255246f657e7c91fc0a8a",
       "class": "PUBLIC"
     },
     {
@@ -475,7 +485,7 @@
     },
     {
       "path": "docs/adr/0002-license.md",
-      "sha256": "7e3edcd464901247fdd43365cff68339f54cd040349a81a8327e47d0653d62b5",
+      "sha256": "d4f3dd16419149a667a3a9a7f22fb974a6d45973f24d883efc728362d247c8c8",
       "class": "PUBLIC"
     },
     {
@@ -745,12 +755,12 @@
     },
     {
       "path": "package-lock.json",
-      "sha256": "9b594228897e27c2b4cb23f00ce758b75c276386a7946ac3ffec167b32f42322",
+      "sha256": "d2988416f2499ff77d8fbfad5b13ecf29610f572306832c390e67b87c19d7a4e",
       "class": "PUBLIC"
     },
     {
       "path": "package.json",
-      "sha256": "c0d5eef50fd8cb976994fa1085688528f407b6241194dd73579b6d8eba7e4ace",
+      "sha256": "1d54a259418f6d9b78af61c99c67959704646365f5a89fd09e3c0bae035ac7fa",
       "class": "PUBLIC"
     },
     {

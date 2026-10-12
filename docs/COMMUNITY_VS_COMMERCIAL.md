@@ -34,7 +34,7 @@ Status key: ✓ available · **exp.** experimental (available, API may change) �
 | Billing, usage metering | — | *planned* | contract |
 | Support | community (GitHub) | standard | contractual SLA |
 | **Terms** | | | |
-| License | Apache-2.0 (*selected; applied once copyright ownership is confirmed*) | commercial terms | commercial terms |
+| License | Apache-2.0 | commercial terms | commercial terms |
 | Account, telemetry or license key required | **never** | account | contract |
 
 ## Where the line is

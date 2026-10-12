@@ -25,7 +25,7 @@ Yes, for EnterpriseRAG-Bench and WixQA. See BENCHMARK_REPRODUCIBILITY.md; datase
 Not as is. It's a single-user local tool with no user authentication. See SECURITY.md.
 
 **Can I use it commercially?**
-Not yet. Apache-2.0 has been selected and is applied once copyright ownership is confirmed. Until a LICENSE file exists, no reuse rights are granted.
+Yes. RadarDB is licensed under Apache-2.0, which allows commercial use, modification and redistribution under its terms (keep the LICENSE and NOTICE files).
 
 **What's the commercial plan?**
 A managed cloud and an enterprise edition built on this same engine (COMMUNITY_VS_COMMERCIAL.md). Neither exists yet, and the community edition has no feature locks.

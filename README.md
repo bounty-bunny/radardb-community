@@ -10,7 +10,7 @@ Retrieval-augmented applications depend on decisions most teams make once, by in
 
 Get them wrong, and the model answers from the wrong pages. RadarDB tests those decisions against **your own questions** and keeps the best configuration. It then checks that choice on held-out questions it never tuned on, and serves it through one local API, with provenance for every passage.
 
-> **Status:** early (0.x), single-user, local-first. No account, no cloud service, no telemetry. APIs may change before 1.0. **License: Apache-2.0 (selected; the LICENSE file is added once copyright ownership is confirmed).** Until a LICENSE file is present, no reuse rights are granted.
+> **Status:** early (0.x), single-user, local-first. No account, no cloud service, no telemetry. APIs may change before 1.0. **License: [Apache-2.0](LICENSE).**
 
 ## Why retrieval optimization matters
 
@@ -113,4 +113,4 @@ Single user, localhost by default. Plain-JSON storage that tops out around 250K 
 
 ## Contributing and security
 
-Contributions are welcome with a DCO sign-off once the license is applied: [CONTRIBUTING.md](CONTRIBUTING.md). Code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Governance: [GOVERNANCE.md](GOVERNANCE.md). Maintainers: [MAINTAINERS.md](MAINTAINERS.md). Report vulnerabilities privately: [SECURITY.md](SECURITY.md).
+Contributions are welcome with a DCO sign-off: [CONTRIBUTING.md](CONTRIBUTING.md). Code of conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Governance: [GOVERNANCE.md](GOVERNANCE.md). Maintainers: [MAINTAINERS.md](MAINTAINERS.md). Report vulnerabilities privately: [SECURITY.md](SECURITY.md).

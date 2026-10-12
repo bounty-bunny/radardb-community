@@ -37,6 +37,7 @@ Single user, localhost by default, no authentication; plain-JSON storage (about 
 - Benchmark reproducibility kit for EnterpriseRAG-Bench and WixQA: `validation/harness/fetch-datasets.ts` (pinned revisions, sha256-verified), reproduction mode (`RADAR_REPRODUCE=1`, writes `*.reproduced.json`, verifies the frozen engine against `validation/harness/frozen-manifest.json`), `research/v1.1/compare-reproduction.ts`.
 - Regression tests guaranteeing that FusionContextPlan (EXPERIMENTAL) leaves the stable `executePlan` results unchanged.
 - Docs: PILOT_GUIDE, BENCHMARK_PROTOCOL, LIMITATIONS, MAINTAINERS; DCO sign-off policy in CONTRIBUTING.
+- License: Apache-2.0 (LICENSE, NOTICE); contributions under the DCO 1.1 (DCO, CONTRIBUTING.md).
 - Third-party dataset notice (docs/DATASETS.md); CI with SHA-pinned actions, a DCO check and a quick-start smoke test; release workflow with SBOMs and build provenance.
 
 ### Unchanged

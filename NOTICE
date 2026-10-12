@@ -1,5 +1,7 @@
 RadarDB
-Copyright (c) 2026 the RadarDB authors. License pending owner approval (see docs/adr/0002-license.md).
+Copyright 2026 Lokesh Lalwani
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
 
 This product depends on third-party software, installed by npm and not
 redistributed in this source repository. Notable licenses (full inventory:

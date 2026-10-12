@@ -1,6 +1,6 @@
 # ADR 0002: License for the community edition
 
-- **Status:** Accepted: Apache-2.0 with DCO, conditional on confirming copyright ownership and licensing rights. **Not applied yet.**
+- **Status:** Accepted and applied (2026-10-12): Apache-2.0 with DCO.
 - **Date:** 2026-10-11
 
 ## Requirements
