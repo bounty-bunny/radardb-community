@@ -23,7 +23,7 @@
     "schemas": "tsx scripts/schemas.ts"
   },
   "dependencies": {
-    "@huggingface/transformers": "^4.3.0",
+    "@huggingface/transformers": "^4.3.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.49.0",
     "next": "^16.3.8",
