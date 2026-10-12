@@ -1,0 +1,43 @@
+# Tagged releases: a DRAFT GitHub release with a source archive, SBOMs and build provenance.
+# Publishing the draft is a manual maintainer step. There is no npm publish ("private": true).
+name: Release
+on:
+  push: { tags: ["v*"] }
+permissions:
+  contents: read
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version: 24, cache: npm }
+      - name: Tag matches package.json version
+        run: test "v$(node -p 'require("./package.json").version')" = "$GITHUB_REF_NAME"
+      - run: npm ci
+      - run: npm run typecheck && npm test && npm run build
+      - name: Source archive and SBOMs
+        run: |
+          git archive --format=tar.gz --prefix="radardb-${GITHUB_REF_NAME}/" -o "radardb-${GITHUB_REF_NAME}.tar.gz" "$GITHUB_REF_NAME"
+          npm sbom --sbom-format cyclonedx --omit dev > "radardb-${GITHUB_REF_NAME}.cdx.json"
+          npm sbom --sbom-format spdx --omit dev > "radardb-${GITHUB_REF_NAME}.spdx.json"
+          sha256sum radardb-* > SHA256SUMS
+      - uses: actions/attest-build-provenance@4d101475d8b20a2381f78447822ac1eab6504dd8 # v4.2.2
+        with:
+          subject-path: |
+            radardb-*.tar.gz
+            radardb-*.cdx.json
+            radardb-*.spdx.json
+      - name: Release notes from this version's CHANGELOG section
+        run: |
+          v="${GITHUB_REF_NAME#v}"
+          awk -v h="## [$v]" 'index($0, h) == 1 { on = 1; next } on && /^## / { exit } on' CHANGELOG.md > notes.md
+          test -s notes.md
+      - name: Draft GitHub release
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh release create "$GITHUB_REF_NAME" radardb-* SHA256SUMS --draft --verify-tag --title "RadarDB Community $GITHUB_REF_NAME" --notes-file notes.md

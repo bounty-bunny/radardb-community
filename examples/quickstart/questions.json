@@ -1,0 +1,22 @@
+[
+  { "question": "How many times does Quillstack retry a failed card payment?", "requiredEvidence": ["retries the charge after 3 days and again after 7 days"], "split": "optimization" },
+  { "question": "When does a downgrade take effect?", "requiredEvidence": ["Downgrades take effect at the end of the current billing period"], "split": "optimization" },
+  { "question": "Which identity providers work with SSO?", "requiredEvidence": ["Okta, Microsoft Entra ID and Google Workspace"], "split": "optimization" },
+  { "question": "Can anyone still log in with a password after SSO is enforced?", "requiredEvidence": ["except one break-glass owner account"], "split": "optimization" },
+  { "question": "What is the API rate limit per workspace token?", "requiredEvidence": ["600 requests per minute per workspace token"], "split": "optimization" },
+  { "question": "What does the API return when I hit the rate limit?", "requiredEvidence": ["HTTP 429", "Retry-After"], "split": "optimization" },
+  { "question": "What does error QS-2040 mean?", "requiredEvidence": ["QS-2040", "limited to 250 MB per file"], "split": "optimization" },
+  { "question": "How do I fix QS-1001?", "requiredEvidence": ["QS-1001", "Create a new personal access token"], "split": "optimization" },
+  { "question": "How long does Quillstack keep retrying a webhook?", "requiredEvidence": ["retried up to 8 times", "roughly 24 hours"], "split": "optimization" },
+  { "question": "What is inside a workspace export archive?", "requiredEvidence": ["notes as Markdown", "manifest.json"], "split": "optimization" },
+  { "question": "What was new in Quillstack 3.2?", "requiredEvidence": ["Offline mode for the desktop app"], "split": "optimization" },
+  { "question": "What caused incident INC-0412?", "requiredEvidence": ["reduced the notification queue's worker pool from 24 to 4 workers"], "split": "optimization" },
+  { "question": "How much does the Business plan cost?", "requiredEvidence": ["$15 per member per month"], "split": "optimization" },
+  { "question": "Why is my workspace read-only?", "requiredEvidence": ["workspace becomes read-only until an owner updates the payment method"], "split": "validation" },
+  { "question": "How do I set up SAML in Quillstack?", "requiredEvidence": ["Upload your provider's metadata XML", "Map the email attribute to `NameID`"], "split": "validation" },
+  { "question": "Do webhook deliveries count against the API rate limit?", "requiredEvidence": ["Webhook deliveries do not count toward the REST API limit"], "split": "validation" },
+  { "question": "What should I do about a QS-4502 webhook signature mismatch?", "requiredEvidence": ["QS-4502", "Recompute the HMAC-SHA256 signature"], "split": "validation" },
+  { "question": "How long is the export download link valid?", "requiredEvidence": ["stays valid for 7 days"], "split": "validation" },
+  { "question": "How many days of note history does the Business plan keep since 3.3?", "requiredEvidence": ["180 days of versions on the Business plan"], "split": "validation" },
+  { "question": "How was the INC-0412 notification delay fixed?", "requiredEvidence": ["The worker pool was restored", "queue latency exceeds 5 minutes"], "split": "validation" }
+]

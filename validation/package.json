@@ -1,0 +1,10 @@
+{
+  "name": "radardb-validation",
+  "private": true,
+  "description": "External validation harness for frozen RadarDB v1.0.0-alpha. Never imported by src/.",
+  "type": "module",
+  "dependencies": {
+    "hyparquet": "^1.0.0",
+    "hyparquet-compressors": "^1.0.0"
+  }
+}

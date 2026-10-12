@@ -1,0 +1,148 @@
+{
+  "label": "WixQA SYNTHETIC SECONDARY GENERALIZATION LOCK (new questions, familiar corpus) — FINAL; prepared from development questions only; Synthetic outcomes read: 0; test NOT run",
+  "createdAt": "2026-10-06T19:31:34.842Z",
+  "question": "Does the already-developed WixQA FusionContextPlan generalize to a large unseen question population on the same WixQA corpus?",
+  "role": "SECONDARY evidence. Never used to change the FusionContextPlan. If it fails, report the disagreement and investigate only after the result is frozen.",
+  "systems": {
+    "globalKey": "section|hybrid|minilm-l6|-|-|cross-encoder|k8",
+    "globalConfig": {
+      "chunkingStrategy": "section",
+      "retrievalStrategy": "hybrid",
+      "embeddingModel": "minilm-l6",
+      "exactMatchBoost": false,
+      "graphStrategy": "none",
+      "reranker": "cross-encoder",
+      "topK": 8
+    },
+    "fusionKey": "fusion[v1](section|hybrid|minilm-l6|-|-|cross-encoder|k8 + sentence-window|hybrid|minilm-l6|-|-|none|k8; rrf60; rerank=none)",
+    "fusionConfig": {
+      "kind": "fusion",
+      "version": 1,
+      "primary": {
+        "chunkingStrategy": "section",
+        "retrievalStrategy": "hybrid",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "cross-encoder",
+        "topK": 8
+      },
+      "partner": {
+        "chunkingStrategy": "sentence-window",
+        "retrievalStrategy": "hybrid",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "none",
+        "topK": 8
+      },
+      "rrfK": 60,
+      "sharedRerank": "none",
+      "rerankPool": 20
+    },
+    "tokenBudget": "per query = Global Fixed context tokens"
+  },
+  "derivation": {
+    "data": "WixQA ExpertWritten+Simulated DEVELOPMENT (optimization) questions only, n=280, full KB",
+    "procedure": "V1.1B final fit (identical to EnterpriseRAG)",
+    "trainingGainOverGlobal": {
+      "delta": 0.05595238095238095,
+      "ci": [
+        0.02380952380952381,
+        0.0880952380952381
+      ]
+    },
+    "gate": "FUSE"
+  },
+  "population": {
+    "source": "wixqa_synthetic__test.jsonl (6,221)",
+    "exclusions": {
+      "R1_exactDuplicateOfPrimary": 0,
+      "R2_nearDuplicateOfPrimary": 27,
+      "R3_duplicateWithinSynthetic": 2,
+      "R4_badGold": 0,
+      "total": 29
+    },
+    "eligible": 6192,
+    "eligibleIdsSha256": "ad389ccde9d5af6f79a57c5c328e4483fcecc42df1ee70d303da8595b9c51e13",
+    "rules": [
+      "R1 exact duplicate of any primary question (400)",
+      "R2 near-duplicate of any primary question (content-word Jaccard >= 0.6)",
+      "R3 duplicate within Synthetic (keep first)",
+      "R4 empty/missing gold"
+    ],
+    "diagnostic": "split by sharesGoldWithDevelopment (included: 239 share)"
+  },
+  "testSubsample": {
+    "n": 4000,
+    "seed": 20261001,
+    "decision": "Option A approved by the user (2026-10-06): seeded random 4,000 of the 6,192 eligible questions, within the preregistered 2 h evaluation budget."
+  },
+  "latencySubsample": {
+    "n": 300,
+    "seed": 20261001
+  },
+  "primary": {
+    "comparison": "FusionContextPlan vs Global Fixed",
+    "metric": "Recall@5 (1 gold per question: equals Success@5 per question)",
+    "bootstrap": {
+      "resamples": 10000,
+      "seed": 20261001
+    },
+    "scientific": "delta > 0 AND paired 95% CI excludes 0",
+    "productDecisionRule": "delta >= +5.0 AND CI excludes 0 (a decision rule; does not by itself establish a true effect >= 5)",
+    "alwaysReport": "two-plan oracle headroom captured (diagnostic)"
+  },
+  "externalWording": "Report point estimate + paired 95% CI; describe threshold outcomes as decision-rule outcomes.",
+  "hashes": {
+    "candidatePlan": {
+      "path": "research/v1.1/v11b/results/candidate-fusionplan-wixqa.json",
+      "sha256": "1907d9ff89ad420ef86e8a7d32d15a4c05d09b62f5d1752657cd77ae3fb82d62"
+    },
+    "audit": {
+      "path": "research/v1.1/v11c/results/synthetic-audit.json",
+      "sha256": "71c4458fbb9191d0986b8dbe94e79538bb2db6ffe1ef70e47f6a43e23cd876d7"
+    },
+    "fusionImplementation": {
+      "path": "src/engine/v11/fusion.ts",
+      "sha256": "3406397c7d48365ec38f3a7b81eb2b51e8eeb57ea65b1d17ef1e6bc59a543e8a"
+    }
+  },
+  "smokeTest": {
+    "developmentQuestions": 280,
+    "globalRankingMismatchesVsStoredV1": 0,
+    "fusedR5": 0.7035714285714286,
+    "lockedFinalFitFusedR5": 0.7035714285714286,
+    "reproduced": true
+  },
+  "resourceProjection": {
+    "coldSecPerQuestionFusion": 1.4145666666666665,
+    "projectedQualitySecAt4000": 5658,
+    "projectedQualitySecAt6192": 8759,
+    "representations": "existing WixQA full-scale V1 caches (section, sentence-window with MiniLM)"
+  },
+  "recordedExpectation": "Positive. WixQA actual-engine out-of-fold development CV: +4.7 [+1.3, +8.2]; final-fit training gain +5.6 [+2.4, +8.8] (in-sample). Synthetic questions are LLM-generated with 1 gold article, a different distribution from the development questions.",
+  "operational": "Keep the machine awake for the run (an OS sleep pauses but does not invalidate quality; latency would be re-measured only if a sleep overlaps the latency pass).",
+  "verification": {
+    "syntheticOutcomesRead": 0,
+    "heldOutLabelsRead": 0
+  },
+  "finalizedAt": "2026-10-06T21:02:59.862Z",
+  "frozen": [
+    "eligible population (6,192 ids, sha256 ad389ccde9d5af6f79a57c5c328e4483fcecc42df1ee70d303da8595b9c51e13) and exclusion rules R1-R4",
+    "test subsample (n=4,000, seed 20261001) and latency subsample (n=300, seed 20261001)",
+    "Global plan and partner (WixQA-derived), RRF k=60, no shared rerank, rerank pool 20",
+    "token budget rule: fused context <= Global Fixed context tokens per query",
+    "gating decision: FUSE",
+    "metrics, paired bootstrap (10,000, seed 20261001), scientific rule, product decision rule",
+    "FusionContextPlan implementation (src/engine/v11/fusion.ts sha256) and src/",
+    "evaluator and analysis scripts at the lock commit"
+  ],
+  "interpretation": {
+    "declaredBeforeAnyOutcome": true,
+    "significantPositive": "Delta > 0 with CI excluding 0: FusionContextPlan generalizes to a large unseen question population on the same corpus.",
+    "null": "CI includes 0: the EnterpriseRAG result remains valid, but the benefit of fusion is workload-dependent.",
+    "significantNegative": "Delta < 0 with CI excluding 0: evidence that the current offline partner-selection/gating method is insufficiently robust.",
+    "noRerun": "No outcome triggers a rerun, an alternate configuration, or any change evaluated on Synthetic. Any investigation happens only after the result is committed."
+  }
+}

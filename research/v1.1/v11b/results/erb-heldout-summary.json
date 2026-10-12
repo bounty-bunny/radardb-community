@@ -1,0 +1,164 @@
+{
+  "n": 142,
+  "heldOutLabelsRead": 142,
+  "systems": {
+    "global": "fixed-512|lexical|-|-|graph|none|k8",
+    "fusion": "fusion[v1](fixed-512|lexical|-|-|graph|none|k8 + section|hybrid|minilm-l6|exact|graph|none|k5; rrf60; rerank=none)"
+  },
+  "global": {
+    "r5": 0.8231807511737089,
+    "r10": 0.8533450704225353,
+    "ndcg": 0.8210093910349787,
+    "s5": 110,
+    "tok": 5989.5
+  },
+  "fusion": {
+    "r5": 0.8770735524256651,
+    "r10": 0.8960485133020345,
+    "ndcg": 0.8306329116422534,
+    "s5": 118,
+    "tok": 5765.387323943662
+  },
+  "primary": {
+    "delta": 0.05389280125195618,
+    "ci": [
+      0.0227112676056338,
+      0.09145148669796557
+    ],
+    "scientific": true,
+    "product": true
+  },
+  "mcnemar": {
+    "fusionOnly": 8,
+    "globalOnly": 0,
+    "p": 0.0078125
+  },
+  "improves": 12,
+  "ties": 129,
+  "harms": 1,
+  "oracle2": 0.8788928012519561,
+  "headroom": 0.0557120500782472,
+  "capture": 0.9673455056179784,
+  "contributionTop5": {
+    "both": 145,
+    "primary-only": 22,
+    "partner-only": 8
+  },
+  "contributionContext": {
+    "both": 145,
+    "primary-only": 28,
+    "partner-only": 10
+  },
+  "latency": {
+    "globalMs": {
+      "p50": 66.03570000000764,
+      "p95": 88.22849999999744
+    },
+    "embedMs": {
+      "p50": 7.5525999999954365,
+      "p95": 10.63300000000163
+    },
+    "primaryBranchMs": {
+      "p50": 173.31540000002133,
+      "p95": 228.59429999999702
+    },
+    "partnerBranchMs": {
+      "p50": 108.67970000000787,
+      "p95": 143.55420000001322
+    },
+    "branchesWallMs": {
+      "p50": 173.33789999998407,
+      "p95": 228.617900000012
+    },
+    "fusionMs": {
+      "p50": 0.06190000000060536,
+      "p95": 0.08770000000367872
+    },
+    "rerankMs": {
+      "p50": 0.0007999999797903001,
+      "p95": 0.0010999999940395355
+    },
+    "assemblyMs": {
+      "p50": 0.9726000000082422,
+      "p95": 1.6212999999988824
+    },
+    "totalMs": {
+      "p50": 182.02289999998175,
+      "p95": 238.41719999999623
+    }
+  },
+  "byType": [
+    {
+      "type": "basic",
+      "n": 53,
+      "global": 0.9056603773584906,
+      "fusion": 0.9433962264150944,
+      "improves": 2,
+      "harms": 0
+    },
+    {
+      "type": "completeness",
+      "n": 6,
+      "global": 0.3666666666666667,
+      "fusion": 0.4444444444444444,
+      "improves": 2,
+      "harms": 0
+    },
+    {
+      "type": "conflicting_info",
+      "n": 6,
+      "global": 0.9166666666666666,
+      "fusion": 1,
+      "improves": 1,
+      "harms": 0
+    },
+    {
+      "type": "constrained",
+      "n": 9,
+      "global": 0.8333333333333334,
+      "fusion": 0.8888888888888888,
+      "improves": 1,
+      "harms": 0
+    },
+    {
+      "type": "intra_document_reasoning",
+      "n": 12,
+      "global": 1,
+      "fusion": 1,
+      "improves": 0,
+      "harms": 0
+    },
+    {
+      "type": "miscellaneous",
+      "n": 6,
+      "global": 1,
+      "fusion": 1,
+      "improves": 0,
+      "harms": 0
+    },
+    {
+      "type": "project_related",
+      "n": 12,
+      "global": 0.8076388888888889,
+      "fusion": 0.8231481481481481,
+      "improves": 2,
+      "harms": 1
+    },
+    {
+      "type": "semantic",
+      "n": 38,
+      "global": 0.6842105263157895,
+      "fusion": 0.7894736842105263,
+      "improves": 4,
+      "harms": 0
+    }
+  ],
+  "resources": {
+    "totalSec": 219,
+    "peakRssSampled500msMB": 4726
+  },
+  "deviations": {
+    "budgetViolations": 0,
+    "primaryBranchDiffersFromGlobal": 0
+  }
+}

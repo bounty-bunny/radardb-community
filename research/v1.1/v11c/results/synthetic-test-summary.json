@@ -1,0 +1,61 @@
+{
+  "primary": {
+    "n": 4000,
+    "global": 0.9785,
+    "fusion": 0.98525,
+    "delta": 0.00675,
+    "ci": [
+      0.0035,
+      0.01
+    ],
+    "improves": 34,
+    "harms": 7,
+    "scientific": true,
+    "productDecisionRule": false
+  },
+  "mcnemar": {
+    "fusionOnly": 34,
+    "globalOnly": 7,
+    "p": 0.00002532080361561384
+  },
+  "oracle2": 0.9885,
+  "capture": 0.6749999999999917,
+  "contrib": {
+    "both": 3865,
+    "g": 55,
+    "p": 21
+  },
+  "diagnosticSplit": {
+    "sharesGoldWithDevelopment": {
+      "n": 155,
+      "global": 0.9612903225806452,
+      "fusion": 0.9548387096774194,
+      "delta": -0.0064516129032258064,
+      "ci": [
+        -0.03225806451612903,
+        0.012903225806451613
+      ],
+      "improves": 1,
+      "harms": 2
+    },
+    "noSharedGold": {
+      "n": 3845,
+      "global": 0.9791937581274383,
+      "fusion": 0.9864759427828349,
+      "delta": 0.007282184655396619,
+      "ci": [
+        0.004161248374512354,
+        0.010663198959687906
+      ],
+      "improves": 33,
+      "harms": 5
+    }
+  },
+  "budgetViolations": 0,
+  "parityMismatches": 0,
+  "resources": {
+    "totalSec": 18507,
+    "qualitySec": 17739,
+    "peakRssSampled500msMB": 2088
+  }
+}

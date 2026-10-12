@@ -1,0 +1,2882 @@
+{
+ "dataset": "EnterpriseRAG-Bench",
+ "revision": "69916e31c68aa5963c00248fd7f0bc12d04fd235",
+ "seed": 20261001,
+ "rule": "70/30 stratified by question_type; identical gold sets grouped; PREREGISTRATION §3",
+ "counts": {
+  "scorable": 470,
+  "optimization": 328,
+  "validation": 142,
+  "excludedNoGold": 30
+ },
+ "byType": {
+  "basic": {
+   "optimization": 122,
+   "validation": 53
+  },
+  "semantic": {
+   "optimization": 87,
+   "validation": 38
+  },
+  "intra_document_reasoning": {
+   "optimization": 28,
+   "validation": 12
+  },
+  "project_related": {
+   "optimization": 28,
+   "validation": 12
+  },
+  "constrained": {
+   "optimization": 21,
+   "validation": 9
+  },
+  "conflicting_info": {
+   "optimization": 14,
+   "validation": 6
+  },
+  "completeness": {
+   "optimization": 14,
+   "validation": 6
+  },
+  "miscellaneous": {
+   "optimization": 14,
+   "validation": 6
+  }
+ },
+ "integrity": {
+  "duplicateQuestionIds": 0,
+  "duplicateQuestions": [],
+  "nearDuplicatesAcrossSplits": [],
+  "templateRepeatsAcrossSplits": [],
+  "identicalGoldSetsAcrossSplits": [],
+  "allGoldPresentInEveryScale": true,
+  "missingQrels": 0,
+  "emptyGoldAmongScored": 0,
+  "ambiguousGoldIdQuestions": [
+   "qst_0413(optimization)"
+  ],
+  "blockingIssues": []
+ },
+ "questions": [
+  {
+   "questionId": "qst_0001",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "80284a9cadb78213db8823d80f5774a6f663705aa2870f4edc326132f83a7606"
+  },
+  {
+   "questionId": "qst_0002",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "0a8abd0f5b7e06eb462ce14fb4c84686a234e4991f6bc3912fb798077411e2d7"
+  },
+  {
+   "questionId": "qst_0003",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "068f3aeac11ca471244db41084043983390bd783a9eeb4477d85f2f2109e8b15"
+  },
+  {
+   "questionId": "qst_0004",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "9119211d32ad93ac371b01559f86b600486d3db2b19d5154f67b3ab9288be762"
+  },
+  {
+   "questionId": "qst_0005",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "65b7981a5076f97967c02ce99839fd95b36658fa6371409b7b28b78271cf247a"
+  },
+  {
+   "questionId": "qst_0006",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "40249146393dceec43276ba5aeced3dd706fb7676e0e99666c7527721d0fecde"
+  },
+  {
+   "questionId": "qst_0007",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "016239e4b8acb5126354c8fcdec3b2505eed19f1fd7e7f098192caf330368d0d"
+  },
+  {
+   "questionId": "qst_0008",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "4aad1952c46f5eefa57f0a4160d5a3c5defab40fc5ee81986f767781364fdb86"
+  },
+  {
+   "questionId": "qst_0009",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "d18ec307634689fa0a276bc5b111230e56a1bdf636be0c2e9a71752e1c122fed"
+  },
+  {
+   "questionId": "qst_0010",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "d1282d5a6e1c2437a077803e2f3e167a9578338865c761d0c25e15da987f132f"
+  },
+  {
+   "questionId": "qst_0011",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ebb4e4e535c48e64334858465298bf2306bbcb16e4773325116bbb1c017fde28"
+  },
+  {
+   "questionId": "qst_0012",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "4a39d02990315f420a19c76c49d5c920d5be5e665d9dbdfb98064bc0d71a8ca8"
+  },
+  {
+   "questionId": "qst_0013",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "f32977d42eb9529a24cc8318911634c5e218ef35543163ce54f0615976f183d6"
+  },
+  {
+   "questionId": "qst_0014",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "5843065c815deec9ea369d2807632cb73ffca4e50744a7f8932025ab34aa582f"
+  },
+  {
+   "questionId": "qst_0015",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "27d38893ffd19c1e67b6de3e276ddd6478336a64705cc5c6686ad064431cab15"
+  },
+  {
+   "questionId": "qst_0016",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "7139a4866171d6fbaf2c6c386d7d256a24524950955cd49ca63d8e0dfb0fc3ef"
+  },
+  {
+   "questionId": "qst_0017",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "81a1ab8c95cec1c6612c71e946d67bd99c9d6ec1e9aa98030fad8037940f461e"
+  },
+  {
+   "questionId": "qst_0018",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "96306a168a4b8675d9fe341dda38eda7ead33ff59b8f6a08d67dff016a037073"
+  },
+  {
+   "questionId": "qst_0019",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "0f4b40501c00ec21e68ed21e0f8d93ab6ec44c44ed8bcb73d2a451405b0f2cb1"
+  },
+  {
+   "questionId": "qst_0020",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "76fab1d3f850365037b1b3c7ab3d34cba0f1d8238219816d6e002ba76149f6e0"
+  },
+  {
+   "questionId": "qst_0021",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "adbeaca7c06c11e5bc2f1fbc99a34d09065cea011438652bdec08dccfd79ccc9"
+  },
+  {
+   "questionId": "qst_0022",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "df0db61d139cad9eaffe832ce5a2fa528aae7b1ad95293fa6cb938b4807a03ff"
+  },
+  {
+   "questionId": "qst_0023",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "34fb21f5c7cb247781b89b62de88e6df8b7172ceefaa7526085a4ce2e422df35"
+  },
+  {
+   "questionId": "qst_0024",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "7207c96f7ae67615c0d8059719245315b3ff10a46bedf071cee176b6bb684e14"
+  },
+  {
+   "questionId": "qst_0025",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "7291231a6b8cbd78f680c11f425891f6a7267a60940f08bf6204b6f467536d4b"
+  },
+  {
+   "questionId": "qst_0026",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "5586a699c29d3d42ee805aef1e72740428c9a10c198f241528783ed521cdb129"
+  },
+  {
+   "questionId": "qst_0027",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "3c3842b84f90a2326e1990f0a78de110fbd77667e2d74d85acefe0a0abd6af9e"
+  },
+  {
+   "questionId": "qst_0028",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "c228faa4b8ec04cc3e59802666d72d9f69a5f91d1c5ba580add58e9e68833750"
+  },
+  {
+   "questionId": "qst_0029",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "1e456be07a2ed41d714574e378f0a2931c97033e20a6ba2575bfccde92285dc1"
+  },
+  {
+   "questionId": "qst_0030",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "b17cf94cc75549050298d655bbfa0aa04cdd800e3864f0ccac04bcaa8e8cc359"
+  },
+  {
+   "questionId": "qst_0031",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "a2badb572cf9cb2fe4a3ca7869a0adc39331bc62a357f37c360d0b838e894587"
+  },
+  {
+   "questionId": "qst_0032",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ddc325194691c6f929fcc600d7a445e5cc7fe378656eb1e2eff066ae11507be5"
+  },
+  {
+   "questionId": "qst_0033",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ca8938ebdf1c4076b30a951bc8f4c73b6d43070e7bfb45f26ff88e1388dd819c"
+  },
+  {
+   "questionId": "qst_0034",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "2cca5c5cbdef27b981332051bcff80f93e2170c30c0dad5e75cb429357a829c3"
+  },
+  {
+   "questionId": "qst_0035",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "90aff8f597470821d55d20daed20b703458b9f025591de1f8a564ec154b5b1db"
+  },
+  {
+   "questionId": "qst_0036",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "8db961986fc88bbd80191985c921bf36695a3ce66c9a214e371ce8feecc35a16"
+  },
+  {
+   "questionId": "qst_0037",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "d2ab28369881d370e18f4fff9b541dc80b3cabf8ec69c389307c7465dec6e8aa"
+  },
+  {
+   "questionId": "qst_0038",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "ded2b953f4baec2d3db3730c6bd7103c7f5aef20d62af920a2ec9651bd197f3a"
+  },
+  {
+   "questionId": "qst_0039",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "09459cdab43afa07ccdbe8f372758f4dc06c793be073e5020b420437429c0c99"
+  },
+  {
+   "questionId": "qst_0040",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "f61fce49707dbfc5d3872cce233ecc712fe34409e1829e809ed258de3d0b52bf"
+  },
+  {
+   "questionId": "qst_0041",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "4311c84bb984506c7d7135afd9e565ce21b23db48cfd93163c10219c9f47244f"
+  },
+  {
+   "questionId": "qst_0042",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "53a49cbed434f2aad0355260ea1f15b01d9c5bcd49ccfd55649d4591c9890602"
+  },
+  {
+   "questionId": "qst_0043",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "7deee4a4cfab54b320deea1048c0a387bdbd8ce8ee7b5e6eccb8d8602726ba38"
+  },
+  {
+   "questionId": "qst_0044",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "59271d2081532812eb35b1ea888234420619ec255977139105d2e55d52ba963f"
+  },
+  {
+   "questionId": "qst_0045",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "cba0e45decb9e3348b8329d90dba470e5f5e2e4622aa59012a96e2ec3f5a3fd5"
+  },
+  {
+   "questionId": "qst_0046",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "baa17847efda562cac9dad9ff1bcdeef465e0b3d136d367c368bae9822f47a56"
+  },
+  {
+   "questionId": "qst_0047",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "9137933d683c7d5833b18948e517c3fb6b9c93f913159b977d7f38dcbf8ec10b"
+  },
+  {
+   "questionId": "qst_0048",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "4dd329c3cb973f283f45ed37cbd6a148c606bc47926a9786e35c4b0f326cfea7"
+  },
+  {
+   "questionId": "qst_0049",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "68b95314ddcebbef2d29e471214b7def066b356038891875a885321c1ed9d905"
+  },
+  {
+   "questionId": "qst_0050",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "bb417941968c767fe75300dbb0c8f515b103dad240a3a23a932f9e5884262bee"
+  },
+  {
+   "questionId": "qst_0051",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "efbe1148c418a32fb2eb729cbe4623feef8eafd58e85a5441034e836f850a276"
+  },
+  {
+   "questionId": "qst_0052",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ce4a5c2fee3ba45b3c4fc83a5167ad56cfa0cab8e487b01bf1a2d3c1d1e49766"
+  },
+  {
+   "questionId": "qst_0053",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ae6e7f46805d4f27fff2b44996bd691a006d5a9451ff56cce92ff3f6181e3bc5"
+  },
+  {
+   "questionId": "qst_0054",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "086a09a69c534cdab1119309eddb8c3259ac4d1e332f348f908a32f75bddc2fc"
+  },
+  {
+   "questionId": "qst_0055",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "89268e6491fa91793106c41b4893890a65afe8af819cba0b5857c4792d411576"
+  },
+  {
+   "questionId": "qst_0056",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ae9e335308e0409a4d7778ce32e9b6ab2853f359f30a51883b16694ae95d63ef"
+  },
+  {
+   "questionId": "qst_0057",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "6d4d81116a22cadce2ff36ef396f07d2dd6f4ab06fdb2073becd38a2106f278e"
+  },
+  {
+   "questionId": "qst_0058",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "5c6542085fcb784850c8748888d8dbb013960499dccd45d6b37bc7efb6061028"
+  },
+  {
+   "questionId": "qst_0059",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "4dff575a73062ae70c2a1a91f3c1658b57b9ed1d7eae9abed3592eabc834d538"
+  },
+  {
+   "questionId": "qst_0060",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "afe1d86cd710ac0ce77792edad18adc7e10816e9073bbaff1d311ec51e9ad68b"
+  },
+  {
+   "questionId": "qst_0061",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "b3032d154f39dc64fa80265f875c52e53f942f9476f5eff63e3b36f6e06e9122"
+  },
+  {
+   "questionId": "qst_0062",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "39b9cf5c25871fb6d67e4ef10fb2c2483bf1ee047efc188661197b018afd063d"
+  },
+  {
+   "questionId": "qst_0063",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "8f74c680d277153a1c4ad56b540115bb4f34bbecd5bf35167da560e7df521883"
+  },
+  {
+   "questionId": "qst_0064",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "35055aeddee71e8a4cac3adea9635ac4eef77321dff3c6452cf7d739be6b0eb6"
+  },
+  {
+   "questionId": "qst_0065",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "e6232db9727812b1deb73c2c86667932f001e51cc2150c8ac7b92ff1bdd79894"
+  },
+  {
+   "questionId": "qst_0066",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "69acdb865685ea69178eae8690750b3c662bb9c69dbdd6b0480308f60e5dec79"
+  },
+  {
+   "questionId": "qst_0067",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "9ef2bb3abb07143fb8026c8046dd137d4387898e7218fdc22cf2f19d1d80e5d2"
+  },
+  {
+   "questionId": "qst_0068",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "b0cb01a951ea8316961de362f7db91041c98ab8334edb41b76b29de0dcc0577d"
+  },
+  {
+   "questionId": "qst_0069",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "07579e1a128568320571212e0114cca64425759816e010d6ca70d1cc315c3075"
+  },
+  {
+   "questionId": "qst_0070",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "dc51230e02b69db59434d0000dcef52db8b6c6a685509b804433b5d9e47116ac"
+  },
+  {
+   "questionId": "qst_0071",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "66971b0aca6e52d69db192a32d80da8da2e384fec40ca4cc457c27694c57f2b5"
+  },
+  {
+   "questionId": "qst_0072",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "fb96730ab53a968c9d86001b4ce0069e28fdbfdc52b211974fde870cfede064f"
+  },
+  {
+   "questionId": "qst_0073",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "3f29cd34dc1d273e4c6bcf032dea9e0854618974f2092797fba126861ae0330a"
+  },
+  {
+   "questionId": "qst_0074",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "1b35037c5b0da23f27e307d2ff1b56ff3d3343f5e1be8b0474604d4a4b52a34c"
+  },
+  {
+   "questionId": "qst_0075",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "adf9267959a45321628fc9622f7c5afdec6783d638df81979a3050d18325326d"
+  },
+  {
+   "questionId": "qst_0076",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "2a6000628bf6d634fcf7600809c40fd9c5be0f861b2ba798e8c8dd08e3555dbf"
+  },
+  {
+   "questionId": "qst_0077",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "55701b8ddc5553d799e97aca05e6807e68bd1fc9e0c7587f113f3ccb63cec8ee"
+  },
+  {
+   "questionId": "qst_0078",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "37f8a9e5c0a1ca5ef648f98c1b0ff6867340eae13f99944b3e7eb16cdc6920aa"
+  },
+  {
+   "questionId": "qst_0079",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "477944578642494f1da9d7f935a74819e56e2e55683a1f88ce0c853a755860aa"
+  },
+  {
+   "questionId": "qst_0080",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "eb69701bfba4e114a6c63af16428e282b52c928f1798644417ac5a55c9e307bb"
+  },
+  {
+   "questionId": "qst_0081",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "84aa399e790b2be1360d57fefa7a10e3c41e98e1d11c8a162035ceb40724f45a"
+  },
+  {
+   "questionId": "qst_0082",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "6b921db83a6ea14762988a29c94d4abfcf8887b7d7fa09ec1706d6b0eebd83d3"
+  },
+  {
+   "questionId": "qst_0083",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "3f37498f73d6d3f6eece2dd4aa07cd1ee9e76ce936c706c85adf20acab306148"
+  },
+  {
+   "questionId": "qst_0084",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "461dd9f72fbb93dbb07e88e078fefabdefadd4693f1e59a0c570169a0f4dcb02"
+  },
+  {
+   "questionId": "qst_0085",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "d6b5d1376ff9eaee91da24219dd7e352cefea3939cab61bebd7761b197dfd3c6"
+  },
+  {
+   "questionId": "qst_0086",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "e186b78d6469d2d3c7bbffadcf7a1bb0442484bf078615eeb95269faa33aec28"
+  },
+  {
+   "questionId": "qst_0087",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "707f32de43278b822623c40964df9d4559078d172b93f9dcef287fb79e4e3e3c"
+  },
+  {
+   "questionId": "qst_0088",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "9198ca2cdaf96de8c9d41a6a6c81076fa04bf15f581211f73870c025bdc88aa8"
+  },
+  {
+   "questionId": "qst_0089",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "a7f1ac2a872d0744dcbb786913cb462ae08e7d30b24cee73a82abe3fd44d85f5"
+  },
+  {
+   "questionId": "qst_0090",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "a4514b65fdbae26cba382721b12b5df720ad6a5d17dd63519d4a6c1d96e3b6cd"
+  },
+  {
+   "questionId": "qst_0091",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "2a01806fc9c4c862034cf7eca6172b92babe388e2dc9e9e4f3d26fe673b65457"
+  },
+  {
+   "questionId": "qst_0092",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "92b5f082b1b4018a09dbc3c06d0152fe08d10f3528cea3d92d412fd0259dce4e"
+  },
+  {
+   "questionId": "qst_0093",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "16c3f863cd872ed376fe1526c3d3b1aa20460e922a8399d8c1a897ca0cdffe65"
+  },
+  {
+   "questionId": "qst_0094",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "8009c5931207af25a15eca49393088bab2a73de60db955bedd95b2061e711265"
+  },
+  {
+   "questionId": "qst_0095",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "6003139348c4e4e4e8acc48e0cbe2d4e0282b6a861991aca627405e13fd672e5"
+  },
+  {
+   "questionId": "qst_0096",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "35958e186233378a178beddde394b3b09891e44e347c902c62baa4b331f07820"
+  },
+  {
+   "questionId": "qst_0097",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "f4700ddc73f94ef4ab2d57e00c86bb5dd1a0cb8b611ef0542521f324a6f7812a"
+  },
+  {
+   "questionId": "qst_0098",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ef31946f53edddb28af1aee743dbef9b2407ec06560bdcf77d927d02c06174bf"
+  },
+  {
+   "questionId": "qst_0099",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "02df9685abcc5174364872e231394ad4fc5cf13f9e83dd2ebdb783052ca41791"
+  },
+  {
+   "questionId": "qst_0100",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "2bfc47183d2679acd097453c35b52d71543736aab0d026c4b50ac58b5088850a"
+  },
+  {
+   "questionId": "qst_0101",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "5cfa3ce5af6aad269cb8d34ee33f5a79769fb4d1220d2ab475dd411ddff8e6b2"
+  },
+  {
+   "questionId": "qst_0102",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "defcfc30a22b20fdcc2317fddc4624a16971246e0bacbe87ee629b6fa8d50214"
+  },
+  {
+   "questionId": "qst_0103",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "2f4f7444735de7ca3746f4849fc21c877431cf66b0476ec1213dedfad95b53a0"
+  },
+  {
+   "questionId": "qst_0104",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "34c8e3e2740d9ba2c2286f051fd12a97c07c7ac17f4e13fe667ed479f93367c5"
+  },
+  {
+   "questionId": "qst_0105",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "c4ac7b901656d1408d891f660e3fbd927771a2b019513fd0f64b79f2fa860d1f"
+  },
+  {
+   "questionId": "qst_0106",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "842a138aa81907a8ca88c17fab601c6872dadd25a9174a8428db55e486dbb6bd"
+  },
+  {
+   "questionId": "qst_0107",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "c057c9a27c67c4e094e5b8ea6ed25456d56ed83caff2c7349b7304e6a571cd44"
+  },
+  {
+   "questionId": "qst_0108",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "6094ab698d026743b006e9a21fb4675f5a139f0848af63c96f12ad2a1a735a4e"
+  },
+  {
+   "questionId": "qst_0109",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "4b5af37f4d6c4089a5312ad127eed2dba1936969b152f7d138d36a311d59d521"
+  },
+  {
+   "questionId": "qst_0110",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "47fcb8c7924ec1a564724cf60fca9e5939ed4d9809c97b56456aed50143fe3a6"
+  },
+  {
+   "questionId": "qst_0111",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "7afe6ccc304de98de450b0d6329cd3a974dc7b9f9ff58b971e9c185c8a05f216"
+  },
+  {
+   "questionId": "qst_0112",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "2675a42cf03d51f3bcd7d827950317f639315153c3be65fd09ef3cf62f11e917"
+  },
+  {
+   "questionId": "qst_0113",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "f62f0aa636b07a60a150a5c915c775b3b073a5f45fff28568c6a9994fc7d5ab9"
+  },
+  {
+   "questionId": "qst_0114",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "00cdf9c050fd1be95fceec9aef1db66021d60e212eda4eb106d794a468262718"
+  },
+  {
+   "questionId": "qst_0115",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "588838301753030dc897e0e5f0b22a2a083816ab446a7323b20aebed6c4a0e80"
+  },
+  {
+   "questionId": "qst_0116",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "d00376a8b615479e8d3cf23911dae42adfef0b83ab9ef2ce9f35527444af6310"
+  },
+  {
+   "questionId": "qst_0117",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "b08e51d141ec0508ee965f4cef7c6ee7f06f14274f74ad263593d8601f989ddf"
+  },
+  {
+   "questionId": "qst_0118",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "6d13521a70c4a2d6a320c1376ef42af69ab8d7fd7b45fb56af376c31d9572f89"
+  },
+  {
+   "questionId": "qst_0119",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "5a8af9d5a1c51792a53099b8c76a66b3fbdbc2778cf1016c0bf326fe77c02b85"
+  },
+  {
+   "questionId": "qst_0120",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "c7618d148084fa455fb70594cdd5adce0606cff6f8f93bb38d464e8a79abd045"
+  },
+  {
+   "questionId": "qst_0121",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "4a99da512b68a8a0dc2d6e655a39093a25032bd25196b0080a5102b704029e22"
+  },
+  {
+   "questionId": "qst_0122",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ea1f2b8345c119dbb5c76ade2e766a1a89edb0020cf653296a14d91f5e6efa16"
+  },
+  {
+   "questionId": "qst_0123",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "7ee9d00bdbb3c8d6aa80675da8ff7acf3264dfa8666c0798e49e0e0579c0c471"
+  },
+  {
+   "questionId": "qst_0124",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "03dda01f3a5f456badeed284fca9b2d0170bbf59788bc2a8f61322164077c995"
+  },
+  {
+   "questionId": "qst_0125",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "347c64e42f5f6077dc6c0f14116e849cfff7cb2798fd3dcd6a8d1ce6a61f48fe"
+  },
+  {
+   "questionId": "qst_0126",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "273485d9572e833dd5eaf9af1649d1497f18bb893e7c862350ce6e03d1245d5f"
+  },
+  {
+   "questionId": "qst_0127",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "412cd655814b85a8fc7a22e973f97c248f7aaefe3a35c7a490d0581527cebbf0"
+  },
+  {
+   "questionId": "qst_0128",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "8f7f182eb3c7c725bcb3f26a40422c1aea0260f1cb8b1928258a7d6c91a9d930"
+  },
+  {
+   "questionId": "qst_0129",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "b5dc576fa54a1a3990230be1b37b0ea7a07001a0ad5d8da7f14ab4e50067db13"
+  },
+  {
+   "questionId": "qst_0130",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "c89b9c0c584532aa127acd2f593877d68382edc2835cce92e6397858fc22881e"
+  },
+  {
+   "questionId": "qst_0131",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "04d722e1f754beaeac3cd22733e832ab0bea0877ee27113d9d9744d06184af95"
+  },
+  {
+   "questionId": "qst_0132",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ddaa7420b52b88c5d662de6f57f8b0c7b4901cdddee53d5560a23f128a419564"
+  },
+  {
+   "questionId": "qst_0133",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "b60986513f666aa316e0c4830a74353a9f2887f5ebb0eaa0a36f9565707b78f8"
+  },
+  {
+   "questionId": "qst_0134",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "21013f2f90711dd1e2effde1636e6a9e7176f1ece38fb85f583c7e316def989a"
+  },
+  {
+   "questionId": "qst_0135",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "0a7dcb002c429abb7b6c4058825d64734498f1d94d6ccd549ca35d5aa33bb626"
+  },
+  {
+   "questionId": "qst_0136",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "69e498bfd9b63c99fca2602c27c127584f3ad5f21779bc97dfc8c9fd49696e23"
+  },
+  {
+   "questionId": "qst_0137",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "bd8eebfae05f5599053d948a5949d9db70d67b18ee723b63b478d8bbcbd89e21"
+  },
+  {
+   "questionId": "qst_0138",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "37c9084d868abf467fd9f59afad6b213df46f48f82b4894dd2399b565e0d1482"
+  },
+  {
+   "questionId": "qst_0139",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "1e605a5a15fe095dc4f42060e851b75b243bf4941ac6bbc660a64ddc2b0447b7"
+  },
+  {
+   "questionId": "qst_0140",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "97c4873bf978b21838aa3a6228103b9c4809a07872dd5fe146903f7d8a1944e6"
+  },
+  {
+   "questionId": "qst_0141",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "696c03455a5c2e7dc96d43ad4e7d19a54428baf93e8ddda053f8fc68e58c19bc"
+  },
+  {
+   "questionId": "qst_0142",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "2cccaed60cdad1d4d76dfaf7a4c148b1917fcb65a90bf7440ebe018d0b36519c"
+  },
+  {
+   "questionId": "qst_0143",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "33a54098b7e3c010eb519fe00f666731b8ce9242cf6a88218fb37cf4d6f8cc33"
+  },
+  {
+   "questionId": "qst_0144",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "a31e989bef2e62eccbd83435b80b99df1631bcbe2d2960eed9ac9c1a948e1348"
+  },
+  {
+   "questionId": "qst_0145",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "6ced0e13d4bbbc2a79facd1151f05207e28f81a5741a76a4a16cec1c931a4832"
+  },
+  {
+   "questionId": "qst_0146",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "93a9473c246cc4977e26fcbf5ad54d0cae4b8623b862d35b057ff4264dfa81ad"
+  },
+  {
+   "questionId": "qst_0147",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "707d68bbe612d2dd5cd5f9ef57f954c626552bb79fa4e665c4b8150be0e0a9ec"
+  },
+  {
+   "questionId": "qst_0148",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "9785b989ebfaf81b2bab544a2fcb814affaaf2b96cf57dc3a89fba22faa153fc"
+  },
+  {
+   "questionId": "qst_0149",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "829f58b6248cb26216bf20bf10dd1ff2b0cb7c2e7fbc6376a65248b0974788e9"
+  },
+  {
+   "questionId": "qst_0150",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "b7d81cfe55e4cf25f6e4ce420f20b1266db70abb26b30c1f446f2150b38c3a4a"
+  },
+  {
+   "questionId": "qst_0151",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "da1a9b4e6b755a960562b5f432ecb75e3d569e2e68ad080f10a2e321a79b895b"
+  },
+  {
+   "questionId": "qst_0152",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "bd3e1a0b20a045c7997668d7229d69bccce56c3988967b5bebee2dee2d0d4702"
+  },
+  {
+   "questionId": "qst_0153",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "1155c35efc344cf9a0e734b3baeaa51f1385d90f293b68a786e2846095ada10d"
+  },
+  {
+   "questionId": "qst_0154",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "e6ac55aa2668b5796009734de1c17c59dd7d15b25b78c003a616434345c8efb5"
+  },
+  {
+   "questionId": "qst_0155",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "3f5bd3dfaa0542c8d6202d60c4ec5fcdd96d757963e1c1efcb46662a907ec71a"
+  },
+  {
+   "questionId": "qst_0156",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "dea3022ed12e0c2c6f6b49ea655198bc1cbfed68e378fbd55c4d1052843189e0"
+  },
+  {
+   "questionId": "qst_0157",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "5e2965bbdd18f55ea7030a6170a5d519f7c9e15cd5de4645b94a676264ed2dd2"
+  },
+  {
+   "questionId": "qst_0158",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "53aa47032844ba14f818adaf7ac776b985af40399aa0a8d9bf44c952da4a8a1f"
+  },
+  {
+   "questionId": "qst_0159",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "32752572df00f4ca92980551255c25235d85a7a9e03eb91ebf27a89f390c3c82"
+  },
+  {
+   "questionId": "qst_0160",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "6b89e1247404e2b100893dceda067b084b91c73d833bc8f203839fa41e024ff1"
+  },
+  {
+   "questionId": "qst_0161",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "0081acebcee318dd43cc0c62392fbf7de1b29ef1456bda9c86714896d54c04c5"
+  },
+  {
+   "questionId": "qst_0162",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "739433f910cd7477253b17a8612fbd6fa6d336a9fd484eb2ca33325438fe9ef6"
+  },
+  {
+   "questionId": "qst_0163",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "de49b6e18a3bbbeb51a2ed0673cbe3f9100bbb8ffd1ab7d71caf4949ae866782"
+  },
+  {
+   "questionId": "qst_0164",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "133f2a9403c502b437c22238fea841ad6c5930736ba4054d05511d185765180c"
+  },
+  {
+   "questionId": "qst_0165",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "d6b81cddd5f93d7d368e31b7133079244b99c88a5e46a627285fcaf9a08b9330"
+  },
+  {
+   "questionId": "qst_0166",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "a7d3f7d16e86608e02086e96904780f8699277c5ac6f31593d377c14bd814199"
+  },
+  {
+   "questionId": "qst_0167",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "9b9a0bdbacb652b831142eb0b93f148530d513afe83b9a3d822a21a70600ed71"
+  },
+  {
+   "questionId": "qst_0168",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "c4659c452249b01a8c9f0db6de0605887879a430193752b28238daee2d41bff3"
+  },
+  {
+   "questionId": "qst_0169",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "7a74dbb53edb4ebf1f73c3f2eb9998e3e2402df460781b11d447ad1648bc64fe"
+  },
+  {
+   "questionId": "qst_0170",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "aa6157116f0327f1b1274c44bd510a7012198c937db03e45a0bbcf22e241f4a4"
+  },
+  {
+   "questionId": "qst_0171",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "40bc679915f2695d6865adbe6961713d6ac3ce60f37256f64b5ee830602e327a"
+  },
+  {
+   "questionId": "qst_0172",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "41f9087eed34920a1ee70669fbaf7bcca1a2d93a0191fc65b4fb52fe92233535"
+  },
+  {
+   "questionId": "qst_0173",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "40b4e65e848817904822d41caf4ef81261ce2749835ef9efb76c5648618a81f0"
+  },
+  {
+   "questionId": "qst_0174",
+   "split": "optimization",
+   "questionType": "basic",
+   "sha256": "ca11f92806b71ded3e9ef9a3c0a0f1f86526aa50456721025a1ac9691260cbc6"
+  },
+  {
+   "questionId": "qst_0175",
+   "split": "validation",
+   "questionType": "basic",
+   "sha256": "1b21fc3455aeac61e5acd883c71482e57f86f67ceb7d794192ff0a3da4404a50"
+  },
+  {
+   "questionId": "qst_0176",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "fac8f365de6304e03f0d9475acf90f621f682297f1376a022906a49280d98534"
+  },
+  {
+   "questionId": "qst_0177",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "6cc47b45172dc4996f6b068cbe76df6086bc44e5865207d564f52fa8c397097c"
+  },
+  {
+   "questionId": "qst_0178",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "ac3281a70be4f4d4bf7a57eefa00e857b730efba78f3429f0a862e3bcfb277c2"
+  },
+  {
+   "questionId": "qst_0179",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "839a864acc0665366b7464be22d50f75b339dc32d8a989b4e49dc58f214361d6"
+  },
+  {
+   "questionId": "qst_0180",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "fd6a9e009b16ec7d4ebf4249f8cbbd2a4f69fca31391a8916dc47a05b99ae461"
+  },
+  {
+   "questionId": "qst_0181",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "b01259cab10c9597e352475873214eff56a5bebe574d65da24c3e81d5d7711d1"
+  },
+  {
+   "questionId": "qst_0182",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "36a7b01cc79680e1a890e4928f6bb24f0c5d9cfcd0312e4800309e8b511fa2d1"
+  },
+  {
+   "questionId": "qst_0183",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "b97e9138186fb20ee1de23d5a61a0f915b793122721eff6f3e229d007407c8a1"
+  },
+  {
+   "questionId": "qst_0184",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "bafdd4fb29cf4febcf212e7f85a663c314f7bafd28dd125974994a516a8dab63"
+  },
+  {
+   "questionId": "qst_0185",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "70fa4617a7407a9079dde244d67216a0cb5a52565df7112539343524dadfe547"
+  },
+  {
+   "questionId": "qst_0186",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "e8fa67718426c6d8aaa1419ac077f6b3d218ba905c6638123b18d2ad2d58c32c"
+  },
+  {
+   "questionId": "qst_0187",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "e0424286c0d7552a5facd2133f7a51f527ca0994a52edba2290bdb84721c0e65"
+  },
+  {
+   "questionId": "qst_0188",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "c74d355c70184f9899f998c302bc1a3c944977d4b202081196d5e3245daf5e65"
+  },
+  {
+   "questionId": "qst_0189",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "89e4a6a6c94719e4019d398d327b80624f3f128719b2d94aecf1177e126dd5c0"
+  },
+  {
+   "questionId": "qst_0190",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "440f8d786c90cf25541a29042d4d8d409b4149badd72f187376a833d09a20954"
+  },
+  {
+   "questionId": "qst_0191",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "05d070cf2cd8e4677c74d12aaec6e0ded0abeb7d21d5669a0c3f8b920582c41d"
+  },
+  {
+   "questionId": "qst_0192",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "ae47c879d713e2cd3abafccc8ad531e5f8d6f6509c922274e577090dd2d83bec"
+  },
+  {
+   "questionId": "qst_0193",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "a2b2edecee46b94cafa7b27e28b6c4b287e301d406b4fd2f672f64dd88be1e11"
+  },
+  {
+   "questionId": "qst_0194",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "ab8b5c5f1d3256437209f78f13d6db3f29436d35e81ff6d5280e53e9c97070ec"
+  },
+  {
+   "questionId": "qst_0195",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "0a6cf83c6a7574105e6f0ac68e50b07cf8ce0fb8d5cea248e57eccc52b8ae1d9"
+  },
+  {
+   "questionId": "qst_0196",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "5db11735bc5ce521c094fc3daffeb172abbcf5196f3f6309fae972110e389dcc"
+  },
+  {
+   "questionId": "qst_0197",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "50b287d5e1642e466d7012d9fba2ae38b38c4d0992ff40a8b9a50fba779589af"
+  },
+  {
+   "questionId": "qst_0198",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "897dae7d34d673c99347d405b3b5f26ae8151cfebf3728e5b816593fac8afbe8"
+  },
+  {
+   "questionId": "qst_0199",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "32649cd7e685ac4f86b164828ccbfec31b39e1fa544b288fa28ad9dfe6d6ea39"
+  },
+  {
+   "questionId": "qst_0200",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "6f18beb1ee5b08a3f58e49ba8243a3e6bfb19c02e50c96acd7b0d605aad80648"
+  },
+  {
+   "questionId": "qst_0201",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "f782d23a8187f45fa57eb00cc9a485071042ea7b25ff9270201f9c7ceea4ebec"
+  },
+  {
+   "questionId": "qst_0202",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "bd43ccdd80f31bf472d6000cc652914040470379cae7d938772e472a1501afb9"
+  },
+  {
+   "questionId": "qst_0203",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "44108ac83a041e5b4b165779e9e0b9c6252361a53ebb0331f66ed800834eb437"
+  },
+  {
+   "questionId": "qst_0204",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "99dc4cd48256d07a9ca9d511401990a9a6b3d08a11fba5ff8d65a59abd268148"
+  },
+  {
+   "questionId": "qst_0205",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "1dbec15dc838b1256aad29a5231ee7c2732c381a2d95db3ead7c27c51b7f9bd7"
+  },
+  {
+   "questionId": "qst_0206",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "e4834d9e66c189a55ac90b0ef87053299a375746a5c9106ea68a160a6575c455"
+  },
+  {
+   "questionId": "qst_0207",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "dac7cdfa6e660b5ac88916d781f2a00b0a80a61edcf2baba88e3147ee839a8eb"
+  },
+  {
+   "questionId": "qst_0208",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "7bfa3b374447e3b7f255c8955e6563ff35d3d4f40b7661bdea7fc69017d8ccb0"
+  },
+  {
+   "questionId": "qst_0209",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "2e789c98219df653515f87c7bcc588f656309bec51c061c44cf6000412005191"
+  },
+  {
+   "questionId": "qst_0210",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "70ced689902d7a0ddf9cb7c1e99cc1186f526bf44620374078cf7efccfc2c48b"
+  },
+  {
+   "questionId": "qst_0211",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "77cd0559da2cf468031771e28f0abbecf5d4f9f9ff4f82c83e2f09784a854a7b"
+  },
+  {
+   "questionId": "qst_0212",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "6086d944ea76595edcbe22842dfef82d5cd5bce049f679f7eee102354a4e038f"
+  },
+  {
+   "questionId": "qst_0213",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "4479342e70146c8341c4cfba010f0a219d3f205907a8a5cabffeeef7df843f23"
+  },
+  {
+   "questionId": "qst_0214",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "dcb219c401e33151ddef16b3b374c2135b0dee2fff2d0b2848f228334ddd18bc"
+  },
+  {
+   "questionId": "qst_0215",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "696144ceb3dd920a60a825c1d072ff43388609f0162ddfc50678f6174035da75"
+  },
+  {
+   "questionId": "qst_0216",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "2f109a189791511dc22967358e5c0b777253ab8e446941fbf2ec61320848b960"
+  },
+  {
+   "questionId": "qst_0217",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "f63e48caa80b9ccadfbaef840af4c571df0ff34e3259ebcbd3c870da087d94c3"
+  },
+  {
+   "questionId": "qst_0218",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "1c864cf3a50a1b18de98003fcdf4f632596ec3edc8760894dde1932345b282ca"
+  },
+  {
+   "questionId": "qst_0219",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "b0e97777dfa7b49049df13231a4bed5a16f9236829fb8578853e8e588c14ea77"
+  },
+  {
+   "questionId": "qst_0220",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "12be043fe3fc525857f27aa09fb1ef131e3f01d70564c20d1677c37031ff7b08"
+  },
+  {
+   "questionId": "qst_0221",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "65605bb9fd536450a98a4c7d9dc828d2fc15b3421c2ede5488b182746a5adc6a"
+  },
+  {
+   "questionId": "qst_0222",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "5aba6df00b6f6887349f67b483886c7d5250b89325736a8858e86f7055f14eaa"
+  },
+  {
+   "questionId": "qst_0223",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "afdfc573e466f0003651d9be41f1cf51356531c4e45bdd7c68a837d2bfadf88d"
+  },
+  {
+   "questionId": "qst_0224",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "2f5de96fa4ae30f84897f3fd93f01fca0d31460db2c41b50c6416ada26ee5f28"
+  },
+  {
+   "questionId": "qst_0225",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "964b75fcd88cf85c3865f60d01388f0d55fde9196c3c5ffe06652df80fe07feb"
+  },
+  {
+   "questionId": "qst_0226",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "44f30049b849ae5e2728141a65f3d3c57ba81140ba511ced97936c9d64f87559"
+  },
+  {
+   "questionId": "qst_0227",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "ea6d13551fe09aecacf14881db204737de2d94db14568e24c893cd88aaf26571"
+  },
+  {
+   "questionId": "qst_0228",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "fc455f911f7cb15aded124b0cc09d6c4b8bf3edf7e29400670973692b49401c1"
+  },
+  {
+   "questionId": "qst_0229",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "a15eabb0beeea2a69aca50f9930c0acd21567d116c9d41010a37dbc524dd7930"
+  },
+  {
+   "questionId": "qst_0230",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "c0f22eac9bac7d5228e941ebd569484afc382aca3d49cfcc01672f162ec66f4d"
+  },
+  {
+   "questionId": "qst_0231",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "617d8aa4593f2cb051424d9d45b659471f54c2bcd1d71a981a09a100b63a2eba"
+  },
+  {
+   "questionId": "qst_0232",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "7c3396ab63d41ca5b9d265fbe07c505dbc7d00b4e1cda3b27a95b20ce025c17e"
+  },
+  {
+   "questionId": "qst_0233",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "6bedb92c114a025fea162015ddb5c9d1a127cfaa95bac463ccd64ceb601dedb2"
+  },
+  {
+   "questionId": "qst_0234",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "7feb88d02206e922479a6401c31062a4fc2352f49c823abadabcf2cab69a139f"
+  },
+  {
+   "questionId": "qst_0235",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "48bbac22cb252e649171a3cee55f0af8a518d7736bbf4b98fa167dcaeaba4664"
+  },
+  {
+   "questionId": "qst_0236",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "52393868eaff2a5238ea454f316d7b6e9e2a44d007d6b0e99f5f8074d1e309ce"
+  },
+  {
+   "questionId": "qst_0237",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "099e7fab97fdcbd2bfbd9067c4c5c85cadd93e5120620a8fa4be41f3f98f8ab0"
+  },
+  {
+   "questionId": "qst_0238",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "87372ff8e8935912c3d9e062a16b252c20bc5184e45ddfe625813e63f1e3aca1"
+  },
+  {
+   "questionId": "qst_0239",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "088757b1a31cbd600c32685bcd21641961b007e0c5417628d282e2751e0dddd4"
+  },
+  {
+   "questionId": "qst_0240",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "08988e95d0d5f2f3ff7274158288d06fc8ce9d1eacd32886c9cbfb2eef776ebe"
+  },
+  {
+   "questionId": "qst_0241",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "29f16779f62fb0f29f5ce953aa55cae66055e90a37e6a7714aec1cf6a2567a4a"
+  },
+  {
+   "questionId": "qst_0242",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "3f8c7e371e68a13d6abd2ecce0138a72077389603421b47794cf58711f6f5057"
+  },
+  {
+   "questionId": "qst_0243",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "6bc6787a3c457f8277af5b5be7f3707c808e18f8ff2349b4deb8225c6abcc052"
+  },
+  {
+   "questionId": "qst_0244",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "b615b4aec229b0fbc8cb4c91ce073a3dee32b894957ee65eeaedcde9b041d9d4"
+  },
+  {
+   "questionId": "qst_0245",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "11301e05f493a7bc44cfde9e000b12817107e72eec1b243259e498b756f92293"
+  },
+  {
+   "questionId": "qst_0246",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "12679da0ab54f7132adf4a797fbc8d2c2c0afc85011a865f74302cedf376d990"
+  },
+  {
+   "questionId": "qst_0247",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "b51b4c71aaabf222f006cad820ae53c4b8fb5c532a875c2cb02ef251efbeaffb"
+  },
+  {
+   "questionId": "qst_0248",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "5a577c096622518bce9ce9fd2312163865dd1988ee43cdba2393c0b1d4fd5d15"
+  },
+  {
+   "questionId": "qst_0249",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "44259e0707c68d8e79d19aa6a3f0bb8a5e3c3572f6184e79599e1eb229e90f6a"
+  },
+  {
+   "questionId": "qst_0250",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "ca6aeee56cced397fc06f46f33ded424c49af68bc4b36cf063be6f77ae5ce767"
+  },
+  {
+   "questionId": "qst_0251",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "31085c3c245b547081cb9e722f9164b56b7540447b88222db14cabe62fe174ea"
+  },
+  {
+   "questionId": "qst_0252",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "91bd94d443a62e12f8cf787531638a47ac93e29db0be939c57020593ac60e84c"
+  },
+  {
+   "questionId": "qst_0253",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "ace214e0a4e9fa689e9f58484b76164599b2743ae1acb25837d60b459668d0be"
+  },
+  {
+   "questionId": "qst_0254",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "e1fa2b4dcb748c83804b0e81ea264517e71174cf216b2bbf58397c72d02455f0"
+  },
+  {
+   "questionId": "qst_0255",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "a6bc75bb33e6841e8b7f5809521d500e6b9ea842daec1d35078ddfb3ac7f5cec"
+  },
+  {
+   "questionId": "qst_0256",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "f56f16e508678bfb2a2566627e4ce0367f79cd5cad980f72c227cd535fabe92c"
+  },
+  {
+   "questionId": "qst_0257",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "ecd9e05fcb2d3a6ada84bc6975bb49f03b7a69ad1099b794b35a90689e39d6ca"
+  },
+  {
+   "questionId": "qst_0258",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "6df7c2c845623e59d4e218004c0ae080aaa83942cc723d7854ec9d6bf0da4982"
+  },
+  {
+   "questionId": "qst_0259",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "5c7903d63b9dd81a31590c32a9bf6eccd912bf5d41992ba4afd5495f69ec1f2c"
+  },
+  {
+   "questionId": "qst_0260",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "d7120a0f705768fb11cf379650e02059665bd2a1baf8bb792f3aa2a853329ea2"
+  },
+  {
+   "questionId": "qst_0261",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "b420629e956543d5d6c1b46015e766f02f385036913ffdab95c552dee5a9cc04"
+  },
+  {
+   "questionId": "qst_0262",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "a3281a0ef56d362713e8e831af278ac5fe735c9998d6cf320ff0d8415ed948e6"
+  },
+  {
+   "questionId": "qst_0263",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "9dbc00c44ad02178d5755fe89f2bd0ec6a6776036a9664f0f0b1d1019f201d29"
+  },
+  {
+   "questionId": "qst_0264",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "8be3daa524b7e3f6de74929c2d61077b8b4f5d23a16ee3a0e7179e29a395887c"
+  },
+  {
+   "questionId": "qst_0265",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "08c8f83f3fb9c6753483d365cbf667f0a96436bac6d635bd17e7979a5569391f"
+  },
+  {
+   "questionId": "qst_0266",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "1fe07ea46d973162e548dcde10c3c196e4d0edd06e950a564d32f77f63ee7628"
+  },
+  {
+   "questionId": "qst_0267",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "d9d7784a5976afac018dca8fb2801e52d886a1e4dfb5dbbd52a942eb080a47da"
+  },
+  {
+   "questionId": "qst_0268",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "113a06903cf1e399da08fdabe64da7333fa3f2a3f00964889ee413ed7ccbf8b0"
+  },
+  {
+   "questionId": "qst_0269",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "0c283fdf01e046d6cbd23fdc8262d238fdc28e2fcd8b277b7543e1a3a17d953a"
+  },
+  {
+   "questionId": "qst_0270",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "8b56727d550475fc3696725c0ff6c2e79914fe1abc1980cd131c15c8e6f982bb"
+  },
+  {
+   "questionId": "qst_0271",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "6709db556c840bcaaf3459bc970ecd36f6a6660a3de0435a75ebd0eb71e01b5a"
+  },
+  {
+   "questionId": "qst_0272",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "5b0f3d3126883b202f5ef892f1ec2152a48074c79fcd263e16d610d3f8cdfef4"
+  },
+  {
+   "questionId": "qst_0273",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "bf00e4358e5a4587057c01ddcb6578aacac9f324d605abf7c8887117fd7449f5"
+  },
+  {
+   "questionId": "qst_0274",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "04e2f9a8577f91ea00cfe66778934ac6f3e38f66d283f0587fdff2be984e1aa7"
+  },
+  {
+   "questionId": "qst_0275",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "47b98294325d8d12560a257f2716de472d448de2ef0eb6750af4606d63cc7760"
+  },
+  {
+   "questionId": "qst_0276",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "7b018c0a315f5fa83ed57f7336774595b8d11473438395afab4589fb345328e9"
+  },
+  {
+   "questionId": "qst_0277",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "03c8181b44fd23b96b2f77ca617392547365b056158ded6db78c68f6de4b3ff2"
+  },
+  {
+   "questionId": "qst_0278",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "d26021a15480a19d81a67e2d4e13f81620d2e25058dfe2209e21e6d0093eee67"
+  },
+  {
+   "questionId": "qst_0279",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "09924122dc73e2469db5f8904bceb4637718adbd8eaf1fb70f9e74a08d8930d1"
+  },
+  {
+   "questionId": "qst_0280",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "6b49f188961fd0b8d387746251b1086f5ffe50fd3481c4d16f6809e19e91777d"
+  },
+  {
+   "questionId": "qst_0281",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "fe8461c095cbb54275d63d44ceb85177c403e4f5903437de54df06b9c460a2ea"
+  },
+  {
+   "questionId": "qst_0282",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "6700b03e121ad0dcd798b1b10bdc28e375c93724499c005bd9a56bdbf1e635a5"
+  },
+  {
+   "questionId": "qst_0283",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "fafae618f361305f04585f18a0ba57443c4a41ab673fe85a5b57e852bdb73692"
+  },
+  {
+   "questionId": "qst_0284",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "cd77f0d0169510b82adb33dcba923b28b55eb5d5a475d431759abe37a65483b3"
+  },
+  {
+   "questionId": "qst_0285",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "8ea96192dff81bb56b11400badcce473f205c35d3c0bc62699b9f36d46224f51"
+  },
+  {
+   "questionId": "qst_0286",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "05b89734c34c5488377b0cfe655b2d5f6f65b46888304a3f5c579aeacb3dab20"
+  },
+  {
+   "questionId": "qst_0287",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "248fd1b87ac936851d0d0c734969fb6db07fd301399eccd3f7ff65ba80db6611"
+  },
+  {
+   "questionId": "qst_0288",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "97798adcf160af08fee34f01f39df6865bf1059134cc4c427a4dabc5503db267"
+  },
+  {
+   "questionId": "qst_0289",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "45ba48a950153e6ad4cba28508db3ab6963c3b4311ed2b850eaf07ab5bae0582"
+  },
+  {
+   "questionId": "qst_0290",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "6d0750dc38b69c3f872aae99220eac05f5e3f1675622a415aaff14754bb92593"
+  },
+  {
+   "questionId": "qst_0291",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "1037642ecbc3bec04537efcc01cdff1fcd48b4e439080c343c67dbf51c56d794"
+  },
+  {
+   "questionId": "qst_0292",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "029d187818ab905d563a6d0bd3472a6d54127d2917506f64c463bd6d401afadf"
+  },
+  {
+   "questionId": "qst_0293",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "d821e40b9baf9d6539149e55006c6a07c119f1431e6969f671780848c4c70fb9"
+  },
+  {
+   "questionId": "qst_0294",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "fa33f5db0cc8f1ff3a56cc5040233570ed63bfdaa51c9ac7b60d31daa0ee6bd8"
+  },
+  {
+   "questionId": "qst_0295",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "b5732395c0cc39e2d223061f50a6f175b80aba77ba9d3a222946031d4b1bbdf6"
+  },
+  {
+   "questionId": "qst_0296",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "8f77eef66c222ea3a8c636089d15d5cd68d0dd2804e5d2ca4854276fd9f2e1a6"
+  },
+  {
+   "questionId": "qst_0297",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "c1aac123817db58d9a12b0b641d56d6d7a88c5ddafef253b1df4770c1f032453"
+  },
+  {
+   "questionId": "qst_0298",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "df208e044f7b36ed5885f2311f06d016e5b671fa9663c7fd85e17cf05fada080"
+  },
+  {
+   "questionId": "qst_0299",
+   "split": "optimization",
+   "questionType": "semantic",
+   "sha256": "feb3dcd01f553ea3c42842a512dcdc56e708d858962659024645301fe1c745db"
+  },
+  {
+   "questionId": "qst_0300",
+   "split": "validation",
+   "questionType": "semantic",
+   "sha256": "524b9208c94f26f7f52e5afa56080e2691d477adb914cfb46c7c46d331c0ef8a"
+  },
+  {
+   "questionId": "qst_0301",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "371063ea5c77c95ef863bdc8800c7095175abdaf455664a329cf22f7bb35c23a"
+  },
+  {
+   "questionId": "qst_0302",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "b4e03d9f685a287673d71db636077176d1ff05defe2656131fb0a0b900773875"
+  },
+  {
+   "questionId": "qst_0303",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "acba4f248e70f6435913975db95798e4ce4278a652eade9566b4808dabeab2e7"
+  },
+  {
+   "questionId": "qst_0304",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "57aee61ee32aad881a971c53b5f376ad1f930024ef89566e3a36f31faefaca95"
+  },
+  {
+   "questionId": "qst_0305",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "2fe4bea02ef6ed5c8d0af7b83d93e5c511ada14beac64f94f23bf446e7974147"
+  },
+  {
+   "questionId": "qst_0306",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "fc1edb43c12e94176203285e3b23c9837ef23cbbed49d274e20f4e5c2cf0f3a2"
+  },
+  {
+   "questionId": "qst_0307",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "9ac5fd8111a391281744a59129053000a1962c8958802cbde79b2587028208d1"
+  },
+  {
+   "questionId": "qst_0308",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "a0afcaa4e896b2256b57f7db4e4d811cdf82a59f155c489833fdc032110f0cb3"
+  },
+  {
+   "questionId": "qst_0309",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "3c85abca8544b8bae2ef1a54c72a611d3c5e3052e646433c84d0aa32dedcfd7f"
+  },
+  {
+   "questionId": "qst_0310",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "8274ff68242c57d97569cd8ba032e40aa40782268d6ca680ed03f6ba3c5e2261"
+  },
+  {
+   "questionId": "qst_0311",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "bb161a9b93ef156d9de05d40b14fb3a3d9c7c9920f021dc8ea42ffa3c2705f18"
+  },
+  {
+   "questionId": "qst_0312",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "361121de294c1b21ae0f8cb224b886658597a00f4223a9d49ffea8daacbd0e96"
+  },
+  {
+   "questionId": "qst_0313",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "f2568fe76d8471d8321290888d697a29314f3522d175ec2a2cfb3d879e7f1d02"
+  },
+  {
+   "questionId": "qst_0314",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "291083610e73acdadc96cc18a758e0a4654fe22fcb8299bc918fc60d251c782b"
+  },
+  {
+   "questionId": "qst_0315",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "717858f949ae5a00c28260f28f9b0f4af082faeaf9e0bd87e1e6a03720f837da"
+  },
+  {
+   "questionId": "qst_0316",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "0e2fd081f05332fa7ab9dc3e1320e73ee4573607c6c8f63378fe1ecf249b9bba"
+  },
+  {
+   "questionId": "qst_0317",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "d98408907277b9f7141196b95f7733b455acafbded899514f8be05fb898d5175"
+  },
+  {
+   "questionId": "qst_0318",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "793bf004a368277dbdcaf6ebd9aba73ce12f368b931df02033163a42c8a68fd4"
+  },
+  {
+   "questionId": "qst_0319",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "2b49094b77d251452332f3b19f8ef2587dc50b538ca4e9eeb31112e9f64f7c36"
+  },
+  {
+   "questionId": "qst_0320",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "2e45d2879b22a9a047d365e45b3e9ee59a83e023436809781e40a4f479cc5d81"
+  },
+  {
+   "questionId": "qst_0321",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "adc86b173b1c1097dac7779af2171befe32eecb8449c4c763757a4c0459fcf2d"
+  },
+  {
+   "questionId": "qst_0322",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "2b1d59c933ebf4fa315cf5db72664d6f54cc27e30e510630fc67268ba14f9c24"
+  },
+  {
+   "questionId": "qst_0323",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "0a8e2ca8f8bc92ac4fd3a63d8068168d7ee172ab62111c29c55427f2599a7f95"
+  },
+  {
+   "questionId": "qst_0324",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "efdc9cf8875ece2e6c05777fd5f680f782afd038cc0f33390361e572063339e5"
+  },
+  {
+   "questionId": "qst_0325",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "b95add2408d3a8df0bb074ff597cea6201cc6fc74224071e7cf595105af5cd6a"
+  },
+  {
+   "questionId": "qst_0326",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "b3a28d02d1ce17628c566b559428f1edcdd1e942f2fb6c91357a796f23fe08ba"
+  },
+  {
+   "questionId": "qst_0327",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "95045b6eeb0c913391ea6ccec19a1ef14e5513bf0244cde7d30829e4f5146bb4"
+  },
+  {
+   "questionId": "qst_0328",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "814fdb928fb52b252175146081e542d9e67d020f35b851dcc3fb8a5afe76823d"
+  },
+  {
+   "questionId": "qst_0329",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "d18fd92df89a6eacfebb045a5b0e599d6daace56b3d8bd7202a14814676ee22a"
+  },
+  {
+   "questionId": "qst_0330",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "e910dd534a78c611489006e52337de21bc6f58661be8d93a6b0c72952f1e0bb1"
+  },
+  {
+   "questionId": "qst_0331",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "617d2f1d5a977c7c59864223101bd22c4d9b25e7be16ed9a678004f49fe382c7"
+  },
+  {
+   "questionId": "qst_0332",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "8321f2c93c03bb777be30aa36627ee679c303d8b1c1c9d4c49e8a73ef4be2f0c"
+  },
+  {
+   "questionId": "qst_0333",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "ff87ceb475b8280640cae77b6fed94a6b1cfbbc8b09b375eccb0591fa92903a0"
+  },
+  {
+   "questionId": "qst_0334",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "7cf52b62d37c18a14403ad834d669d78e08aaa5ee5ded024ca4579db144a03fc"
+  },
+  {
+   "questionId": "qst_0335",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "f1c44378611103c4882844e0180ab5de34b05f2427b70dd9866157b1c37b15f6"
+  },
+  {
+   "questionId": "qst_0336",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "d70ba88795b1fd54c2dae5f52365e0e6b1503380a32e4308fb019bb49e01f294"
+  },
+  {
+   "questionId": "qst_0337",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "bfcdfa4d86100d718c921cf786c1fa355d68ccb90d6071b163f50c36d2673e01"
+  },
+  {
+   "questionId": "qst_0338",
+   "split": "validation",
+   "questionType": "intra_document_reasoning",
+   "sha256": "a00da0d3d5200a22ef3ca5fe0eda803f25173dadf53341b926fbaa75aed388e3"
+  },
+  {
+   "questionId": "qst_0339",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "15a95e6313b8bb48c19811a0f1a2bf6da888064ac2a08128c322bf35a495dc81"
+  },
+  {
+   "questionId": "qst_0340",
+   "split": "optimization",
+   "questionType": "intra_document_reasoning",
+   "sha256": "e268d7d2621753d246707e5f93953434de2e772dc107dece4838bce413293bb8"
+  },
+  {
+   "questionId": "qst_0341",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "8fbdf0faef033dd4768208e562a0e1fdf6fd4c15cd896ef1e78056aad1418989"
+  },
+  {
+   "questionId": "qst_0342",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "aa03361c7dc31d6545471454dbdb1e3b2263745581c063106a748afaa9246a40"
+  },
+  {
+   "questionId": "qst_0343",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "1aa55db28f8cdb7af15b4a29a23aba55e20dff925de7884068bf744030154e74"
+  },
+  {
+   "questionId": "qst_0344",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "7abaf1a59efa947b89d0eafd11edc2cfb7dde009cfab04e694a4aea5a75a5653"
+  },
+  {
+   "questionId": "qst_0345",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "3c9756dd02a14c51cc7f84bc1e70318c2d39ef897cb86712eff18a5370b499da"
+  },
+  {
+   "questionId": "qst_0346",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "7473b0def1ab15629c773b98e523f2070f6b4c041ae392fb29ef3c33a30c89ba"
+  },
+  {
+   "questionId": "qst_0347",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "dd5d9cc99e81574537461147884e79f797c020103cb20377da86a71142bac02d"
+  },
+  {
+   "questionId": "qst_0348",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "c1916cb5c2f2a7c13b8f6c48c4543fbc69af4f5eff05d658be0daae7fcc8d59d"
+  },
+  {
+   "questionId": "qst_0349",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "d0e670ca2161ebd0dc23fa66d354ba2b4d978fcf15310812b061dc25dce475c4"
+  },
+  {
+   "questionId": "qst_0350",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "09ce4c22d25c7f2e3329fe5897e62c7d5983655259d09f3e8c6dd059d48cca1d"
+  },
+  {
+   "questionId": "qst_0351",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "749d1e416f58774efb54f0106e09483a76a291eaf47865e4de0ef6c2dec203a9"
+  },
+  {
+   "questionId": "qst_0352",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "4f72b1ec5d4cc3347f93ff38748f954e079ac6862ea84a2748d9e90c545843a8"
+  },
+  {
+   "questionId": "qst_0353",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "7623e6e167dcb25febe4134320d23ec1bfdba0cbf93ed58d0cee52fb06bd889b"
+  },
+  {
+   "questionId": "qst_0354",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "3390af71918ed32b88e65a5bb58f87976ab34aacf92866b0e6cee28742f31d85"
+  },
+  {
+   "questionId": "qst_0355",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "7ba6054f201480e37523c4b2b7cce2d7ec7871e132e0041b3f9991b40dc335d3"
+  },
+  {
+   "questionId": "qst_0356",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "76205e713ccb046802f191870857b40be8b36c851b898f9054e0e33505df508d"
+  },
+  {
+   "questionId": "qst_0357",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "250a38f116f852ea7ace8a34abeec94e953dcebd6656de5259a6150c523a7dde"
+  },
+  {
+   "questionId": "qst_0358",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "3005d7b6fd029f24e30fcca40da60d7d5902dcfe29bfe5aa33924ca0e49562ce"
+  },
+  {
+   "questionId": "qst_0359",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "642f5ca52947ef19b1360652c5d687f40df53f02490033811e755e5e78e02dfc"
+  },
+  {
+   "questionId": "qst_0360",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "5d505a17a304b0c7743cd05a16b347a969f1811df2955906f05c93e489307821"
+  },
+  {
+   "questionId": "qst_0361",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "408f5fada483254f70f7270a89a9c7d0589f5e2f60b66bb9a99842445704cdde"
+  },
+  {
+   "questionId": "qst_0362",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "050fbd71ddf30c21a5c39b86e74085c889d9100a196e7cc92baa64ab48541b97"
+  },
+  {
+   "questionId": "qst_0363",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "beaa39ddf62d9b8f22f5388fe8f144e02e564b1c651a60e83063cb7bdfd7fc29"
+  },
+  {
+   "questionId": "qst_0364",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "05ba60e5ff9c09307c12636dbf8b3e255f7f4b1b5391525c040b69af202f0bf2"
+  },
+  {
+   "questionId": "qst_0365",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "59676950bc9affc1ce8097830e9eae0a7f94253cb426910e2eca9e0cbe4ca32e"
+  },
+  {
+   "questionId": "qst_0366",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "2fc3fe7d2eb5143cac2f73e65c80aa2312a04ded4fecdbaa5b03b5f523b7f7a5"
+  },
+  {
+   "questionId": "qst_0367",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "8768ac19e430d7273ee5a920cbf57c51aab0278002cbe0709b42d755e57b4120"
+  },
+  {
+   "questionId": "qst_0368",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "22adeb488cc6e3790aabe4f8593fc98e58c19be35384b80562a99b5f56d68551"
+  },
+  {
+   "questionId": "qst_0369",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "344040691de10ac32a2fb4597bf3976c178311447eaf0187d940edef8be8a793"
+  },
+  {
+   "questionId": "qst_0370",
+   "split": "validation",
+   "questionType": "project_related",
+   "sha256": "832b8ddc80dfc12f4c7743552a97bc3a59fcdbfc40ebda6f492a4e178a5d5fa8"
+  },
+  {
+   "questionId": "qst_0371",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "581b6ceb70c4d62b97d5c695b107db630345d9714a5bc5feb8357954bbebc52e"
+  },
+  {
+   "questionId": "qst_0372",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "8232a7ebca224a1f9a0d5a513152d018ab243296d2f538cb005f7d03da5c510a"
+  },
+  {
+   "questionId": "qst_0373",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "d5ea179822fde8807baae6c1fb44fb9b53393668379f4f3bedfa5ece594e3f66"
+  },
+  {
+   "questionId": "qst_0374",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "17c926a2047804e781012bbf9dd75c9f22764838e386774e32e976504427dcf4"
+  },
+  {
+   "questionId": "qst_0375",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "79878dbd750511b4c3926345b4b03939650992d179f27555bc39f0b86865264c"
+  },
+  {
+   "questionId": "qst_0376",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "f24358ec10619e07b6c15a1280ca9e813d9ed293f38871a5b67c546d86524d3c"
+  },
+  {
+   "questionId": "qst_0377",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "d91bcffa18a59e191cee9e20932a721b452c2c2eff3d09ef23e316ef1af74bb2"
+  },
+  {
+   "questionId": "qst_0378",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "25bc39a85fe3c1c336bc0294d6166efbc99d1d9f447a28ef870417f20365fe1b"
+  },
+  {
+   "questionId": "qst_0379",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "a32fdc361c586d5d02678ea7c0313deaa5055fa441c7c07c0e471078ef5325f6"
+  },
+  {
+   "questionId": "qst_0380",
+   "split": "optimization",
+   "questionType": "project_related",
+   "sha256": "3e3ca09f10b62f23ef74ed59d22c73abf7b95e591f17dbac80bbc8cbdbade459"
+  },
+  {
+   "questionId": "qst_0381",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "ae5bfd12b15367b53096f045436f6b494dcf724cb536db9ebc6d3830057b6fbb"
+  },
+  {
+   "questionId": "qst_0382",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "e6d0d3831d2d0cf379f2e791d6a0ca2748e4eed1cf8f16cc1e4c685f33193035"
+  },
+  {
+   "questionId": "qst_0383",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "9f6039f2a3567c8dc2980947fd1a918b2cb9d83a871251d61bb8d8910893b5bb"
+  },
+  {
+   "questionId": "qst_0384",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "8045f0c348260e13be171b0fc41e8bdec84e4c039c38bd1091fc374b66697618"
+  },
+  {
+   "questionId": "qst_0385",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "9169c3036ea20300ae8a9253b96d2fedaa8df0f7c1ba154d7d36297fcae007f4"
+  },
+  {
+   "questionId": "qst_0386",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "037023052b66d024c6c921f48fcaa1dee8662f1f6fd849a53f65910d814f1332"
+  },
+  {
+   "questionId": "qst_0387",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "c3069178a90f7268091565c5d09083219f6584369dc2fa617eddc713f2ed51ee"
+  },
+  {
+   "questionId": "qst_0388",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "adeb09676d5f1e519341dd22b25678054c40e0cbb1a11899d35782956d5020b0"
+  },
+  {
+   "questionId": "qst_0389",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "ecf8230f0b73d6e63588897b9bf721e574b20882433d83f1d4543afee770c0fe"
+  },
+  {
+   "questionId": "qst_0390",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "7a9c5a20e55ea265773dd832cae97b6bdfd430f586b7bef27884873b78a4053c"
+  },
+  {
+   "questionId": "qst_0391",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "6369a2023f623a5f6ef3315b1b97fa8de3fe20aeae1e693d77cfe4019225fe0f"
+  },
+  {
+   "questionId": "qst_0392",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "a1fb45320784dd4beeef79194533d825ea0c07dea926a78621214a8681ce8e79"
+  },
+  {
+   "questionId": "qst_0393",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "faeba5fb21e68c25bb4c06de015668f0c62ab20155874303c7e5542141e205e7"
+  },
+  {
+   "questionId": "qst_0394",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "dbeb67a718a8b24745a6470fbaf581094286f113a43d716ccc8dede2f2188697"
+  },
+  {
+   "questionId": "qst_0395",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "df384c481f8b468f0812445e1d3b2ca6bc40372f4c6e80560ca4f3a3be801ad5"
+  },
+  {
+   "questionId": "qst_0396",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "a5a86313087da3df8713af25c2aafea1b2234dcb31061f31e4d67c252f07cd3b"
+  },
+  {
+   "questionId": "qst_0397",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "32e3b0a6e35676b3281b5430dd44a7b8c025437641ef8f6f816a8f103ccbb62f"
+  },
+  {
+   "questionId": "qst_0398",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "4517bb39e4b8c1b172020bc4dcfe826388d729535f8a3706384c6a106b1e0cc7"
+  },
+  {
+   "questionId": "qst_0399",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "08bcec68881be0319d2032cf583d958135f5dbfc60033fe4c40f764402749419"
+  },
+  {
+   "questionId": "qst_0400",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "16e637a25c1548e5ce662ce4bb22b6380e33d8be367be8239539e1f4bf98eceb"
+  },
+  {
+   "questionId": "qst_0401",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "4e240d0b2adb12f544a66613b4b71e1264fbdb584d7bdd7f6ed1449472191930"
+  },
+  {
+   "questionId": "qst_0402",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "ec9815634f0a3b2a275a26f616f9719c0c6ce6b2a5ee1aa0506b11b307de58b7"
+  },
+  {
+   "questionId": "qst_0403",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "4737f5c87946e2adf742981c15b0fad0ccb754482edbc62fabd6e1504ef31a45"
+  },
+  {
+   "questionId": "qst_0404",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "9905fd5a7a94c865f9d5fe53941ff31931f28973902cb465111f745fb06c0084"
+  },
+  {
+   "questionId": "qst_0405",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "ed61022106a3200fd2f69aad456ac691dc0dd159309c9e1b2a311d4291bf4199"
+  },
+  {
+   "questionId": "qst_0406",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "543428ef892d15e74a77b37791bc14dfa83375304813d347da51fb05593de346"
+  },
+  {
+   "questionId": "qst_0407",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "1a11e5735f35f49f94a6ca0f5c154c886d9c85922be87a69b9715e80261079ea"
+  },
+  {
+   "questionId": "qst_0408",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "ef266ac60d7ddaeede7cbb64a93ff255c96cf4b1983c27d28b9cfb9b6248c2b9"
+  },
+  {
+   "questionId": "qst_0409",
+   "split": "validation",
+   "questionType": "constrained",
+   "sha256": "90d16182ea37671567ac019bb71ffcaa7b674501fb7ec66c46560e4053f1d914"
+  },
+  {
+   "questionId": "qst_0410",
+   "split": "optimization",
+   "questionType": "constrained",
+   "sha256": "6d6a064943ad847fad443b24606a4f46ea115c3e31116324d11a237d84aa55da"
+  },
+  {
+   "questionId": "qst_0411",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "81403b6ae4b9cafe563ff1b5f49e061edf757331746dbb3433ac43f715084d05"
+  },
+  {
+   "questionId": "qst_0412",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "aba2a16a56e10c2303b283df2a86cfe9ea327f2846d91b4a63f8264909db63ec"
+  },
+  {
+   "questionId": "qst_0413",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "e39d858f2578688719c191b425e690c77e7e28297e94ef79a5f18b669c35010a"
+  },
+  {
+   "questionId": "qst_0414",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "c3a9170e826f17813d19c1af169c0596f0b5adb59db2d081291069d4ec33fbab"
+  },
+  {
+   "questionId": "qst_0415",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "2eb170464c2635821026db448e4294ea0e63b290501d598418c631afb028e239"
+  },
+  {
+   "questionId": "qst_0416",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "3f69546ee895e456a063ec977013ed73a38d31cc1b17a151fa1524d1d189af98"
+  },
+  {
+   "questionId": "qst_0417",
+   "split": "validation",
+   "questionType": "conflicting_info",
+   "sha256": "f7a31f4cda44b6c7b6dade8ff0675c9d4ed48105886db3cd96ed4604f3563e76"
+  },
+  {
+   "questionId": "qst_0418",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "77cf283957aa87cae2b7172363aa35478890901180b1b275871ddbf8a0130351"
+  },
+  {
+   "questionId": "qst_0419",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "395a067b39012b8ff007782eed5a99fcad3fe9e1ca9ef1dbf07f511147dd1e22"
+  },
+  {
+   "questionId": "qst_0420",
+   "split": "validation",
+   "questionType": "conflicting_info",
+   "sha256": "7f272b30b8d0a831a52576bfec82e118f533caef4f1b5406d15971d365b25ffa"
+  },
+  {
+   "questionId": "qst_0421",
+   "split": "validation",
+   "questionType": "conflicting_info",
+   "sha256": "c97c352dfb287e348bb4cc03923cf2f97227ede2bb9728e17df956051274f03c"
+  },
+  {
+   "questionId": "qst_0422",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "1ce84200b4563cc9761839fdd127cae88c74669fdad93bffddd0ccd0b7ec9ed0"
+  },
+  {
+   "questionId": "qst_0423",
+   "split": "validation",
+   "questionType": "conflicting_info",
+   "sha256": "724a7961ceedf6a3fb99d9e405a428ec82f77e92ca5fbd6776fa874424e18e9b"
+  },
+  {
+   "questionId": "qst_0424",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "ad585c913d055c652ba99feb2099f1b1c691763e022598f87d4c7e575e6dff55"
+  },
+  {
+   "questionId": "qst_0425",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "15e855eb0d4cb004177e9effd6ed689cec4eb25d2248afda15758c623bbfaf2c"
+  },
+  {
+   "questionId": "qst_0426",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "9997edecc948b91689f77383191a9a783639540125fa5d1bf48d779a120b3a28"
+  },
+  {
+   "questionId": "qst_0427",
+   "split": "validation",
+   "questionType": "conflicting_info",
+   "sha256": "9226ee8122a61712e0b82939c863e4b985c00b53d14f129007e9b964c0d3830f"
+  },
+  {
+   "questionId": "qst_0428",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "1aa920bedcc2cda78843992aa76b04b188495efd739e1e244032e7df3e639f59"
+  },
+  {
+   "questionId": "qst_0429",
+   "split": "validation",
+   "questionType": "conflicting_info",
+   "sha256": "07f1cfbf40a0ca8563795041c9bb089bebcf7d883ba9c1ce176e1720474627ae"
+  },
+  {
+   "questionId": "qst_0430",
+   "split": "optimization",
+   "questionType": "conflicting_info",
+   "sha256": "79874d082f4168e7db24c902c920c1fbb4af6895ecf9d23cfc5e304adc1625b6"
+  },
+  {
+   "questionId": "qst_0431",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "43475c44e7e77962a397cba1344e9f15ab87330d4d275fe1ec2a8cbd9620d169"
+  },
+  {
+   "questionId": "qst_0432",
+   "split": "validation",
+   "questionType": "completeness",
+   "sha256": "dbdf7fea2b06bc886e5bc878de01018eed74b818d0cd90e2631c42657f5f11a1"
+  },
+  {
+   "questionId": "qst_0433",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "0cb888b8f956d9a9cc22e896e5353abdb1b8e675b04038e7c66dcfbbb47601f7"
+  },
+  {
+   "questionId": "qst_0434",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "1248a9e9319db4b42820ffd075c9a56bd5b2e657e52484bf23feb718f91d32c4"
+  },
+  {
+   "questionId": "qst_0435",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "72ad0b38c0de5fab7cf4c756f28b814f6734dbaf6692e45038fea8eccbaf7aab"
+  },
+  {
+   "questionId": "qst_0436",
+   "split": "validation",
+   "questionType": "completeness",
+   "sha256": "d77019e06f07afb2930a8b63e8d64908b4b95c9aa91df71875cf5e1d01644c89"
+  },
+  {
+   "questionId": "qst_0437",
+   "split": "validation",
+   "questionType": "completeness",
+   "sha256": "60e7548751fb6f920effd6cf65df3b1b22326404987264d93bed0c1d0d25cfca"
+  },
+  {
+   "questionId": "qst_0438",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "a995470ed722a1da6e5e67ba791fb47c97d2fb06c88c7314b9c7e3195d4a4dc0"
+  },
+  {
+   "questionId": "qst_0439",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "1fd91aa71ec3a8b7992cb729d90ace9e30c90a9b064ae037b4065f04dd7c1a29"
+  },
+  {
+   "questionId": "qst_0440",
+   "split": "validation",
+   "questionType": "completeness",
+   "sha256": "9d0e3b92f0fa3e0b5f385250a130a73b136e4a590402abff82bd504680536201"
+  },
+  {
+   "questionId": "qst_0441",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "6d292ae085538311f6e1c5446bbfce82f4194eb6ad43fa6d6b51cb620ac32b53"
+  },
+  {
+   "questionId": "qst_0442",
+   "split": "validation",
+   "questionType": "completeness",
+   "sha256": "68349f1c8fa3836c544a1a9bc5638a7cbc833f63a7c93d106b205234b41213f7"
+  },
+  {
+   "questionId": "qst_0443",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "2788a5c4fbad8f024d092ed054d6cb0a2222be9f26fa6a2f079aa601d88ff154"
+  },
+  {
+   "questionId": "qst_0444",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "ebe7bc524c8059a9c8caf1b35143aa366a636eeee9f500762fd0e3df8bc6538b"
+  },
+  {
+   "questionId": "qst_0445",
+   "split": "validation",
+   "questionType": "completeness",
+   "sha256": "a3cbfa197eb336e4ec6808134a20b67db46ef91373edea94e8a4dd2d3a97b11d"
+  },
+  {
+   "questionId": "qst_0446",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "a904249e064437356a6f0b368bf3061c6aecfd810537d63fc5bc67ef9bd48258"
+  },
+  {
+   "questionId": "qst_0447",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "e2688ffb419d146f9abe8fe9413275c02531113656bf97a311ff615d022cb507"
+  },
+  {
+   "questionId": "qst_0448",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "afa77f20a3d799e1c24d26948f3b585d209677c9b2beb29209fd48191d1f7cca"
+  },
+  {
+   "questionId": "qst_0449",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "95ce6fb765939d72b3b2ff99ec8a57abaa45fbfb83c655df8cf592394647bbea"
+  },
+  {
+   "questionId": "qst_0450",
+   "split": "optimization",
+   "questionType": "completeness",
+   "sha256": "6ee491a383a08561fd84b489226e1baa8b9309ee9591c29fc51584fd4650118c"
+  },
+  {
+   "questionId": "qst_0451",
+   "split": "validation",
+   "questionType": "miscellaneous",
+   "sha256": "00c685419230bcd9090e429d03231aaadb4a7ea176a77901d283cb92a9d1b28c"
+  },
+  {
+   "questionId": "qst_0452",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "b133defd39349a14f85ee542288332f822eb80f0b8a420aae743e89955a4a6df"
+  },
+  {
+   "questionId": "qst_0453",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "28534732b7706a28e02b6595d34d794847e7cea3ac6dbf7a9b0a42401650e99b"
+  },
+  {
+   "questionId": "qst_0454",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "832d8ccf94c2276b2883b3a67ddc223bbdc635cfafc20566f6294e9d31eaf5e8"
+  },
+  {
+   "questionId": "qst_0455",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "5e568b2433fae531cbf0a01966c98ed6d6f41b8535920456bdadebe971d35393"
+  },
+  {
+   "questionId": "qst_0456",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "a8392a37844a71a314db9bff19fd9f0d5ffcef41532c72fef4471262ed8e6c76"
+  },
+  {
+   "questionId": "qst_0457",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "14c6c7eda253a7749294b045830e9b1efd7b85b31092e68b9d52cd06dc028e36"
+  },
+  {
+   "questionId": "qst_0458",
+   "split": "validation",
+   "questionType": "miscellaneous",
+   "sha256": "dc87a4973794d41ad179daa7e2ae24a6965c1582d2ceef429109e2b1f781dbd0"
+  },
+  {
+   "questionId": "qst_0459",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "691b0dfbf8bdb85eb65a9dd149ad8ed11b1e4c571962395dfd7257f98a8af0ce"
+  },
+  {
+   "questionId": "qst_0460",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "a6721dca9191319bce19ec4d7a94f13a59e5063cb298da30f98704c2fc31639b"
+  },
+  {
+   "questionId": "qst_0461",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "ab6c26da4bdae49f38c16f5440a06ccef68b8af63e4f438c22aa4d6f0e65585a"
+  },
+  {
+   "questionId": "qst_0462",
+   "split": "validation",
+   "questionType": "miscellaneous",
+   "sha256": "546a7a3112035d48c3d06626a4f19b916feefd0ae37f7c0b6780a651134f4003"
+  },
+  {
+   "questionId": "qst_0463",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "31fbc12c7e6c479b71cfff276b9acda620eee02940e8882d85baf9c5e48dac5e"
+  },
+  {
+   "questionId": "qst_0464",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "298130f805c38d52ca15d4daf8e55599aeb76757b989022380837a3b88a793af"
+  },
+  {
+   "questionId": "qst_0465",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "f0fbca31ff5eb03f5f9d9517939f69ae3957d032f66bf0235f263a8d45d16c3c"
+  },
+  {
+   "questionId": "qst_0466",
+   "split": "validation",
+   "questionType": "miscellaneous",
+   "sha256": "3dfb7c652e6eb20621365e2a6fdd23893d7079683a53cae8d4192791afc1df14"
+  },
+  {
+   "questionId": "qst_0467",
+   "split": "validation",
+   "questionType": "miscellaneous",
+   "sha256": "dc8ba419eb666e3c62b3a6636c742cdb0a2a83a38edb23aaf55a26b04aac0f73"
+  },
+  {
+   "questionId": "qst_0468",
+   "split": "validation",
+   "questionType": "miscellaneous",
+   "sha256": "0359a4f314ca0d5892a8220cb51edcf11b8dbe4fe4e7f5c56943151c459fc653"
+  },
+  {
+   "questionId": "qst_0469",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "3877b70a3ee66e3a6a8b502ec6b5bc7db8e2f7404be965b5ab013e7305e63e9a"
+  },
+  {
+   "questionId": "qst_0470",
+   "split": "optimization",
+   "questionType": "miscellaneous",
+   "sha256": "d8492aebfcfe83a4be866aa51d9d149ec44d8ea0b9d68036594d10751cb71a8d"
+  }
+ ]
+}

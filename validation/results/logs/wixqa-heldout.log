@@ -1,0 +1,19 @@
+15:51:48  questions 120 (validation); lock 114b92d
+15:55:09  evaluated fixed-512|hybrid|minilm-l6|-|-|cross-encoder|k8
+15:56:39  evaluated section|vector|minilm-l6|-|-|cross-encoder|k8
+15:56:41  evaluated section|lexical|-|-|-|none|k8
+15:56:43  evaluated section|vector|minilm-l6|-|-|none|k8
+15:56:46  evaluated section|hybrid|minilm-l6|-|-|none|k8
+15:57:26  evaluated section|hybrid|minilm-l6|-|-|cross-encoder|k8
+15:58:15  evaluated fixed-256|hybrid|minilm-l6|-|-|cross-encoder|k8
+15:58:31  evaluated sentence-window|hybrid|minilm-l6|-|-|none|k3
+16:01:33  latency fixed-512|hybrid|minilm-l6|-|-|cross-encoder|k8
+16:04:03  latency section|vector|minilm-l6|-|-|cross-encoder|k8
+16:04:05  latency section|lexical|-|-|-|none|k8
+16:04:08  latency section|vector|minilm-l6|-|-|none|k8
+16:04:12  latency section|hybrid|minilm-l6|-|-|none|k8
+16:06:50  latency section|hybrid|minilm-l6|-|-|cross-encoder|k8
+16:09:04  latency fixed-256|hybrid|minilm-l6|-|-|cross-encoder|k8
+16:09:24  latency sentence-window|hybrid|minilm-l6|-|-|none|k3
+16:27:34  evaluated Baseline F
+16:27:34  DONE 120 questions; v1 1055s; F index 1085s

@@ -1,0 +1,10 @@
+{
+  "check": "S7 (PREREGISTRATION §9)",
+  "scale": 2000,
+  "n": 280,
+  "baselineA": "section|lexical|-|-|-|none|k8",
+  "optimizationRecall5": 0.6054,
+  "threshold": 0.95,
+  "triggered": false,
+  "heldOutLabelsRead": 0
+}

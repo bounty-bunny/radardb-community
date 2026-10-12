@@ -1,0 +1,84 @@
+top by R@5: [
+  {
+    key: 'section|vector|minilm-l6|-|-|cross-encoder|k8',
+    r5: 65.6,
+    cov: 70.24,
+    tokens: 2279
+  },
+  {
+    key: 'section|vector|minilm-l6|-|graph|cross-encoder|k8',
+    r5: 65.6,
+    cov: 70.24,
+    tokens: 2279
+  },
+  {
+    key: 'section|vector|minilm-l6|exact|-|cross-encoder|k8',
+    r5: 65.6,
+    cov: 70.24,
+    tokens: 2279
+  },
+  {
+    key: 'section|vector|minilm-l6|exact|graph|cross-encoder|k8',
+    r5: 65.6,
+    cov: 70.24,
+    tokens: 2279
+  },
+  {
+    key: 'section|hybrid|minilm-l6|-|-|none|k8',
+    r5: 64.76,
+    cov: 70.12,
+    tokens: 2311
+  },
+  {
+    key: 'section|hybrid|minilm-l6|-|-|cross-encoder|k8',
+    r5: 64.76,
+    cov: 70.71,
+    tokens: 2388
+  },
+  {
+    key: 'section|hybrid|minilm-l6|-|graph|none|k8',
+    r5: 64.76,
+    cov: 70.12,
+    tokens: 2311
+  },
+  {
+    key: 'section|hybrid|minilm-l6|-|graph|cross-encoder|k8',
+    r5: 64.76,
+    cov: 70.71,
+    tokens: 2391
+  }
+]
+top by coverage: [
+  {
+    key: 'section|hybrid|minilm-l6|-|-|cross-encoder|k8',
+    r5: 64.76,
+    cov: 70.71,
+    tokens: 2388
+  },
+  {
+    key: 'section|hybrid|minilm-l6|-|graph|cross-encoder|k8',
+    r5: 64.76,
+    cov: 70.71,
+    tokens: 2391
+  },
+  {
+    key: 'section|hybrid|minilm-l6|exact|-|cross-encoder|k8',
+    r5: 64.76,
+    cov: 70.71,
+    tokens: 2388
+  },
+  {
+    key: 'section|hybrid|minilm-l6|exact|graph|cross-encoder|k8',
+    r5: 64.76,
+    cov: 70.71,
+    tokens: 2391
+  },
+  {
+    key: 'section|vector|minilm-l6|-|-|cross-encoder|k8',
+    r5: 65.6,
+    cov: 70.24,
+    tokens: 2279
+  }
+]
+G rank by R@5: 33
+POST-HOC CV R@5: single best-by-R@5 (train folds) = 63.45 | length-tercile best-by-R@5 = 63.15

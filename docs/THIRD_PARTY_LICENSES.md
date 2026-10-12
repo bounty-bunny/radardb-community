@@ -1,0 +1,239 @@
+# Third-party licenses
+
+Generated from `package-lock.json` by `npx tsx scripts/licenses.ts`. Declared licenses only; verify before redistributing binaries or container images.
+
+| License | Packages |
+|---|---|
+| MIT | 139 |
+| MPL-2.0 | 24 |
+| Apache-2.0 | 22 |
+| BSD-3-Clause | 12 |
+| LGPL-3.0-or-later | 10 |
+| ISC | 5 |
+| Apache-2.0 AND LGPL-3.0-or-later | 3 |
+| Apache-2.0 AND LGPL-3.0-or-later AND MIT | 1 |
+| CC-BY-4.0 | 1 |
+| 0BSD | 1 |
+| (MIT OR CC0-1.0) | 1 |
+
+| Package | Version | License | Scope |
+|---|---|---|---|
+| @alloc/quick-lru | 5.3.0 | MIT | dev |
+| @emnapi/runtime | 1.11.3 | MIT | optional |
+| @esbuild/aix-ppc64 | 0.28.2 | MIT | dev |
+| @esbuild/android-arm | 0.28.2 | MIT | dev |
+| @esbuild/android-arm64 | 0.28.2 | MIT | dev |
+| @esbuild/android-x64 | 0.28.2 | MIT | dev |
+| @esbuild/darwin-arm64 | 0.28.2 | MIT | dev |
+| @esbuild/darwin-x64 | 0.28.2 | MIT | dev |
+| @esbuild/freebsd-arm64 | 0.28.2 | MIT | dev |
+| @esbuild/freebsd-x64 | 0.28.2 | MIT | dev |
+| @esbuild/linux-arm | 0.28.2 | MIT | dev |
+| @esbuild/linux-arm64 | 0.28.2 | MIT | dev |
+| @esbuild/linux-ia32 | 0.28.2 | MIT | dev |
+| @esbuild/linux-loong64 | 0.28.2 | MIT | dev |
+| @esbuild/linux-mips64el | 0.28.2 | MIT | dev |
+| @esbuild/linux-ppc64 | 0.28.2 | MIT | dev |
+| @esbuild/linux-riscv64 | 0.28.2 | MIT | dev |
+| @esbuild/linux-s390x | 0.28.2 | MIT | dev |
+| @esbuild/linux-x64 | 0.28.2 | MIT | dev |
+| @esbuild/netbsd-arm64 | 0.28.2 | MIT | dev |
+| @esbuild/netbsd-x64 | 0.28.2 | MIT | dev |
+| @esbuild/openbsd-arm64 | 0.28.2 | MIT | dev |
+| @esbuild/openbsd-x64 | 0.28.2 | MIT | dev |
+| @esbuild/openharmony-arm64 | 0.28.2 | MIT | dev |
+| @esbuild/sunos-x64 | 0.28.2 | MIT | dev |
+| @esbuild/win32-arm64 | 0.28.2 | MIT | dev |
+| @esbuild/win32-ia32 | 0.28.2 | MIT | dev |
+| @esbuild/win32-x64 | 0.28.2 | MIT | dev |
+| @huggingface/jinja | 0.5.10 | MIT | runtime |
+| @huggingface/tokenizers | 0.2.0 | Apache-2.0 | runtime |
+| @huggingface/transformers | 4.3.0 | Apache-2.0 | runtime |
+| @img/colour | 1.1.0 | MIT | runtime |
+| @img/sharp-darwin-arm64 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-darwin-x64 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-freebsd-wasm32 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-libvips-darwin-arm64 | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-darwin-x64 | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-linux-arm | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-linux-arm64 | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-linux-ppc64 | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-linux-riscv64 | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-linux-s390x | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-linux-x64 | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-linuxmusl-arm64 | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-libvips-linuxmusl-x64 | 1.3.4 | LGPL-3.0-or-later | optional |
+| @img/sharp-linux-arm | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-linux-arm64 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-linux-ppc64 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-linux-riscv64 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-linux-s390x | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-linux-x64 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-linuxmusl-arm64 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-linuxmusl-x64 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-wasm32 | 0.35.5 | Apache-2.0 AND LGPL-3.0-or-later AND MIT | optional |
+| @img/sharp-webcontainers-wasm32 | 0.35.5 | Apache-2.0 | optional |
+| @img/sharp-win32-arm64 | 0.35.5 | Apache-2.0 AND LGPL-3.0-or-later | optional |
+| @img/sharp-win32-ia32 | 0.35.5 | Apache-2.0 AND LGPL-3.0-or-later | optional |
+| @img/sharp-win32-x64 | 0.35.5 | Apache-2.0 AND LGPL-3.0-or-later | optional |
+| @jridgewell/gen-mapping | 0.3.13 | MIT | dev |
+| @jridgewell/remapping | 2.3.5 | MIT | dev |
+| @jridgewell/resolve-uri | 3.1.2 | MIT | dev |
+| @jridgewell/sourcemap-codec | 1.6.0 | MIT | dev |
+| @jridgewell/trace-mapping | 0.3.31 | MIT | dev |
+| @next/env | 16.3.8 | MIT | runtime |
+| @next/swc-darwin-arm64 | 16.3.8 | MIT | optional |
+| @next/swc-darwin-x64 | 16.3.8 | MIT | optional |
+| @next/swc-linux-arm64-gnu | 16.3.8 | MIT | optional |
+| @next/swc-linux-arm64-musl | 16.3.8 | MIT | optional |
+| @next/swc-linux-x64-gnu | 16.3.8 | MIT | optional |
+| @next/swc-linux-x64-musl | 16.3.8 | MIT | optional |
+| @next/swc-win32-arm64-msvc | 16.3.8 | MIT | optional |
+| @next/swc-win32-x64-msvc | 16.3.8 | MIT | optional |
+| @oxc-project/types | 0.152.0 | MIT | dev |
+| @protobufjs/aspromise | 1.1.2 | BSD-3-Clause | runtime |
+| @protobufjs/base64 | 1.1.2 | BSD-3-Clause | runtime |
+| @protobufjs/codegen | 2.0.5 | BSD-3-Clause | runtime |
+| @protobufjs/eventemitter | 1.1.1 | BSD-3-Clause | runtime |
+| @protobufjs/fetch | 1.1.1 | BSD-3-Clause | runtime |
+| @protobufjs/float | 1.0.2 | BSD-3-Clause | runtime |
+| @protobufjs/path | 1.1.2 | BSD-3-Clause | runtime |
+| @protobufjs/pool | 1.1.0 | BSD-3-Clause | runtime |
+| @protobufjs/utf8 | 1.1.2 | BSD-3-Clause | runtime |
+| @rolldown/binding-android-arm-eabi | 1.2.12 | MIT | dev |
+| @rolldown/binding-android-arm64 | 1.2.12 | MIT | dev |
+| @rolldown/binding-darwin-arm64 | 1.2.12 | MIT | dev |
+| @rolldown/binding-darwin-x64 | 1.2.12 | MIT | dev |
+| @rolldown/binding-freebsd-x64 | 1.2.12 | MIT | dev |
+| @rolldown/binding-linux-arm-gnueabihf | 1.2.12 | MIT | dev |
+| @rolldown/binding-linux-arm64-gnu | 1.2.12 | MIT | dev |
+| @rolldown/binding-linux-arm64-musl | 1.2.12 | MIT | dev |
+| @rolldown/binding-linux-ppc64-gnu | 1.2.12 | MIT | dev |
+| @rolldown/binding-linux-s390x-gnu | 1.2.12 | MIT | dev |
+| @rolldown/binding-linux-x64-gnu | 1.2.12 | MIT | dev |
+| @rolldown/binding-linux-x64-musl | 1.2.12 | MIT | dev |
+| @rolldown/binding-openharmony-arm64 | 1.2.12 | MIT | dev |
+| @rolldown/binding-win32-arm64-msvc | 1.2.12 | MIT | dev |
+| @rolldown/binding-win32-x64-msvc | 1.2.12 | MIT | dev |
+| @rolldown/pluginutils | 1.0.1 | MIT | dev |
+| @swc/helpers | 0.5.23 | Apache-2.0 | runtime |
+| @tailwindcss/node | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-android-arm64 | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-darwin-arm64 | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-darwin-x64 | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-freebsd-x64 | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-linux-arm-gnueabihf | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-linux-arm64-gnu | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-linux-arm64-musl | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-linux-x64-gnu | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-linux-x64-musl | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-wasm32-wasi | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-win32-arm64-msvc | 4.3.3 | MIT | dev |
+| @tailwindcss/oxide-win32-x64-msvc | 4.3.3 | MIT | dev |
+| @tailwindcss/postcss | 4.3.3 | MIT | dev |
+| @types/chai | 5.2.3 | MIT | dev |
+| @types/deep-eql | 4.0.2 | MIT | dev |
+| @types/estree | 1.0.9 | MIT | dev |
+| @types/node | 26.6.3 | MIT | runtime |
+| @types/react | 19.3.0 | MIT | runtime |
+| @types/react-dom | 19.3.0 | MIT | dev |
+| @vitest/mocker | 5.0.3 | MIT | dev |
+| @vitest/spy | 5.0.3 | MIT | dev |
+| adm-zip | 0.6.1 | MIT | runtime |
+| assertion-error | 2.0.1 | MIT | dev |
+| baseline-browser-mapping | 2.11.26 | Apache-2.0 | runtime |
+| caniuse-lite | 1.0.30001814 | CC-BY-4.0 | runtime |
+| chai | 6.3.0 | MIT | dev |
+| client-only | 0.0.1 | MIT | runtime |
+| clsx | 2.1.1 | MIT | runtime |
+| csstype | 3.2.3 | MIT | runtime |
+| define-data-property | 1.1.4 | MIT | runtime |
+| define-properties | 1.2.1 | MIT | runtime |
+| detect-libc | 2.1.2 | Apache-2.0 | runtime |
+| enhanced-resolve | 5.26.0 | MIT | dev |
+| es-define-property | 1.0.1 | MIT | runtime |
+| es-errors | 1.3.0 | MIT | runtime |
+| es-module-lexer | 2.3.2 | MIT | dev |
+| esbuild | 0.28.2 | MIT | dev |
+| escape-string-regexp | 4.0.0 | MIT | runtime |
+| estree-walker | 3.0.3 | MIT | dev |
+| expect-type | 1.4.0 | Apache-2.0 | dev |
+| fdir | 6.5.0 | MIT | dev |
+| flatbuffers | 25.9.23 | Apache-2.0 | runtime |
+| fsevents | 2.3.3 | MIT | dev |
+| global-agent | 4.1.3 | BSD-3-Clause | runtime |
+| globalthis | 1.0.4 | MIT | runtime |
+| gopd | 1.2.0 | MIT | runtime |
+| graceful-fs | 4.2.11 | ISC | dev |
+| guid-typescript | 1.0.9 | ISC | runtime |
+| has-property-descriptors | 1.0.2 | MIT | runtime |
+| jiti | 2.7.0 | MIT | dev |
+| lightningcss | 1.32.0 | MPL-2.0 | dev |
+| lightningcss | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-android-arm64 | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-android-arm64 | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-darwin-arm64 | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-darwin-arm64 | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-darwin-x64 | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-darwin-x64 | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-freebsd-x64 | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-freebsd-x64 | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-linux-arm-gnueabihf | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-linux-arm-gnueabihf | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-linux-arm64-gnu | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-linux-arm64-gnu | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-linux-arm64-musl | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-linux-arm64-musl | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-linux-x64-gnu | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-linux-x64-gnu | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-linux-x64-musl | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-linux-x64-musl | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-win32-arm64-msvc | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-win32-arm64-msvc | 1.33.0 | MPL-2.0 | dev |
+| lightningcss-win32-x64-msvc | 1.32.0 | MPL-2.0 | dev |
+| lightningcss-win32-x64-msvc | 1.33.0 | MPL-2.0 | dev |
+| long | 5.3.2 | Apache-2.0 | runtime |
+| lucide-react | 1.49.0 | ISC | runtime |
+| magic-string | 0.30.21 | MIT | dev |
+| magic-string | 1.4.2 | MIT | dev |
+| magic-string | 1.4.2 | MIT | dev |
+| matcher | 4.0.0 | MIT | runtime |
+| nanoid | 3.3.19 | MIT | runtime |
+| next | 16.3.8 | MIT | runtime |
+| object-keys | 1.1.1 | MIT | runtime |
+| obug | 2.2.1 | MIT | dev |
+| onnxruntime-common | 1.30.0 | MIT | runtime |
+| onnxruntime-common | 1.31.0-dev.20260911-2a43ec07e | MIT | runtime |
+| onnxruntime-node | 1.30.0 | MIT | runtime |
+| onnxruntime-web | 1.31.0-dev.20260914-8d85527a0 | MIT | runtime |
+| picocolors | 1.1.1 | ISC | runtime |
+| picomatch | 4.0.7 | MIT | dev |
+| platform | 1.3.6 | MIT | runtime |
+| postcss | 8.5.23 | MIT | runtime |
+| postcss | 8.5.28 | MIT | dev |
+| protobufjs | 7.6.6 | BSD-3-Clause | runtime |
+| react | 19.3.0 | MIT | runtime |
+| react-dom | 19.3.0 | MIT | runtime |
+| rolldown | 1.2.12 | MIT | dev |
+| scheduler | 0.28.0 | MIT | runtime |
+| semver | 7.8.5 | ISC | runtime |
+| serialize-error | 8.1.0 | MIT | runtime |
+| sharp | 0.35.5 | Apache-2.0 | runtime |
+| source-map-js | 1.2.2 | BSD-3-Clause | runtime |
+| std-env | 4.3.0 | MIT | dev |
+| styled-jsx | 5.1.6 | MIT | runtime |
+| tailwindcss | 4.3.3 | MIT | dev |
+| tapable | 2.3.3 | MIT | dev |
+| tinybench | 6.2.0 | MIT | dev |
+| tinyexec | 1.3.1 | MIT | dev |
+| tinyglobby | 0.2.17 | MIT | dev |
+| tslib | 2.8.1 | 0BSD | runtime |
+| tsx | 4.23.15 | MIT | dev |
+| type-fest | 0.20.2 | (MIT OR CC0-1.0) | runtime |
+| typescript | 5.9.3 | Apache-2.0 | dev |
+| undici-types | 8.9.0 | MIT | runtime |
+| vite | 8.3.1 | MIT | dev |
+| vitest | 5.0.3 | MIT | dev |
+| why-is-node-running | 3.2.1 | MIT | dev |
+| zod | 4.6.5 | MIT | runtime |

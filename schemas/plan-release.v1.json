@@ -1,0 +1,301 @@
+{
+  "$id": "urn:radardb:schema:plan-release.v1",
+  "title": "RadarDB portable plan release",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "radardb.plan-release"
+    },
+    "schemaVersion": {
+      "type": "number",
+      "const": 1
+    },
+    "exportedAt": {
+      "type": "string"
+    },
+    "engine": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "const": "radardb"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "release": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "datasetVersion": {
+          "type": "string"
+        },
+        "routerVersion": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "datasetVersion",
+        "routerVersion",
+        "createdAt"
+      ],
+      "additionalProperties": false
+    },
+    "plans": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "questionClass": {
+            "type": "string",
+            "minLength": 1
+          },
+          "config": {
+            "type": "object",
+            "properties": {
+              "chunkingStrategy": {
+                "type": "string",
+                "enum": [
+                  "fixed-512",
+                  "fixed-256",
+                  "section",
+                  "sentence-window"
+                ]
+              },
+              "retrievalStrategy": {
+                "type": "string",
+                "enum": [
+                  "lexical",
+                  "vector",
+                  "hybrid"
+                ]
+              },
+              "embeddingModel": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "enum": [
+                      "minilm-l6",
+                      "hash-ngram"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "exactMatchBoost": {
+                "type": "boolean"
+              },
+              "graphStrategy": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "entity-expansion"
+                ]
+              },
+              "reranker": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "cross-encoder"
+                ]
+              },
+              "topK": {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 50
+              }
+            },
+            "required": [
+              "chunkingStrategy",
+              "retrievalStrategy",
+              "embeddingModel",
+              "exactMatchBoost",
+              "graphStrategy",
+              "reranker",
+              "topK"
+            ],
+            "additionalProperties": false
+          },
+          "optimizationMetrics": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "n": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "evidenceCoverage": {
+                    "type": "number"
+                  },
+                  "retrievalSuccess": {
+                    "type": "number"
+                  },
+                  "retrievalSuccessCI": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  "contextPrecision": {
+                    "type": "number"
+                  },
+                  "contextTokens": {
+                    "type": "number"
+                  },
+                  "estimatedCostUsd": {
+                    "type": "number"
+                  },
+                  "estimatedLatencyMs": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "n",
+                  "evidenceCoverage",
+                  "retrievalSuccess",
+                  "retrievalSuccessCI",
+                  "contextPrecision",
+                  "contextTokens",
+                  "estimatedCostUsd",
+                  "estimatedLatencyMs"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "validationMetrics": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "n": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "evidenceCoverage": {
+                    "type": "number"
+                  },
+                  "retrievalSuccess": {
+                    "type": "number"
+                  },
+                  "retrievalSuccessCI": {
+                    "type": "array",
+                    "prefixItems": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ],
+                    "items": false,
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  "contextPrecision": {
+                    "type": "number"
+                  },
+                  "contextTokens": {
+                    "type": "number"
+                  },
+                  "estimatedCostUsd": {
+                    "type": "number"
+                  },
+                  "estimatedLatencyMs": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "n",
+                  "evidenceCoverage",
+                  "retrievalSuccess",
+                  "retrievalSuccessCI",
+                  "contextPrecision",
+                  "contextTokens",
+                  "estimatedCostUsd",
+                  "estimatedLatencyMs"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "confidence": {
+            "type": "object",
+            "properties": {
+              "level": {
+                "type": "string",
+                "enum": [
+                  "low",
+                  "medium",
+                  "high"
+                ]
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "level",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "questionClass",
+          "config",
+          "optimizationMetrics",
+          "validationMetrics",
+          "confidence"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "schemaVersion",
+    "exportedAt",
+    "engine",
+    "release",
+    "plans"
+  ],
+  "additionalProperties": false
+}

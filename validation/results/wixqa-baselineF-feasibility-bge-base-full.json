@@ -1,0 +1,66 @@
+{
+  "test": "wixqa-baselineF-feasibility-bge-base-full",
+  "label": "Baseline F — OUTSIDE RADARDB",
+  "outcome": "RESOURCE_LIMIT_FAILURE",
+  "classification": "EMBEDDING_TIME_LIMIT",
+  "error": {
+    "message": "Baseline F indexing exceeded 7200s",
+    "stage": "index"
+  },
+  "totalSec": 7201,
+  "budgets": {
+    "indexingSec": 7200,
+    "searchSec": 21600,
+    "rssMB": 10240,
+    "diskMB": 25600
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "nodeOptions": "--max-old-space-size=8192",
+    "heapLimitMB": 8384
+  },
+  "maxRssSampledEvery5sMB": 3120,
+  "maxJsHeapObservedAtInstrumentationEventsMB": 206,
+  "diskMB": 0,
+  "model": "Xenova/bge-base-en-v1.5",
+  "dtype": "q8",
+  "pooling": "cls",
+  "normalized": true,
+  "queryPrefix": "Represent this sentence for searching relevant passages: ",
+  "frozen": {
+    "commit": "7cdae10e7bcc497ab82c4926fc3a9dce08f91382",
+    "srcSha256": "565e26006d1b4e0e51bc5f60fea35ffd4a5f4a38369f3b819da7b62ff3fca4b8"
+  },
+  "corpus": {
+    "dataset": "wixqa",
+    "scale": "full",
+    "documents": 6221,
+    "characters": 14122425,
+    "manifestSha256": "704dc3aacd62917170e45e27cbcfce75b0e164087cc492a4c573a5697ae27d78",
+    "goldDensity": 0.054653592669988746
+  },
+  "questions": {
+    "optimization": 280,
+    "heldOutRead": 0
+  },
+  "indexing": [
+    {
+      "chunking": "fixed-512",
+      "chunks": 10637,
+      "dim": 768,
+      "sec": 2021
+    },
+    {
+      "chunking": "fixed-256",
+      "chunks": 17286,
+      "dim": 768,
+      "sec": 1624
+    },
+    {
+      "chunking": "section",
+      "chunks": 13841,
+      "dim": 768,
+      "sec": 2344
+    }
+  ]
+}

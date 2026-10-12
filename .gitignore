@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.radar/
+next-env.d.ts
+*.tsbuildinfo
+.env*
+/sources/*
+!/sources/README.md
+*.reproduced.json

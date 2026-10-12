@@ -1,0 +1,22 @@
+name: Bug report
+description: Something does not work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not include customer data, credentials or private documents. Security issues: see SECURITY.md (report privately)."
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: "Expected vs actual behavior" }
+    validations: { required: true }
+  - type: textarea
+    id: repro
+    attributes: { label: Steps to reproduce, description: "Commands, request bodies, minimal synthetic data" }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: RadarDB version or commit }
+    validations: { required: true }
+  - type: textarea
+    id: env
+    attributes: { label: Environment, description: "Output of `npm run radar -- doctor`, OS" }

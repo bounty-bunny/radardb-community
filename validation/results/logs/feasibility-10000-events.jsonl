@@ -1,0 +1,7 @@
+{"t":"2026-10-01T15:08:43.368Z","elapsedSec":0,"stage":"ingest","event":"stage","rssMB":76,"heapUsedMB":14}
+{"t":"2026-10-01T15:10:04.468Z","elapsedSec":81,"stage":"ingest","event":"ingested","rssMB":5043,"heapUsedMB":405,"documents":10000,"characters":49277493,"manifestSha256":"e95925fe0b110875b7e298ad7ecc9acb3b041e6f1be5aa0da44a351f964a807f","datasetVersion":"eaaf489450a5","goldDensity":0.0722}
+{"t":"2026-10-01T15:10:04.472Z","elapsedSec":81,"stage":"represent","event":"stage","rssMB":5043,"heapUsedMB":405}
+{"t":"2026-10-01T15:30:52.608Z","elapsedSec":1329,"stage":"represent","event":"representation","rssMB":3105,"heapUsedMB":667,"chunking":"fixed-512","chunks":24360,"vectors":{"minilm-l6":24360,"hash-ngram":24360},"sec":1248}
+{"t":"2026-10-01T16:08:52.326Z","elapsedSec":3609,"stage":"represent","event":"representation","rssMB":3550,"heapUsedMB":1247,"chunking":"fixed-256","chunks":45213,"vectors":{"minilm-l6":45213,"hash-ngram":45213},"sec":2280}
+{"t":"2026-10-01T16:45:45.862Z","elapsedSec":5823,"stage":"represent","event":"representation","rssMB":3916,"heapUsedMB":1750,"chunking":"section","chunks":31869,"vectors":{"minilm-l6":31869,"hash-ngram":31869},"sec":2214}
+{"t":"2026-10-01T17:08:50.199Z","elapsedSec":7207,"stage":"represent","event":"finish","rssMB":4070,"heapUsedMB":2705,"outcome":"FAILED","classification":"EMBEDDING_TIME_LIMIT"}

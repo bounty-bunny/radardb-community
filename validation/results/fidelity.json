@@ -1,0 +1,136 @@
+{
+  "test": "0b",
+  "paretoNote": "Pareto flags are computed from estimatedLatencyMs, which includes wall-clock time; they were not a preregistered fidelity field. Reported separately with the frozen engine's own run-to-run variation.",
+  "frozenSelfConsistency": {
+    "paretoFlagDifferences": 10,
+    "deterministicMetricDifferences": 0
+  },
+  "paretoMismatches": 23,
+  "gatingMismatches": [],
+  "label": "Harness fidelity gate (RequiredEvidenceScorer vs frozen optimize()+validatePlans())",
+  "comparedFields": "per-trial coverage/success/CI/precision/tokens/estimated cost, Pareto flags, distinct behaviors, selections, explanations, routed metrics, held-out metrics and per-question outcomes",
+  "excludedFields": "estimatedLatencyMs and measured latency (wall-clock, non-deterministic in the frozen engine itself; not used by quality/balanced selection)",
+  "trialsCompared": 480,
+  "objectives": {
+    "balanced": {
+      "selectedFallback": "section|hybrid|minilm-l6|-|graph|none|k8",
+      "classPlans": [
+        [
+          "procedure",
+          "section|hybrid|minilm-l6|-|-|none|k3"
+        ],
+        [
+          "root_cause",
+          "section|hybrid|hash-ngram|exact|graph|none|k5"
+        ],
+        [
+          "lookup",
+          "section|vector|minilm-l6|exact|-|none|k5"
+        ],
+        [
+          "general",
+          "section|hybrid|hash-ngram|-|-|cross-encoder|k5"
+        ]
+      ],
+      "heldOut": {
+        "radardb": {
+          "n": 11,
+          "evidenceCoverage": 0.9090909090909091,
+          "retrievalSuccess": 0.9090909090909091,
+          "retrievalSuccessCI": [
+            0.6226353745137962,
+            0.9837682477371741
+          ],
+          "contextPrecision": 0.20454545454545456,
+          "contextTokens": 307.72727272727275,
+          "estimatedCostUsd": 0.0009317272727272727
+        },
+        "typical": {
+          "n": 11,
+          "evidenceCoverage": 0.6363636363636364,
+          "retrievalSuccess": 0.6363636363636364,
+          "retrievalSuccessCI": [
+            0.35379677689163724,
+            0.8483377638586862
+          ],
+          "contextPrecision": 0.12727272727272726,
+          "contextTokens": 1142.3636363636363,
+          "estimatedCostUsd": 0.003429090909090909
+        }
+      }
+    },
+    "quality": {
+      "selectedFallback": "fixed-256|hybrid|hash-ngram|-|graph|none|k5",
+      "classPlans": [
+        [
+          "procedure",
+          "sentence-window|hybrid|minilm-l6|-|-|none|k3"
+        ],
+        [
+          "root_cause",
+          "fixed-256|vector|hash-ngram|-|graph|cross-encoder|k3"
+        ],
+        [
+          "lookup",
+          "fixed-256|lexical|-|exact|-|none|k3"
+        ],
+        [
+          "general",
+          "sentence-window|vector|hash-ngram|-|-|cross-encoder|k5"
+        ]
+      ],
+      "heldOut": {
+        "radardb": {
+          "n": 11,
+          "evidenceCoverage": 1,
+          "retrievalSuccess": 1,
+          "retrievalSuccessCI": [
+            0.7411599827511859,
+            1
+          ],
+          "contextPrecision": 0.36818181818181817,
+          "contextTokens": 534.2727272727273,
+          "estimatedCostUsd": 0.0016179090909090909
+        },
+        "typical": {
+          "n": 11,
+          "evidenceCoverage": 0.6363636363636364,
+          "retrievalSuccess": 0.6363636363636364,
+          "retrievalSuccessCI": [
+            0.35379677689163724,
+            0.8483377638586862
+          ],
+          "contextPrecision": 0.12727272727272726,
+          "contextTokens": 1142.3636363636363,
+          "estimatedCostUsd": 0.003429090909090909
+        }
+      }
+    }
+  },
+  "allMismatches": [
+    "balanced: trial fixed-256|lexical|-|-|-|cross-encoder|k5 pareto: frozen=true harness=false",
+    "balanced: trial fixed-256|lexical|-|-|graph|cross-encoder|k5 pareto: frozen=false harness=true",
+    "balanced: trial fixed-256|lexical|-|exact|-|cross-encoder|k5 pareto: frozen=false harness=true",
+    "balanced: trial fixed-256|lexical|-|exact|graph|cross-encoder|k5 pareto: frozen=true harness=false",
+    "balanced: trial fixed-256|vector|hash-ngram|-|graph|cross-encoder|k3 pareto: frozen=true harness=false",
+    "balanced: trial section|hybrid|minilm-l6|-|graph|cross-encoder|k8 pareto: frozen=false harness=true",
+    "balanced: trial section|hybrid|minilm-l6|exact|graph|cross-encoder|k8 pareto: frozen=false harness=true",
+    "balanced: trial section|hybrid|hash-ngram|exact|graph|none|k8 pareto: frozen=true harness=false",
+    "balanced: trial sentence-window|vector|hash-ngram|-|-|cross-encoder|k3 pareto: frozen=true harness=false",
+    "balanced: trial sentence-window|vector|hash-ngram|exact|graph|cross-encoder|k5 pareto: frozen=true harness=false",
+    "balanced: trial sentence-window|hybrid|hash-ngram|-|-|none|k8 pareto: frozen=false harness=true",
+    "quality: trial fixed-256|lexical|-|-|-|cross-encoder|k5 pareto: frozen=true harness=false",
+    "quality: trial fixed-256|lexical|-|exact|-|cross-encoder|k5 pareto: frozen=false harness=true",
+    "quality: trial fixed-256|vector|hash-ngram|-|graph|cross-encoder|k3 pareto: frozen=true harness=false",
+    "quality: trial fixed-256|hybrid|minilm-l6|-|graph|cross-encoder|k3 pareto: frozen=false harness=true",
+    "quality: trial fixed-256|hybrid|minilm-l6|exact|graph|cross-encoder|k3 pareto: frozen=true harness=false",
+    "quality: trial fixed-256|hybrid|hash-ngram|-|graph|cross-encoder|k5 pareto: frozen=false harness=true",
+    "quality: trial fixed-256|hybrid|hash-ngram|exact|graph|cross-encoder|k5 pareto: frozen=true harness=false",
+    "quality: trial section|hybrid|minilm-l6|-|graph|cross-encoder|k8 pareto: frozen=false harness=true",
+    "quality: trial section|hybrid|minilm-l6|exact|graph|cross-encoder|k8 pareto: frozen=false harness=true",
+    "quality: trial sentence-window|vector|hash-ngram|exact|graph|cross-encoder|k5 pareto: frozen=true harness=false",
+    "quality: trial sentence-window|hybrid|hash-ngram|-|-|none|k8 pareto: frozen=false harness=true",
+    "quality: trial sentence-window|hybrid|hash-ngram|exact|graph|none|k8 pareto: frozen=false harness=true"
+  ],
+  "faithful": true
+}

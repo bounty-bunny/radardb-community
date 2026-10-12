@@ -1,0 +1,88 @@
+{
+  "label": "Candidate FusionContextPlan — final fit on wixqa optimization questions (n=280); held-out labels read: 0",
+  "createdAt": "2026-10-06T19:28:31.160Z",
+  "dataset": "wixqa",
+  "datasetVersion": "040a7a418663",
+  "n": 280,
+  "globalPlan": {
+    "key": "section|hybrid|minilm-l6|-|-|cross-encoder|k8",
+    "config": {
+      "chunkingStrategy": "section",
+      "retrievalStrategy": "hybrid",
+      "embeddingModel": "minilm-l6",
+      "exactMatchBoost": false,
+      "graphStrategy": "none",
+      "reranker": "cross-encoder",
+      "topK": 8
+    },
+    "nearBest": 9
+  },
+  "fusionPlan": {
+    "key": "fusion[v1](section|hybrid|minilm-l6|-|-|cross-encoder|k8 + sentence-window|hybrid|minilm-l6|-|-|none|k8; rrf60; rerank=none)",
+    "partnerKey": "sentence-window|hybrid|minilm-l6|-|-|none|k8",
+    "config": {
+      "kind": "fusion",
+      "version": 1,
+      "primary": {
+        "chunkingStrategy": "section",
+        "retrievalStrategy": "hybrid",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "cross-encoder",
+        "topK": 8
+      },
+      "partner": {
+        "chunkingStrategy": "sentence-window",
+        "retrievalStrategy": "hybrid",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "none",
+        "topK": 8
+      },
+      "rrfK": 60,
+      "sharedRerank": "none",
+      "rerankPool": 20
+    }
+  },
+  "optimizationGainOverGlobal": {
+    "delta": 0.05595238095238095,
+    "ci": [
+      0.02380952380952381,
+      0.0880952380952381
+    ]
+  },
+  "fuseIfProvenDecision": true,
+  "deployedSystem": "FusionContextPlan",
+  "options": [
+    {
+      "key": "fusion[v1](section|hybrid|minilm-l6|-|-|cross-encoder|k8 + sentence-window|hybrid|minilm-l6|-|-|none|k8; rrf60; rerank=none)",
+      "r5": 0.7035714285714286
+    },
+    {
+      "key": "fusion[v1](section|hybrid|minilm-l6|-|-|cross-encoder|k8 + sentence-window|vector|minilm-l6|-|-|cross-encoder|k8; rrf60; rerank=none)",
+      "r5": 0.7
+    },
+    {
+      "key": "fusion[v1](section|hybrid|minilm-l6|-|-|cross-encoder|k8 + sentence-window|hybrid|minilm-l6|-|-|none|k3; rrf60; rerank=none)",
+      "r5": 0.693452380952381
+    },
+    {
+      "key": "fusion[v1](section|hybrid|minilm-l6|-|-|cross-encoder|k8 + sentence-window|vector|minilm-l6|-|-|cross-encoder|k8; rrf60; rerank=cross-encoder)",
+      "r5": 0.675
+    },
+    {
+      "key": "fusion[v1](section|hybrid|minilm-l6|-|-|cross-encoder|k8 + sentence-window|hybrid|minilm-l6|-|-|none|k8; rrf60; rerank=cross-encoder)",
+      "r5": 0.6660714285714285
+    },
+    {
+      "key": "fusion[v1](section|hybrid|minilm-l6|-|-|cross-encoder|k8 + sentence-window|hybrid|minilm-l6|-|-|none|k3; rrf60; rerank=cross-encoder)",
+      "r5": 0.6601190476190476
+    }
+  ],
+  "requiredRepresentations": [
+    "section:minilm-l6",
+    "sentence-window:minilm-l6"
+  ]
+}

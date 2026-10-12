@@ -1,0 +1,97 @@
+{
+  "test": "0a",
+  "label": "RadarDB V1 native scoring — internal synthetic benchmark, frozen product path",
+  "objective": "balanced",
+  "runtimeSec": 13.878,
+  "datasetVersion": "e3babff9cb66",
+  "configurationsTested": 480,
+  "heldOut": {
+    "n": 11,
+    "typical": {
+      "evidenceCoverage": 0.6363636363636364,
+      "retrievalSuccess": 0.6363636363636364,
+      "contextPrecision": 0.12727272727272726,
+      "contextTokens": 1142.3636363636363,
+      "estimatedCostUsd": 0.003429090909090909,
+      "n": 11
+    },
+    "radardb": {
+      "evidenceCoverage": 0.9090909090909091,
+      "retrievalSuccess": 0.9090909090909091,
+      "contextPrecision": 0.20454545454545456,
+      "contextTokens": 307.72727272727275,
+      "estimatedCostUsd": 0.0009317272727272727,
+      "n": 11
+    }
+  },
+  "optimization": {
+    "n": 37,
+    "typical": {
+      "evidenceCoverage": 0.7162162162162162,
+      "retrievalSuccess": 0.7027027027027027,
+      "contextPrecision": 0.15675675675675685,
+      "contextTokens": 1030.972972972973,
+      "estimatedCostUsd": 0.003094918918918919,
+      "n": 37
+    },
+    "radardb": {
+      "evidenceCoverage": 1,
+      "retrievalSuccess": 1,
+      "contextPrecision": 0.24327541827541818,
+      "contextTokens": 396.5135135135135,
+      "estimatedCostUsd": 0.0011972702702702702,
+      "n": 37
+    }
+  },
+  "measuredLatency": {
+    "typical": {
+      "n": 11,
+      "p50": 3.212100000000646,
+      "p95": 54.137799999998606,
+      "mean": 14.910663636363262,
+      "method": "wall-clock per request: cold model inference (result caches bypassed), warm indexes, in-process, this machine"
+    },
+    "radardb": {
+      "n": 11,
+      "p50": 3.6599999999998545,
+      "p95": 863.0917000000009,
+      "mean": 151.08183636363654,
+      "method": "wall-clock per request: cold model inference (result caches bypassed), warm indexes, in-process, this machine"
+    }
+  },
+  "plans": [
+    {
+      "class": "procedure",
+      "config": "section|hybrid|minilm-l6|-|-|none|k3"
+    },
+    {
+      "class": "root_cause",
+      "config": "section|hybrid|hash-ngram|exact|graph|none|k5"
+    },
+    {
+      "class": "lookup",
+      "config": "section|vector|minilm-l6|exact|-|none|k5"
+    },
+    {
+      "class": "general",
+      "config": "section|hybrid|hash-ngram|-|-|cross-encoder|k5"
+    },
+    {
+      "class": "*",
+      "config": "section|hybrid|minilm-l6|-|graph|none|k8"
+    }
+  ],
+  "expected": {
+    "typical": {
+      "cov": 0.636,
+      "prec": 0.127,
+      "tok": 1142
+    },
+    "radar": {
+      "cov": 0.909,
+      "prec": 0.205,
+      "tok": 308
+    }
+  },
+  "reproduced": true
+}

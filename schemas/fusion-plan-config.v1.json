@@ -1,0 +1,179 @@
+{
+  "$id": "urn:radardb:schema:fusion-plan-config.v1",
+  "title": "RadarDB FusionPlanConfig (EXPERIMENTAL)",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "kind": {
+      "type": "string",
+      "const": "fusion"
+    },
+    "version": {
+      "type": "number",
+      "const": 1
+    },
+    "primary": {
+      "type": "object",
+      "properties": {
+        "chunkingStrategy": {
+          "type": "string",
+          "enum": [
+            "fixed-512",
+            "fixed-256",
+            "section",
+            "sentence-window"
+          ]
+        },
+        "retrievalStrategy": {
+          "type": "string",
+          "enum": [
+            "lexical",
+            "vector",
+            "hybrid"
+          ]
+        },
+        "embeddingModel": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "minilm-l6",
+                "hash-ngram"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exactMatchBoost": {
+          "type": "boolean"
+        },
+        "graphStrategy": {
+          "type": "string",
+          "enum": [
+            "none",
+            "entity-expansion"
+          ]
+        },
+        "reranker": {
+          "type": "string",
+          "enum": [
+            "none",
+            "cross-encoder"
+          ]
+        },
+        "topK": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        }
+      },
+      "required": [
+        "chunkingStrategy",
+        "retrievalStrategy",
+        "embeddingModel",
+        "exactMatchBoost",
+        "graphStrategy",
+        "reranker",
+        "topK"
+      ],
+      "additionalProperties": false
+    },
+    "partner": {
+      "type": "object",
+      "properties": {
+        "chunkingStrategy": {
+          "type": "string",
+          "enum": [
+            "fixed-512",
+            "fixed-256",
+            "section",
+            "sentence-window"
+          ]
+        },
+        "retrievalStrategy": {
+          "type": "string",
+          "enum": [
+            "lexical",
+            "vector",
+            "hybrid"
+          ]
+        },
+        "embeddingModel": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "minilm-l6",
+                "hash-ngram"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "exactMatchBoost": {
+          "type": "boolean"
+        },
+        "graphStrategy": {
+          "type": "string",
+          "enum": [
+            "none",
+            "entity-expansion"
+          ]
+        },
+        "reranker": {
+          "type": "string",
+          "enum": [
+            "none",
+            "cross-encoder"
+          ]
+        },
+        "topK": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 50
+        }
+      },
+      "required": [
+        "chunkingStrategy",
+        "retrievalStrategy",
+        "embeddingModel",
+        "exactMatchBoost",
+        "graphStrategy",
+        "reranker",
+        "topK"
+      ],
+      "additionalProperties": false
+    },
+    "rrfK": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 1000
+    },
+    "sharedRerank": {
+      "type": "string",
+      "enum": [
+        "none",
+        "cross-encoder"
+      ]
+    },
+    "rerankPool": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 200
+    }
+  },
+  "required": [
+    "kind",
+    "version",
+    "primary",
+    "partner",
+    "rrfK",
+    "sharedRerank",
+    "rerankPool"
+  ],
+  "additionalProperties": false
+}

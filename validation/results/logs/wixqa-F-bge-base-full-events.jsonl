@@ -1,0 +1,8 @@
+{"t":"2026-10-03T06:42:21.829Z","elapsedSec":0,"stage":"ingest","event":"stage","rssMB":73,"heapUsedMB":12}
+{"t":"2026-10-03T06:42:22.204Z","elapsedSec":1,"stage":"ingest","event":"ingested","rssMB":152,"heapUsedMB":53,"dataset":"wixqa","scale":"full","documents":6221,"characters":14122425,"manifestSha256":"704dc3aacd62917170e45e27cbcfce75b0e164087cc492a4c573a5697ae27d78","goldDensity":0.054653592669988746}
+{"t":"2026-10-03T06:42:22.205Z","elapsedSec":1,"stage":"index","event":"stage","rssMB":152,"heapUsedMB":53}
+{"t":"2026-10-03T06:42:26.509Z","elapsedSec":5,"stage":"index","event":"model-loaded","rssMB":420,"heapUsedMB":84}
+{"t":"2026-10-03T07:16:07.152Z","elapsedSec":2026,"stage":"index","event":"index","rssMB":2619,"heapUsedMB":83,"chunking":"fixed-512","chunks":10637,"sec":2021}
+{"t":"2026-10-03T07:43:11.450Z","elapsedSec":3650,"stage":"index","event":"index","rssMB":2886,"heapUsedMB":117,"chunking":"fixed-256","chunks":17286,"sec":1624}
+{"t":"2026-10-03T08:22:15.743Z","elapsedSec":5994,"stage":"index","event":"index","rssMB":2974,"heapUsedMB":142,"chunking":"section","chunks":13841,"sec":2344}
+{"t":"2026-10-03T08:42:22.173Z","elapsedSec":7201,"stage":"index","event":"finish","rssMB":3007,"heapUsedMB":206,"outcome":"RESOURCE_LIMIT_FAILURE","classification":"EMBEDDING_TIME_LIMIT"}

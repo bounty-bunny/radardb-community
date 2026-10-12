@@ -1,0 +1,616 @@
+{
+  "label": "WixQA SELECTION LOCK — selections from optimization questions only (n=280). Held-out labels read: 0.",
+  "createdAt": "2026-10-03T15:34:02.663Z",
+  "frozenEngine": {
+    "commit": "a2464f5800cb200b219bef55b5534271e2584ff8",
+    "srcSha256": "565e26006d1b4e0e51bc5f60fea35ffd4a5f4a38369f3b819da7b62ff3fca4b8",
+    "harnessHead": "15b427f3b31cf778bff27ac760946cfe7bd2db1b"
+  },
+  "candidateSpace": {
+    "configurations": 480,
+    "sha256": "84281130cfbf0a9f5b935e3279093464353cfc8c9031d5895cda574870f621c3"
+  },
+  "split": {
+    "file": "validation/splits/wixqa.json",
+    "sha256": "c75fe95ed0e50fc40774cef5f903e9c6f444f7166cbd6206c108d756678ca87b",
+    "optimization": 280,
+    "heldOut": 120,
+    "seed": 20261001
+  },
+  "dataset": {
+    "revision": "d662dc42479c14e202eccd832f8c4b66a035c4cc",
+    "scale": "full (6,221 articles)",
+    "datasetVersion": "040a7a418663",
+    "manifestSha256": "704dc3aacd62917170e45e27cbcfce75b0e164087cc492a4c573a5697ae27d78",
+    "goldArticles": 340,
+    "goldDensity": 0.054653592669988746,
+    "searchJsonSha256": "398a09d450fa2cfd37568ed3bfbdb5924745c3952ff3f8d149323018adb34180",
+    "fSearchJsonSha256": "ff57d68661302621acc4912d7fb02ae0aa5f60b37ffa606a848888581cb4fad7"
+  },
+  "routing": {
+    "router": "rules-v1",
+    "fallbackThreshold": 0.5,
+    "minClassQuestions": 3,
+    "classes": [
+      "procedure",
+      "root_cause",
+      "lookup",
+      "general"
+    ]
+  },
+  "objectives": {
+    "primary": "quality",
+    "secondary": "balanced (E and RadarDB only)"
+  },
+  "primary": {
+    "comparison": "RadarDB_quality vs E_globalFixed_quality",
+    "metric": "pooled question-level held-out Recall@5",
+    "n": 120,
+    "bootstrap": {
+      "resamples": 10000,
+      "seed": 20261001
+    },
+    "success": ">= +5.0 pts AND 95% CI excludes 0"
+  },
+  "oracleRouting": "not applicable: WixQA has no question-category field",
+  "systems": {
+    "E_globalFixed_quality": {
+      "name": "Best Global Fixed (quality)",
+      "planKey": "fixed-512|hybrid|minilm-l6|-|-|cross-encoder|k8",
+      "config": {
+        "chunkingStrategy": "fixed-512",
+        "retrievalStrategy": "hybrid",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "cross-encoder",
+        "topK": 8
+      },
+      "description": "Fixed 512 tok · Hybrid (BM25 + vector) · MiniLM-L6 · Cross-encoder · top-8",
+      "optimization": {
+        "n": 280,
+        "evidenceCoverage": 0.7,
+        "retrievalSuccess": 0.6464285714285715,
+        "retrievalSuccessCI": [
+          0.5887932683106276,
+          0.7001002554011893
+        ],
+        "contextPrecision": 0.1413265306122449,
+        "contextTokens": 3380.075,
+        "estimatedCostUsd": 0.010182225000000005,
+        "estimatedLatencyMs": 4882.417592857106
+      }
+    },
+    "E_globalFixed_balanced": {
+      "name": "Best Global Fixed (balanced)",
+      "planKey": "section|vector|minilm-l6|-|-|cross-encoder|k8",
+      "config": {
+        "chunkingStrategy": "section",
+        "retrievalStrategy": "vector",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "cross-encoder",
+        "topK": 8
+      },
+      "description": "Section-aware · Vector · MiniLM-L6 · Cross-encoder · top-8",
+      "optimization": {
+        "n": 280,
+        "evidenceCoverage": 0.7023809523809524,
+        "retrievalSuccess": 0.6428571428571429,
+        "retrievalSuccessCI": [
+          0.585146387607061,
+          0.6967009525995896
+        ],
+        "contextPrecision": 0.19270833333333334,
+        "contextTokens": 2278.510714285714,
+        "estimatedCostUsd": 0.006877532142857144,
+        "estimatedLatencyMs": 4875.390975714304
+      }
+    },
+    "A": {
+      "name": "Baseline A (quality)",
+      "planKey": "section|lexical|-|-|-|none|k8",
+      "config": {
+        "chunkingStrategy": "section",
+        "retrievalStrategy": "lexical",
+        "embeddingModel": null,
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "none",
+        "topK": 8
+      },
+      "description": "Section-aware · Lexical (BM25) · top-8",
+      "optimization": {
+        "n": 280,
+        "evidenceCoverage": 0.5404761904761904,
+        "retrievalSuccess": 0.4857142857142857,
+        "retrievalSuccessCI": [
+          0.42776253346773263,
+          0.5440527325116024
+        ],
+        "contextPrecision": 0.13014455782312925,
+        "contextTokens": 2530.1214285714286,
+        "estimatedCostUsd": 0.007590364285714288,
+        "estimatedLatencyMs": 13.291547857111851
+      }
+    },
+    "B": {
+      "name": "Baseline B (quality)",
+      "planKey": "section|vector|minilm-l6|-|-|none|k8",
+      "config": {
+        "chunkingStrategy": "section",
+        "retrievalStrategy": "vector",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "none",
+        "topK": 8
+      },
+      "description": "Section-aware · Vector · MiniLM-L6 · top-8",
+      "optimization": {
+        "n": 280,
+        "evidenceCoverage": 0.6702380952380953,
+        "retrievalSuccess": 0.6142857142857143,
+        "retrievalSuccessCI": [
+          0.5560891771227788,
+          0.6693886950425417
+        ],
+        "contextPrecision": 0.16804846938775514,
+        "contextTokens": 2014.5607142857143,
+        "estimatedCostUsd": 0.006045682142857142,
+        "estimatedLatencyMs": 86.1184882142785
+      }
+    },
+    "C": {
+      "name": "Baseline C (quality)",
+      "planKey": "section|hybrid|minilm-l6|-|-|none|k8",
+      "config": {
+        "chunkingStrategy": "section",
+        "retrievalStrategy": "hybrid",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "none",
+        "topK": 8
+      },
+      "description": "Section-aware · Hybrid (BM25 + vector) · MiniLM-L6 · top-8",
+      "optimization": {
+        "n": 280,
+        "evidenceCoverage": 0.7011904761904764,
+        "retrievalSuccess": 0.6392857142857142,
+        "retrievalSuccessCI": [
+          0.5815028274886018,
+          0.6932983292128823
+        ],
+        "contextPrecision": 0.17940051020408163,
+        "contextTokens": 2311.332142857143,
+        "estimatedCostUsd": 0.006935996428571431,
+        "estimatedLatencyMs": 97.2222785713954
+      }
+    },
+    "D": {
+      "name": "Baseline D (quality)",
+      "planKey": "fixed-512|hybrid|minilm-l6|-|-|cross-encoder|k8",
+      "config": {
+        "chunkingStrategy": "fixed-512",
+        "retrievalStrategy": "hybrid",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": false,
+        "graphStrategy": "none",
+        "reranker": "cross-encoder",
+        "topK": 8
+      },
+      "description": "Fixed 512 tok · Hybrid (BM25 + vector) · MiniLM-L6 · Cross-encoder · top-8",
+      "optimization": {
+        "n": 280,
+        "evidenceCoverage": 0.7,
+        "retrievalSuccess": 0.6464285714285715,
+        "retrievalSuccessCI": [
+          0.5887932683106276,
+          0.7001002554011893
+        ],
+        "contextPrecision": 0.1413265306122449,
+        "contextTokens": 3380.075,
+        "estimatedCostUsd": 0.010182225000000005,
+        "estimatedLatencyMs": 4882.417592857106
+      }
+    },
+    "RadarDB_quality": {
+      "name": "RadarDB ContextPlans (quality)",
+      "planSetVersion": "wixqa-full-quality-v1",
+      "fallback": {
+        "planId": "plan_wixqa_quality_fallback",
+        "name": "fallback",
+        "planKey": "fixed-512|hybrid|minilm-l6|-|-|cross-encoder|k8",
+        "config": {
+          "chunkingStrategy": "fixed-512",
+          "retrievalStrategy": "hybrid",
+          "embeddingModel": "minilm-l6",
+          "exactMatchBoost": false,
+          "graphStrategy": "none",
+          "reranker": "cross-encoder",
+          "topK": 8
+        },
+        "description": "Fixed 512 tok · Hybrid (BM25 + vector) · MiniLM-L6 · Cross-encoder · top-8",
+        "optimization": {
+          "n": 280,
+          "evidenceCoverage": 0.7,
+          "retrievalSuccess": 0.6464285714285715,
+          "retrievalSuccessCI": [
+            0.5887932683106276,
+            0.7001002554011893
+          ],
+          "contextPrecision": 0.1413265306122449,
+          "contextTokens": 3380.075,
+          "estimatedCostUsd": 0.010182225000000005,
+          "estimatedLatencyMs": 4882.417592857106
+        }
+      },
+      "classPlans": [
+        {
+          "planId": "plan_wixqa_quality_procedure",
+          "questionClass": "procedure",
+          "optimizationQuestions": 71,
+          "name": "procedure",
+          "planKey": "section|hybrid|minilm-l6|-|-|cross-encoder|k8",
+          "config": {
+            "chunkingStrategy": "section",
+            "retrievalStrategy": "hybrid",
+            "embeddingModel": "minilm-l6",
+            "exactMatchBoost": false,
+            "graphStrategy": "none",
+            "reranker": "cross-encoder",
+            "topK": 8
+          },
+          "description": "Section-aware · Hybrid (BM25 + vector) · MiniLM-L6 · Cross-encoder · top-8",
+          "optimization": {
+            "n": 71,
+            "evidenceCoverage": 0.7417840375586854,
+            "retrievalSuccess": 0.6619718309859155,
+            "retrievalSuccessCI": [
+              0.5461640065219604,
+              0.7611517109399859
+            ],
+            "contextPrecision": 0.20296780684104626,
+            "contextTokens": 2388.2676056338028,
+            "estimatedCostUsd": 0.00720680281690141,
+            "estimatedLatencyMs": 4886.324714084698
+          }
+        },
+        {
+          "planId": "plan_wixqa_quality_root_cause",
+          "questionClass": "root_cause",
+          "optimizationQuestions": 5,
+          "name": "root_cause",
+          "planKey": "sentence-window|hybrid|minilm-l6|-|-|none|k3",
+          "config": {
+            "chunkingStrategy": "sentence-window",
+            "retrievalStrategy": "hybrid",
+            "embeddingModel": "minilm-l6",
+            "exactMatchBoost": false,
+            "graphStrategy": "none",
+            "reranker": "none",
+            "topK": 3
+          },
+          "description": "Sentence window · Hybrid (BM25 + vector) · MiniLM-L6 · top-3",
+          "optimization": {
+            "n": 5,
+            "evidenceCoverage": 0.6,
+            "retrievalSuccess": 0.6,
+            "retrievalSuccessCI": [
+              0.23071993220883708,
+              0.8823817688407467
+            ],
+            "contextPrecision": 0.4,
+            "contextTokens": 387.8,
+            "estimatedCostUsd": 0.0011654,
+            "estimatedLatencyMs": 202.07079999968408
+          }
+        },
+        {
+          "planId": "plan_wixqa_quality_lookup",
+          "questionClass": "lookup",
+          "optimizationQuestions": 15,
+          "name": "lookup",
+          "planKey": "fixed-256|hybrid|minilm-l6|-|-|cross-encoder|k8",
+          "config": {
+            "chunkingStrategy": "fixed-256",
+            "retrievalStrategy": "hybrid",
+            "embeddingModel": "minilm-l6",
+            "exactMatchBoost": false,
+            "graphStrategy": "none",
+            "reranker": "cross-encoder",
+            "topK": 8
+          },
+          "description": "Fixed 256 tok · Hybrid (BM25 + vector) · MiniLM-L6 · Cross-encoder · top-8",
+          "optimization": {
+            "n": 15,
+            "evidenceCoverage": 0.8,
+            "retrievalSuccess": 0.7333333333333333,
+            "retrievalSuccessCI": [
+              0.4804911034231324,
+              0.8910272389681718
+            ],
+            "contextPrecision": 0.17738095238095236,
+            "contextTokens": 1973.7333333333333,
+            "estimatedCostUsd": 0.005963200000000001,
+            "estimatedLatencyMs": 4894.792933333219
+          }
+        },
+        {
+          "planId": "plan_wixqa_quality_general",
+          "questionClass": "general",
+          "optimizationQuestions": 189,
+          "name": "general",
+          "planKey": "fixed-512|hybrid|minilm-l6|-|-|cross-encoder|k8",
+          "config": {
+            "chunkingStrategy": "fixed-512",
+            "retrievalStrategy": "hybrid",
+            "embeddingModel": "minilm-l6",
+            "exactMatchBoost": false,
+            "graphStrategy": "none",
+            "reranker": "cross-encoder",
+            "topK": 8
+          },
+          "description": "Fixed 512 tok · Hybrid (BM25 + vector) · MiniLM-L6 · Cross-encoder · top-8",
+          "optimization": {
+            "n": 189,
+            "evidenceCoverage": 0.710758377425044,
+            "retrievalSuccess": 0.656084656084656,
+            "retrievalSuccessCI": [
+              0.5858589948812523,
+              0.7200915883953851
+            ],
+            "contextPrecision": 0.14191232048374905,
+            "contextTokens": 3351.259259259259,
+            "estimatedCostUsd": 0.010095777777777773,
+            "estimatedLatencyMs": 4882.6095513226655
+          }
+        }
+      ],
+      "optimizationRoutedMetrics": {
+        "n": 280,
+        "evidenceCoverage": 0.7214285714285714,
+        "retrievalSuccess": 0.6607142857142857,
+        "retrievalSuccessCI": [
+          0.6034144533810794,
+          0.7136638043514024
+        ],
+        "contextPrecision": 0.16390306122448978,
+        "contextTokens": 2980.3571428571427,
+        "estimatedCostUsd": 0.008982357142857143,
+        "estimatedLatencyMs": 4800.623242499991
+      },
+      "optimizationPlanDistribution": {
+        "general": 189,
+        "lookup": 15,
+        "procedure": 71,
+        "root_cause": 5
+      }
+    },
+    "RadarDB_balanced": {
+      "name": "RadarDB ContextPlans (balanced)",
+      "planSetVersion": "wixqa-full-balanced-v1",
+      "fallback": {
+        "planId": "plan_wixqa_balanced_fallback",
+        "name": "fallback",
+        "planKey": "section|vector|minilm-l6|-|-|cross-encoder|k8",
+        "config": {
+          "chunkingStrategy": "section",
+          "retrievalStrategy": "vector",
+          "embeddingModel": "minilm-l6",
+          "exactMatchBoost": false,
+          "graphStrategy": "none",
+          "reranker": "cross-encoder",
+          "topK": 8
+        },
+        "description": "Section-aware · Vector · MiniLM-L6 · Cross-encoder · top-8",
+        "optimization": {
+          "n": 280,
+          "evidenceCoverage": 0.7023809523809524,
+          "retrievalSuccess": 0.6428571428571429,
+          "retrievalSuccessCI": [
+            0.585146387607061,
+            0.6967009525995896
+          ],
+          "contextPrecision": 0.19270833333333334,
+          "contextTokens": 2278.510714285714,
+          "estimatedCostUsd": 0.006877532142857144,
+          "estimatedLatencyMs": 4875.390975714304
+        }
+      },
+      "classPlans": [
+        {
+          "planId": "plan_wixqa_balanced_procedure",
+          "questionClass": "procedure",
+          "optimizationQuestions": 71,
+          "name": "procedure",
+          "planKey": "section|hybrid|minilm-l6|-|-|none|k8",
+          "config": {
+            "chunkingStrategy": "section",
+            "retrievalStrategy": "hybrid",
+            "embeddingModel": "minilm-l6",
+            "exactMatchBoost": false,
+            "graphStrategy": "none",
+            "reranker": "none",
+            "topK": 8
+          },
+          "description": "Section-aware · Hybrid (BM25 + vector) · MiniLM-L6 · top-8",
+          "optimization": {
+            "n": 71,
+            "evidenceCoverage": 0.7323943661971831,
+            "retrievalSuccess": 0.6619718309859155,
+            "retrievalSuccessCI": [
+              0.5461640065219604,
+              0.7611517109399859
+            ],
+            "contextPrecision": 0.19500335345405767,
+            "contextTokens": 2153.9718309859154,
+            "estimatedCostUsd": 0.006463915492957746,
+            "estimatedLatencyMs": 96.50638309856734
+          }
+        },
+        {
+          "planId": "plan_wixqa_balanced_root_cause",
+          "questionClass": "root_cause",
+          "optimizationQuestions": 5,
+          "name": "root_cause",
+          "planKey": "sentence-window|hybrid|minilm-l6|-|-|none|k3",
+          "config": {
+            "chunkingStrategy": "sentence-window",
+            "retrievalStrategy": "hybrid",
+            "embeddingModel": "minilm-l6",
+            "exactMatchBoost": false,
+            "graphStrategy": "none",
+            "reranker": "none",
+            "topK": 3
+          },
+          "description": "Sentence window · Hybrid (BM25 + vector) · MiniLM-L6 · top-3",
+          "optimization": {
+            "n": 5,
+            "evidenceCoverage": 0.6,
+            "retrievalSuccess": 0.6,
+            "retrievalSuccessCI": [
+              0.23071993220883708,
+              0.8823817688407467
+            ],
+            "contextPrecision": 0.4,
+            "contextTokens": 387.8,
+            "estimatedCostUsd": 0.0011654,
+            "estimatedLatencyMs": 202.07079999968408
+          }
+        },
+        {
+          "planId": "plan_wixqa_balanced_lookup",
+          "questionClass": "lookup",
+          "optimizationQuestions": 15,
+          "name": "lookup",
+          "planKey": "fixed-256|hybrid|minilm-l6|-|-|cross-encoder|k8",
+          "config": {
+            "chunkingStrategy": "fixed-256",
+            "retrievalStrategy": "hybrid",
+            "embeddingModel": "minilm-l6",
+            "exactMatchBoost": false,
+            "graphStrategy": "none",
+            "reranker": "cross-encoder",
+            "topK": 8
+          },
+          "description": "Fixed 256 tok · Hybrid (BM25 + vector) · MiniLM-L6 · Cross-encoder · top-8",
+          "optimization": {
+            "n": 15,
+            "evidenceCoverage": 0.8,
+            "retrievalSuccess": 0.7333333333333333,
+            "retrievalSuccessCI": [
+              0.4804911034231324,
+              0.8910272389681718
+            ],
+            "contextPrecision": 0.17738095238095236,
+            "contextTokens": 1973.7333333333333,
+            "estimatedCostUsd": 0.005963200000000001,
+            "estimatedLatencyMs": 4894.792933333219
+          }
+        },
+        {
+          "planId": "plan_wixqa_balanced_general",
+          "questionClass": "general",
+          "optimizationQuestions": 189,
+          "name": "general",
+          "planKey": "section|vector|minilm-l6|-|-|cross-encoder|k8",
+          "config": {
+            "chunkingStrategy": "section",
+            "retrievalStrategy": "vector",
+            "embeddingModel": "minilm-l6",
+            "exactMatchBoost": false,
+            "graphStrategy": "none",
+            "reranker": "cross-encoder",
+            "topK": 8
+          },
+          "description": "Section-aware · Vector · MiniLM-L6 · Cross-encoder · top-8",
+          "optimization": {
+            "n": 189,
+            "evidenceCoverage": 0.701058201058201,
+            "retrievalSuccess": 0.6402116402116402,
+            "retrievalSuccessCI": [
+              0.5696215671614003,
+              0.705215397476935
+            ],
+            "contextPrecision": 0.19138951877047114,
+            "contextTokens": 2271.4444444444443,
+            "estimatedCostUsd": 0.006856333333333334,
+            "estimatedLatencyMs": 4875.4245920635
+          }
+        }
+      ],
+      "optimizationRoutedMetrics": {
+        "n": 280,
+        "evidenceCoverage": 0.7125,
+        "retrievalSuccess": 0.65,
+        "retrievalSuccessCI": [
+          0.592443491807762,
+          0.7034962154092211
+        ],
+        "contextPrecision": 0.19528061224489796,
+        "contextTokens": 2192.0714285714284,
+        "estimatedCostUsd": 0.006607357142857146,
+        "estimatedLatencyMs": 3581.2123182142623
+      },
+      "optimizationPlanDistribution": {
+        "general": 189,
+        "lookup": 15,
+        "procedure": 71,
+        "root_cause": 5
+      }
+    },
+    "baselineF": {
+      "name": "Baseline F — OUTSIDE RADARDB (bge-small-en-v1.5, preregistered fallback)",
+      "model": "Xenova/bge-small-en-v1.5",
+      "dtype": "q8",
+      "pooling": "cls",
+      "fallbackTrigger": "bge-base-en-v1.5 WixQA full: RESOURCE_LIMIT_FAILURE / EMBEDDING_TIME_LIMIT (wixqa-baselineF-feasibility-bge-base-full.json)",
+      "queryEmbedding": "batches of 32 over the split question list in task order (as at selection; DEVIATIONS 2026-10-02)",
+      "chunking": "fixed-512",
+      "topK": 8,
+      "key": "fixed-512|k8",
+      "optimization": {
+        "n": 280,
+        "evidenceCoverage": 0.6779761904761905,
+        "retrievalSuccess": 0.6214285714285714,
+        "retrievalSuccessCI": [
+          0.5633341121220569,
+          0.676236127053596
+        ],
+        "contextPrecision": 0.14224064625850338,
+        "contextTokens": 3172.225,
+        "estimatedCostUsd": 0,
+        "estimatedLatencyMs": 0
+      }
+    }
+  },
+  "heterogeneityStateOptimizationOnly": {
+    "source": "validation/results/wixqa-heterogeneity-full.json (DIAGNOSTIC ONLY; never used for selection)",
+    "globalRecall5": 62.38,
+    "questionsRoutedDifferently": {
+      "count": 91,
+      "of": 280
+    },
+    "uniqueEffectivePlansQuality": 4,
+    "otherConfigBeatsGlobal": 86,
+    "oracleRecall5": 88.04,
+    "oracleGapPts": 25.65,
+    "radarRoutingCvDeltaPts": -2.8,
+    "radarRoutingCvCi95Pts": [
+      -6.37,
+      0.65
+    ],
+    "globalRankByRecall5InSample": 33,
+    "lengthTercileCv": "+4.4 pts [+1.6, +7.3]; did not replicate in post-hoc check; NOT used in V1 or this lock"
+  },
+  "preRegisteredExpectation": "H1 is unlikely to succeed (out-of-fold rules-v1 routing −2.8 pts on optimization data). This expectation comes only from optimization data; the held-out test is run regardless, with the unchanged criterion.",
+  "verification": {
+    "heldOutLabelsRead": 0,
+    "searchSpaceMatchesFrozen": true,
+    "srcUnchanged": true,
+    "benchmarkInformedModifications": "none"
+  }
+}

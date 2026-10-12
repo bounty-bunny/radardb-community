@@ -1,0 +1,88 @@
+{
+  "label": "Candidate FusionContextPlan — final fit on erb-2k optimization questions (n=328); held-out labels read: 0",
+  "createdAt": "2026-10-06T17:54:43.881Z",
+  "dataset": "erb-2k",
+  "datasetVersion": "15ad4f3c5b7e",
+  "n": 328,
+  "globalPlan": {
+    "key": "fixed-512|lexical|-|-|graph|none|k8",
+    "config": {
+      "chunkingStrategy": "fixed-512",
+      "retrievalStrategy": "lexical",
+      "embeddingModel": null,
+      "exactMatchBoost": false,
+      "graphStrategy": "entity-expansion",
+      "reranker": "none",
+      "topK": 8
+    },
+    "nearBest": 29
+  },
+  "fusionPlan": {
+    "key": "fusion[v1](fixed-512|lexical|-|-|graph|none|k8 + section|hybrid|minilm-l6|exact|graph|none|k5; rrf60; rerank=none)",
+    "partnerKey": "section|hybrid|minilm-l6|exact|graph|none|k5",
+    "config": {
+      "kind": "fusion",
+      "version": 1,
+      "primary": {
+        "chunkingStrategy": "fixed-512",
+        "retrievalStrategy": "lexical",
+        "embeddingModel": null,
+        "exactMatchBoost": false,
+        "graphStrategy": "entity-expansion",
+        "reranker": "none",
+        "topK": 8
+      },
+      "partner": {
+        "chunkingStrategy": "section",
+        "retrievalStrategy": "hybrid",
+        "embeddingModel": "minilm-l6",
+        "exactMatchBoost": true,
+        "graphStrategy": "entity-expansion",
+        "reranker": "none",
+        "topK": 5
+      },
+      "rrfK": 60,
+      "sharedRerank": "none",
+      "rerankPool": 20
+    }
+  },
+  "optimizationGainOverGlobal": {
+    "delta": 0.031753290747193186,
+    "ci": [
+      0.007803426248548199,
+      0.05616047231900892
+    ]
+  },
+  "fuseIfProvenDecision": true,
+  "deployedSystem": "FusionContextPlan",
+  "options": [
+    {
+      "key": "fusion[v1](fixed-512|lexical|-|-|graph|none|k8 + section|hybrid|minilm-l6|exact|graph|none|k5; rrf60; rerank=none)",
+      "r5": 0.9344064556716996
+    },
+    {
+      "key": "fusion[v1](fixed-512|lexical|-|-|graph|none|k8 + section|hybrid|minilm-l6|exact|-|none|k5; rrf60; rerank=none)",
+      "r5": 0.9344064556716996
+    },
+    {
+      "key": "fusion[v1](fixed-512|lexical|-|-|graph|none|k8 + section|hybrid|minilm-l6|-|-|none|k5; rrf60; rerank=none)",
+      "r5": 0.9334579461866048
+    },
+    {
+      "key": "fusion[v1](fixed-512|lexical|-|-|graph|none|k8 + section|hybrid|minilm-l6|exact|graph|none|k5; rrf60; rerank=cross-encoder)",
+      "r5": 0.9231308072009292
+    },
+    {
+      "key": "fusion[v1](fixed-512|lexical|-|-|graph|none|k8 + section|hybrid|minilm-l6|exact|-|none|k5; rrf60; rerank=cross-encoder)",
+      "r5": 0.9231308072009292
+    },
+    {
+      "key": "fusion[v1](fixed-512|lexical|-|-|graph|none|k8 + section|hybrid|minilm-l6|-|-|none|k5; rrf60; rerank=cross-encoder)",
+      "r5": 0.9225210511033684
+    }
+  ],
+  "requiredRepresentations": [
+    "fixed-512:lexical-only",
+    "section:minilm-l6"
+  ]
+}

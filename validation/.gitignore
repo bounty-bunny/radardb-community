@@ -1,0 +1,4 @@
+# Downloaded datasets and working directories are never committed.
+data/
+work/
+node_modules/

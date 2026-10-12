@@ -1,0 +1,72 @@
+{
+  "test": "wixqa-baselineF-feasibility-bge-base-2000",
+  "label": "Baseline F — OUTSIDE RADARDB",
+  "outcome": "PASS",
+  "classification": null,
+  "error": null,
+  "totalSec": 3377,
+  "budgets": {
+    "indexingSec": 7200,
+    "searchSec": 21600,
+    "rssMB": 10240,
+    "diskMB": 25600
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "nodeOptions": "--max-old-space-size=8192",
+    "heapLimitMB": 8384
+  },
+  "maxRssSampledEvery5sMB": 3073,
+  "maxJsHeapObservedAtInstrumentationEventsMB": 272,
+  "diskMB": 1,
+  "model": "Xenova/bge-base-en-v1.5",
+  "dtype": "q8",
+  "pooling": "cls",
+  "normalized": true,
+  "queryPrefix": "Represent this sentence for searching relevant passages: ",
+  "frozen": {
+    "commit": "287042bd01f36e0508d7b0770898c88ed041e233",
+    "srcSha256": "565e26006d1b4e0e51bc5f60fea35ffd4a5f4a38369f3b819da7b62ff3fca4b8"
+  },
+  "corpus": {
+    "dataset": "wixqa",
+    "scale": "2000",
+    "documents": 2000,
+    "characters": 4894655,
+    "manifestSha256": "fb1ffe2fcb398b815583396f7fbd6cc87de54fcd54b2aca93bea3225b63eb188",
+    "goldDensity": 0.17
+  },
+  "questions": {
+    "optimization": 280,
+    "heldOutRead": 0
+  },
+  "indexing": [
+    {
+      "chunking": "fixed-512",
+      "chunks": 3565,
+      "dim": 768,
+      "sec": 678
+    },
+    {
+      "chunking": "fixed-256",
+      "chunks": 5926,
+      "dim": 768,
+      "sec": 570
+    },
+    {
+      "chunking": "section",
+      "chunks": 4696,
+      "dim": 768,
+      "sec": 808
+    },
+    {
+      "chunking": "sentence-window",
+      "chunks": 26751,
+      "dim": 768,
+      "sec": 1269
+    }
+  ],
+  "indexingSec": 3326,
+  "searchSec": 50,
+  "configurations": 12
+}

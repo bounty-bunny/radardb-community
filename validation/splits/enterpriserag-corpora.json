@@ -1,0 +1,62 @@
+{
+ "seed": 20261001,
+ "rule": "all 722 gold rows + proportional per-source-type prefixes of a seeded permutation of non-gold, non-empty rows; nested; PREREGISTRATION §2.2",
+ "eligibleDistractorPoolBySource": {
+  "confluence": 4975,
+  "fireflies": 10142,
+  "github": 7987,
+  "gmail": 121332,
+  "google_drive": 25045,
+  "hubspot": 14983,
+  "jira": 6001,
+  "linear": 35248,
+  "slack": 285525
+ },
+ "scales": [
+  {
+   "scale": 2000,
+   "seed": 20261001,
+   "gold": 723,
+   "distractors": 1277,
+   "goldDensity": 0.361,
+   "sha256": "e2ed829a722ec0564489de816e525591d5db46283286ba19518ed3cf13e79d64",
+   "documents": 2000
+  },
+  {
+   "scale": 10000,
+   "seed": 20261001,
+   "gold": 723,
+   "distractors": 9277,
+   "goldDensity": 0.0722,
+   "sha256": "e95925fe0b110875b7e298ad7ecc9acb3b041e6f1be5aa0da44a351f964a807f",
+   "documents": 10000
+  },
+  {
+   "scale": 25000,
+   "seed": 20261001,
+   "gold": 723,
+   "distractors": 24277,
+   "goldDensity": 0.02888,
+   "sha256": "825bb9c392ce90fdda0a70a23058d3a3f247389a3eb828bf7952e59a65ee9bad",
+   "documents": 25000
+  },
+  {
+   "scale": 50000,
+   "seed": 20261001,
+   "gold": 723,
+   "distractors": 49277,
+   "goldDensity": 0.01444,
+   "sha256": "86c74b2838f5d26e05c1e1b4407836ce3083a2a6a41c71f63fae614eefd39fda",
+   "documents": 50000
+  },
+  {
+   "scale": 100000,
+   "seed": 20261001,
+   "gold": 723,
+   "distractors": 99277,
+   "goldDensity": 0.00722,
+   "sha256": "f01bab2d3a010ad56b54a685c95e3cb51b18fa15972ebe8c1c5fbbdf80a92595",
+   "documents": 100000
+  }
+ ]
+}

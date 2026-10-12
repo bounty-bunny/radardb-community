@@ -1,0 +1,32 @@
+RadarDB
+Copyright (c) 2026 the RadarDB authors. License pending owner approval (see docs/adr/0002-license.md).
+
+This product depends on third-party software, installed by npm and not
+redistributed in this source repository. Notable licenses (full inventory:
+docs/THIRD_PARTY_LICENSES.md, generated from package-lock.json):
+
+  - Next.js, React, zod, clsx, lucide-react, Tailwind CSS ............ MIT / ISC
+  - @huggingface/transformers (transformers.js) ...................... Apache-2.0
+  - onnxruntime-node / onnxruntime-web .............................. MIT
+  - protobufjs (used by onnxruntime) ................................ BSD-3-Clause
+  - sharp / libvips native binaries (optional, pulled in by Next.js
+    and transformers.js) ............................................ Apache-2.0 / LGPL-3.0-or-later
+  - lightningcss (build-time only) .................................. MPL-2.0
+  - caniuse-lite (browser data, build-time) ......................... CC-BY-4.0
+
+Machine-learning models are downloaded at first use from the Hugging Face Hub
+and are not included in this repository:
+
+  - Xenova/all-MiniLM-L6-v2 (ONNX port of sentence-transformers/all-MiniLM-L6-v2) ..... Apache-2.0
+  - Xenova/ms-marco-MiniLM-L-6-v2 (ONNX port of cross-encoder/ms-marco-MiniLM-L-6-v2) .. Apache-2.0
+
+The bundled demo corpus (data/demo) and the quick-start example (examples/quickstart)
+are synthetic and were written for this project. No third-party dataset is
+redistributed. The benchmark reproduction kit includes identifiers, hashes and
+retrieval metrics derived from two MIT-licensed datasets (see docs/DATASETS.md):
+
+  - EnterpriseRAG-Bench, by Onyx (onyx-dot-app) ............................ MIT
+  - WixQA, by Wix.com AI Research ......................................... MIT
+
+Container images or binary distributions that bundle sharp/libvips or model
+files must carry those components' license texts.

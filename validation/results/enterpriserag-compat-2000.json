@@ -1,0 +1,94 @@
+{
+  "test": "enterpriserag-compatibility",
+  "label": "External benchmark relevance scoring — compatibility run (no held-out evaluation, no system comparison)",
+  "scale": 2000,
+  "frozen": {
+    "commit": "3945af3ba3457d1aa19efdedff826651dcdfa266",
+    "srcSha256": "565e26006d1b4e0e51bc5f60fea35ffd4a5f4a38369f3b819da7b62ff3fca4b8"
+  },
+  "corpus": {
+    "documents": 2000,
+    "characters": 10867541,
+    "gold": 723,
+    "goldDensity": 0.361,
+    "manifestSha256": "e2ed829a722ec0564489de816e525591d5db46283286ba19518ed3cf13e79d64",
+    "datasetVersion": "15ad4f3c5b7e"
+  },
+  "productLimits": {
+    "documents": true,
+    "characters": true,
+    "questions": true,
+    "withinAll": true
+  },
+  "questions": {
+    "optimization": 328,
+    "heldOut": 142
+  },
+  "representations": {
+    "chunks": {
+      "fixed-512": 5315,
+      "fixed-256": 9951,
+      "section": 8893,
+      "sentence-window": 52756
+    },
+    "buildSec": 1617.7
+  },
+  "calibration": {
+    "embedQueryMs": 3.89,
+    "rerankPerPairMs": 50.026,
+    "method": "median of uncached inferences after warm-up, measured on this machine at run start (CPU)"
+  },
+  "optimizer": {
+    "configurations": 480,
+    "distinctBehaviors": 448,
+    "searchSec": 6597.6,
+    "totalSec": 8221.5
+  },
+  "timings": {
+    "ingestionSec": 91.7
+  },
+  "resources": {
+    "peakRssMB": 4576,
+    "cpuUserSec": 42980.7,
+    "cpuSystemSec": 300,
+    "wallSec": 8313.7,
+    "workDirMB": 288,
+    "embeddingCacheMB": 157
+  },
+  "router": {
+    "version": "rules-v1",
+    "optimizationClassCounts": {
+      "general": 180,
+      "lookup": 75,
+      "procedure": 26,
+      "root_cause": 47
+    },
+    "learnableClasses": [
+      "general",
+      "lookup",
+      "procedure",
+      "root_cause"
+    ],
+    "heldOutPlanDistribution": {
+      "general": 75,
+      "root_cause": 20,
+      "procedure": 11,
+      "lookup": 36
+    },
+    "maxShare": 0.528169014084507,
+    "ROUTER_COLLAPSE": false
+  },
+  "stopChecks": {
+    "S6_ambiguousGold": {
+      "affectedQuestions": 1,
+      "of": 470,
+      "triggered": false
+    },
+    "S7_productCeiling": {
+      "baselineA": "fixed-512|lexical|-|-|-|none|k8",
+      "optimizationRecall5": 0.9021450348432057,
+      "threshold": 0.95,
+      "triggered": false
+    }
+  }
+}

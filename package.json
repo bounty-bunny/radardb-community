@@ -1,0 +1,48 @@
+{
+  "name": "radardb",
+  "version": "0.2.0",
+  "private": true,
+  "description": "RadarDB - the context engine for enterprise AI",
+  "homepage": "https://github.com/bounty-bunny/radardb-community#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bounty-bunny/radardb-community.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bounty-bunny/radardb-community/issues"
+  },
+  "scripts": {
+    "dev": "next dev -H 127.0.0.1",
+    "build": "next build",
+    "start": "next start -H 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "optimize": "tsx scripts/optimize.ts",
+    "benchmark": "tsx scripts/benchmark.ts",
+    "radar": "tsx scripts/radar.ts",
+    "schemas": "tsx scripts/schemas.ts"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.49.0",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.3"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}

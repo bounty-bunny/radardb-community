@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --bg: #f6f7f8;
+  --surface: #ffffff;
+  --surface-2: #f1f3f5;
+  --surface-3: #e9ecef;
+  --line: #e3e6ea;
+  --line-strong: #cfd4da;
+  --text: #15181c;
+  --text-2: #3f4650;
+  --muted: #6b7480;
+  --accent: #0c9467;
+  --accent-strong: #08744f;
+  --accent-soft: #e5f5ee;
+  --accent-ink: #ffffff;
+  --warn: #b45309;
+  --warn-soft: #fdf3e3;
+  --danger: #c2341f;
+  --danger-soft: #fbeae7;
+  --info: #2457c5;
+  --info-soft: #e8effc;
+  --violet: #6d4bd1;
+  --violet-soft: #efeafd;
+  --chart-dot: #aab2bd;
+  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 1px 3px rgba(16, 24, 40, 0.06);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b0d10;
+    --surface: #111418;
+    --surface-2: #161a1f;
+    --surface-3: #1d2228;
+    --line: #232930;
+    --line-strong: #323a43;
+    --text: #e8ebee;
+    --text-2: #c2c8cf;
+    --muted: #8a939d;
+    --accent: #34d399;
+    --accent-strong: #6ee7b7;
+    --accent-soft: rgba(52, 211, 153, 0.12);
+    --accent-ink: #04130d;
+    --warn: #f0b45a;
+    --warn-soft: rgba(240, 180, 90, 0.12);
+    --danger: #f2826f;
+    --danger-soft: rgba(242, 130, 111, 0.12);
+    --info: #7aa7ff;
+    --info-soft: rgba(122, 167, 255, 0.12);
+    --violet: #b29bff;
+    --violet-soft: rgba(178, 155, 255, 0.12);
+    --chart-dot: #4a535e;
+    --shadow: none;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0d10;
+  --surface: #111418;
+  --surface-2: #161a1f;
+  --surface-3: #1d2228;
+  --line: #232930;
+  --line-strong: #323a43;
+  --text: #e8ebee;
+  --text-2: #c2c8cf;
+  --muted: #8a939d;
+  --accent: #34d399;
+  --accent-strong: #6ee7b7;
+  --accent-soft: rgba(52, 211, 153, 0.12);
+  --accent-ink: #04130d;
+  --warn: #f0b45a;
+  --warn-soft: rgba(240, 180, 90, 0.12);
+  --danger: #f2826f;
+  --danger-soft: rgba(242, 130, 111, 0.12);
+  --info: #7aa7ff;
+  --info-soft: rgba(122, 167, 255, 0.12);
+  --violet: #b29bff;
+  --violet-soft: rgba(178, 155, 255, 0.12);
+  --chart-dot: #4a535e;
+  --shadow: none;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-fg: var(--text);
+  --color-fg-2: var(--text-2);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-violet: var(--violet);
+  --color-violet-soft: var(--violet-soft);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --shadow-card: var(--shadow);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "cv11", "ss01";
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+@keyframes radar-sweep {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.radar-sweep {
+  animation: radar-sweep 2.4s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes progress-stripes {
+  to {
+    background-position: 24px 0;
+  }
+}
+.progress-live {
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.18) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.18) 50%,
+    rgba(255, 255, 255, 0.18) 75%,
+    transparent 75%
+  );
+  background-size: 24px 24px;
+  animation: progress-stripes 0.8s linear infinite;
+}

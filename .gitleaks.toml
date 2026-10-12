@@ -1,0 +1,7 @@
+# gitleaks configuration: the default rules, plus an allowlist for files that only list sha256 hashes of other files.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "sha256 file manifests (content hashes, not secrets)"
+paths = ['''(^|/)validation/harness/frozen-manifest\.json$''', '''(^|/)RELEASE_MANIFEST\.json$''']

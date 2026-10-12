@@ -1,0 +1,62 @@
+{
+  "label": "PRE-RUN PROJECTION — prediction only, not a measured result",
+  "createdAt": "2026-10-01T15:05:58.511Z",
+  "runtime": {
+    "node": "v24.19.0",
+    "nodeFlags": "--max-old-space-size=8192 (preregistered)",
+    "maxStringLength": 536870888,
+    "heapLimitMB": 4288,
+    "ramTotalGB": 15.8,
+    "ramFreeGB": 2.4,
+    "diskFreeGB": 43.7
+  },
+  "measured2k": {
+    "corpusChars": 10867541,
+    "chunks": {
+      "fixed-512": 5315,
+      "fixed-256": 9951,
+      "section": 8893,
+      "sentence-window": 52756
+    },
+    "cachedVectorsUnique": 76008,
+    "embeddingCacheBytes": 160610945,
+    "embeddingCacheJsonCharsFormula": 159920833,
+    "representationBuildSec": 1617.7,
+    "searchSec": 6597.6,
+    "searchSplitFromExperimentsSec": {
+      "reranked": 4387,
+      "notReranked": 2201
+    },
+    "peakRssMB": 4576
+  },
+  "computed10k": {
+    "note": "exact, deterministic: frozen chunkers applied to the 10K manifest documents (no embedding)",
+    "documents": 10000,
+    "corpusChars": 49277493,
+    "chunks": {
+      "fixed-512": 24360,
+      "fixed-256": 45213,
+      "section": 31869,
+      "sentence-window": 213884
+    },
+    "totalChunks": 315326,
+    "cachedVectorsUnique": 310851
+  },
+  "projected10k": {
+    "embeddingCacheJsonChars": 654030505,
+    "exceedsMaxStringLength": true,
+    "overBy": 117159617,
+    "representationBuildSec": 6616,
+    "representationBudgetSec": 7200,
+    "searchSec": 13429,
+    "searchBudgetSec": 21600,
+    "peakRssMB": 18760,
+    "rssBudgetMB": 10240,
+    "assumptions": [
+      "representation time scales with unique vectors embedded (MiniLM dominates)",
+      "non-reranked retrieval time scales with total chunks (linear BM25/vector scans); reranker time per query is constant (20 pairs)",
+      "RSS scales with total chunks (upper-bound style estimate)",
+      "V1 serializes the embedding cache once, at the end of the search (flushModelCaches)"
+    ]
+  }
+}

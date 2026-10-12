@@ -1,0 +1,115 @@
+{
+  "test": "wixqa-feasibility-full",
+  "label": "V1 ENGINE feasibility + optimization search — WixQA primary (ExpertWritten + Simulated), full articles; optimization questions only; no held-out labels; no comparisons",
+  "outcome": "PASS",
+  "classification": null,
+  "error": null,
+  "startedAt": "2026-10-03T02:53:50.240Z",
+  "endedAt": "2026-10-03T06:42:17.891Z",
+  "totalSec": 13708,
+  "budgets": {
+    "ingestAndRepresentSec": 7200,
+    "searchSec": 21600,
+    "rssMB": 10240,
+    "diskMB": 25600
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "nodeOptions": "--max-old-space-size=8192",
+    "heapLimitMB": 8384,
+    "maxStringLength": 536870888
+  },
+  "maxRssSampledEvery5sMB": 4689,
+  "maxJsHeapObservedAtInstrumentationEventsMB": 1040,
+  "diskMB": 285,
+  "frozen": {
+    "commit": "9e83fe138ed1eb60c3fd97a978971f9b8bb772a5",
+    "srcSha256": "565e26006d1b4e0e51bc5f60fea35ffd4a5f4a38369f3b819da7b62ff3fca4b8"
+  },
+  "corpus": {
+    "documents": 6221,
+    "characters": 14122425,
+    "datasetVersion": "040a7a418663",
+    "dataset": "wixqa",
+    "scale": "full",
+    "manifestSha256": "704dc3aacd62917170e45e27cbcfce75b0e164087cc492a4c573a5697ae27d78",
+    "goldArticles": 340,
+    "goldDensity": 0.054653592669988746
+  },
+  "questions": {
+    "optimization": 280,
+    "heldOutRead": 0
+  },
+  "representations": [
+    {
+      "chunking": "fixed-512",
+      "chunks": 10637,
+      "vectors": {
+        "minilm-l6": 10637,
+        "hash-ngram": 10637
+      },
+      "sec": 440
+    },
+    {
+      "chunking": "fixed-256",
+      "chunks": 17286,
+      "vectors": {
+        "minilm-l6": 17286,
+        "hash-ngram": 17286
+      },
+      "sec": 273
+    },
+    {
+      "chunking": "section",
+      "chunks": 13841,
+      "vectors": {
+        "minilm-l6": 13841,
+        "hash-ngram": 13841
+      },
+      "sec": 771
+    },
+    {
+      "chunking": "sentence-window",
+      "chunks": 76693,
+      "vectors": {
+        "minilm-l6": 76693,
+        "hash-ngram": 76693
+      },
+      "sec": 5086
+    }
+  ],
+  "representationBuildSec": 6608,
+  "searchStartedAt": "2026-10-03T04:43:58.191Z",
+  "searchCompletedAt": "2026-10-03T06:42:15.916Z",
+  "searchSec": 7098,
+  "cacheBeforeSerialization": {
+    "embeddings": {
+      "entries": 111530,
+      "jsonChars": 234659121
+    },
+    "rerank": {
+      "entries": 52768,
+      "jsonChars": 3270264
+    },
+    "maxStringLength": 536870888,
+    "embeddingsExceedsLimit": false
+  },
+  "cacheAfterSerialization": {
+    "embeddingsFileBytes": 234659121
+  },
+  "optimizer": {
+    "configurations": 480,
+    "distinctBehaviors": 142,
+    "chunks": {
+      "fixed-512": 10637,
+      "fixed-256": 17286,
+      "section": 13841,
+      "sentence-window": 76693
+    },
+    "calibration": {
+      "embedQueryMs": 72.45,
+      "rerankPerPairMs": 239.494,
+      "method": "median of uncached inferences after warm-up, measured on this machine at run start (CPU)"
+    }
+  }
+}

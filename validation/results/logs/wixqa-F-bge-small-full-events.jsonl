@@ -1,0 +1,10 @@
+{"t":"2026-10-03T08:42:23.112Z","elapsedSec":0,"stage":"ingest","event":"stage","rssMB":57,"heapUsedMB":11}
+{"t":"2026-10-03T08:42:23.354Z","elapsedSec":0,"stage":"ingest","event":"ingested","rssMB":135,"heapUsedMB":53,"dataset":"wixqa","scale":"full","documents":6221,"characters":14122425,"manifestSha256":"704dc3aacd62917170e45e27cbcfce75b0e164087cc492a4c573a5697ae27d78","goldDensity":0.054653592669988746}
+{"t":"2026-10-03T08:42:23.355Z","elapsedSec":0,"stage":"index","event":"stage","rssMB":135,"heapUsedMB":53}
+{"t":"2026-10-03T08:42:24.149Z","elapsedSec":1,"stage":"index","event":"model-loaded","rssMB":324,"heapUsedMB":80}
+{"t":"2026-10-03T08:57:05.594Z","elapsedSec":883,"stage":"index","event":"index","rssMB":2244,"heapUsedMB":84,"chunking":"fixed-512","chunks":10637,"sec":881}
+{"t":"2026-10-03T09:08:10.947Z","elapsedSec":1548,"stage":"index","event":"index","rssMB":2390,"heapUsedMB":116,"chunking":"fixed-256","chunks":17286,"sec":665}
+{"t":"2026-10-03T09:24:50.452Z","elapsedSec":2548,"stage":"index","event":"index","rssMB":2458,"heapUsedMB":148,"chunking":"section","chunks":13841,"sec":1000}
+{"t":"2026-10-03T09:47:56.992Z","elapsedSec":3934,"stage":"index","event":"index","rssMB":2642,"heapUsedMB":216,"chunking":"sentence-window","chunks":76693,"sec":1387}
+{"t":"2026-10-03T09:47:56.994Z","elapsedSec":3934,"stage":"search","event":"stage","rssMB":2642,"heapUsedMB":216}
+{"t":"2026-10-03T09:49:32.789Z","elapsedSec":4030,"stage":"search","event":"finish","rssMB":3365,"heapUsedMB":741,"outcome":"PASS","classification":null}
