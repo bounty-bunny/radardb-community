@@ -4,7 +4,7 @@ All notable changes to RadarDB. Format: [Keep a Changelog](https://keepachangelo
 
 ## [Unreleased]
 
-## [0.2.0] - unreleased (release candidate)
+## [0.2.0] - 2026-10-12
 
 First public release of the RadarDB community edition: a local-first context optimizer that searches 480 retrieval configurations for your documents and questions, validates the choice on held-out questions, and serves the result with provenance. No account, no telemetry, no license key.
 

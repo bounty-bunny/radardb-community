@@ -6,4 +6,4 @@ In short: be respectful and constructive, assume good intent, and focus on the w
 
 ## Reporting
 
-Report unacceptable behavior to the maintainers at **[[OWNER: conduct contact address, to be provided before release]]**. Reports are handled confidentially. Enforcement follows the Contributor Covenant's enforcement guidelines (correction, warning, temporary ban, permanent ban).
+Report unacceptable behavior to the lead maintainer, Lokesh Lalwani ([@bounty-bunny](https://github.com/bounty-bunny)), through the repository's private reporting form: **[private report](https://github.com/bounty-bunny/radardb-community/security/advisories/new)** (start the title with "Conduct:"). Content on GitHub can also be reported with GitHub's "Report content" option. Reports are handled confidentially. Enforcement follows the Contributor Covenant's enforcement guidelines (correction, warning, temporary ban, permanent ban).

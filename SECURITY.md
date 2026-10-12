@@ -6,7 +6,7 @@ RadarDB is pre-1.0. Security fixes are made on the latest 0.x release only.
 
 ## Reporting a vulnerability
 
-Please **do not open a public issue**. Report privately through GitHub's private vulnerability reporting: [Report a vulnerability](https://github.com/bounty-bunny/radardb-community/security/advisories/new), or by email to **[[OWNER: security contact address, e.g. a monitored project alias, to be provided before release]]**.
+Please **do not open a public issue**. Report privately through GitHub's private vulnerability reporting: **[Report a vulnerability](https://github.com/bounty-bunny/radardb-community/security/advisories/new)**. Reports go to the lead maintainer, Lokesh Lalwani ([@bounty-bunny](https://github.com/bounty-bunny)), and stay private until a fix is published.
 
 Include affected version or commit, reproduction steps, and impact. We aim to acknowledge reports within 3 business days and to agree a disclosure timeline with you.
 

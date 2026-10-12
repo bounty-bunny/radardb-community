@@ -65,12 +65,12 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "85f926eb03bd3b98461aad77424b57f78cf1b2d63b3b1b25d296a70ba7b677b0",
+      "sha256": "095da3ddeee44deb98be709dbf8723289f494cf9cf1db587201466f37f716460",
       "class": "PUBLIC"
     },
     {
       "path": "CODE_OF_CONDUCT.md",
-      "sha256": "62784cb5ccc38bfa8b707d506a76038511903194c21ad83ee1b1e427472acafb",
+      "sha256": "b2ada9a7336b93ce1de44f9192492217c23b261838ac78417bd7620841167bfe",
       "class": "PUBLIC"
     },
     {
@@ -95,7 +95,7 @@
     },
     {
       "path": "MAINTAINERS.md",
-      "sha256": "d04e8c5c6c2669eb4cb326f6803ee604bb651f2bdf7cbe571584a677ca8f453e",
+      "sha256": "2e301c28c0dc8b7672818b27b9a10f814c8958a4bf1c69591d42d714d45f8e6c",
       "class": "PUBLIC"
     },
     {
@@ -110,7 +110,7 @@
     },
     {
       "path": "SECURITY.md",
-      "sha256": "a89a23b901b12b669555eaa07f69768dd785eaf93240cfb9588bf69f0c8e0e55",
+      "sha256": "01b5fb5eb2aee088fce032475767be88f3e2e090c269ad17f2c829c3e3ef49f2",
       "class": "PUBLIC"
     },
     {
