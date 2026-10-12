@@ -20,6 +20,8 @@ The protocol is summarized in [BENCHMARK_PROTOCOL.md](BENCHMARK_PROTOCOL.md).
 
 Node.js 20.9+; 16 GB RAM recommended (peaks of about 5 GB were measured); 10 GB of free disk for EnterpriseRAG-Bench. Expect hours of CPU time for the full chains. All commands run from the repository root.
 
+**Use the `v0.2.0` release** (`git checkout v0.2.0`). Later versions update dependencies, and reproduction mode deliberately refuses to run when the engine's dependencies differ from the frozen V1 lockfile.
+
 ```bash
 npm ci && (cd validation && npm ci)          # the harness has one extra dependency (parquet reader)
 export NODE_OPTIONS=--max-old-space-size=8192 # PowerShell: $env:NODE_OPTIONS = "--max-old-space-size=8192"
